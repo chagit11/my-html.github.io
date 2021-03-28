@@ -1,0 +1,1025 @@
+
+// ==== FONT-FACE 'Montserrat' ====
+/* montserrat-regular - latin */
+@font-face
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 400
+    src: url('../fonts/montserrat-v15-latin-regular.eot')
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/montserrat-v15-latin-regular.eot?#iefix') format("embedded-opentype"), url('../fonts/montserrat-v15-latin-regular.woff2') format("woff2"), url('../fonts/montserrat-v15-latin-regular.woff') format("woff"), url('../fonts/montserrat-v15-latin-regular.ttf') format("truetype"), url('../fonts/montserrat-v15-latin-regular.svg#Montserrat') format("svg")
+    /* Legacy iOS */
+
+/* montserrat-500 - latin */
+@font-face
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 500
+    src: url('../fonts/montserrat-v15-latin-500.eot')
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/montserrat-v15-latin-500.eot?#iefix') format("embedded-opentype"), url('../fonts/montserrat-v15-latin-500.woff2') format("woff2"), url('../fonts/montserrat-v15-latin-500.woff') format("woff"), url('../fonts/montserrat-v15-latin-500.ttf') format("truetype"), url('../fonts/montserrat-v15-latin-500.svg#Montserrat') format("svg")
+    /* Legacy iOS */
+
+/* montserrat-600 - latin */
+@font-face
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 600
+    src: url('../fonts/montserrat-v15-latin-600.eot')
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/montserrat-v15-latin-600.eot?#iefix') format("embedded-opentype"), url('../fonts/montserrat-v15-latin-600.woff2') format("woff2"), url('../fonts/montserrat-v15-latin-600.woff') format("woff"), url('../fonts/montserrat-v15-latin-600.ttf') format("truetype"), url('../fonts/montserrat-v15-latin-600.svg#Montserrat') format("svg")
+    /* Legacy iOS */
+
+/* montserrat-700 - latin */
+@font-face
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 700
+    src: url('../fonts/montserrat-v15-latin-700.eot')
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/montserrat-v15-latin-700.eot?#iefix') format("embedded-opentype"), url('../fonts/montserrat-v15-latin-700.woff2') format("woff2"), url('../fonts/montserrat-v15-latin-700.woff') format("woff"), url('../fonts/montserrat-v15-latin-700.ttf') format("truetype"), url('../fonts/montserrat-v15-latin-700.svg#Montserrat') format("svg")
+    /* Legacy iOS */
+
+/* montserrat-800 - latin */
+@font-face
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 800
+    src: url('../fonts/montserrat-v15-latin-800.eot')
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/montserrat-v15-latin-800.eot?#iefix') format("embedded-opentype"), url('../fonts/montserrat-v15-latin-800.woff2') format("woff2"), url('../fonts/montserrat-v15-latin-800.woff') format("woff"), url('../fonts/montserrat-v15-latin-800.ttf') format("truetype"), url('../fonts/montserrat-v15-latin-800.svg#Montserrat') format("svg")
+    /* Legacy iOS */
+
+/* montserrat-900 - latin */
+@font-face
+    font-family: 'Montserrat'
+    font-style: normal
+    font-weight: 900
+    src: url('../fonts/montserrat-v15-latin-900.eot')
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/montserrat-v15-latin-900.eot?#iefix') format("embedded-opentype"), url('../fonts/montserrat-v15-latin-900.woff2') format("woff2"), url('../fonts/montserrat-v15-latin-900.woff') format("woff"), url('../fonts/montserrat-v15-latin-900.ttf') format("truetype"), url('../fonts/montserrat-v15-latin-900.svg#Montserrat') format("svg")
+    /* Legacy iOS */
+
+    
+// ==== IMPORT 'Scada' ====
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap')
+
+
+
+
+
+// =============== HTML ===============
+html 
+    box-sizing: border-box
+    scroll-behavior: smooth
+*, *::after, *::before 
+    box-sizing: inherit
+
+body 
+    padding: 0
+    //-- Font default
+    font-family: Montserrat, sans-serif
+    font-style: normal
+    font-size: 10px
+
+img 
+    max-width: 100%
+    height: auto
+
+a 
+    text-decoration: none
+
+
+// =============== #SITE ===============  
+#site 
+    width: 1440px
+    margin: 0 auto
+    a:hover
+        opacity: 0.8
+
+
+    
+
+
+// --- Header --- --------------------
+header 
+    width: 100%
+    height: 800px
+    background: url(../img/header/header-bg.jpg) no-repeat center
+
+.header-top
+    padding: 30px 130px
+        right: 115px
+    background: #FFFFFF
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a.logo
+        display: block
+        img
+    ul.menu
+        display: flex
+        justify-content: center
+        align-items: center
+        li
+            font-weight: 500
+            font-size: 15px
+            line-height: 16px
+            text-align: center
+            letter-spacing: -0.01em
+            color: #020202
+            &:not(:last-child)
+                margin-right: 30px
+            a
+            
+.header-main
+    padding: 73px 130px
+        bottom: 0
+    h1
+        margin-bottom: 12px
+        font-weight: 800
+        font-size: 48px
+        line-height: 59px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+    p
+        margin-bottom: 53px
+        font-weight: bold
+        font-size: 24px
+        line-height: 35px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+    .items 
+        margin-bottom: 55px
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .item
+            padding-left: 40px
+        @for $i from 1 through 3
+            .item:nth-child(#{$i})
+                background: url(../img/header/item-ico-0#{$i}.svg) no-repeat top 5px left
+
+    .date-time 
+        font-weight: 800
+        font-size: 48px
+        line-height: 64px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+        text-shadow: 0px 4px 20px rgba(200, 31, 86, 0.5)
+    a.btn 
+        margin-top: 60px
+        width: 184px
+        height: 43px
+        border-radius: 20px
+        background: #FEB447
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 600
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        letter-spacing: 0.75px
+        text-transform: uppercase
+        color: #000000
+
+
+
+// --- Main --- ----------------------
+main 
+    width: 100%
+
+
+// -- skills
+section.skills
+    padding: 70px 250px
+        //bottom: 0
+    background: url(../img/skills/skills-bg.png) no-repeat top 270px right 0    
+h2.title-main
+    margin-bottom: 30px
+    font-weight: bold
+    font-size: 34px
+    line-height: 50px
+    letter-spacing: -0.01em
+    color: #000000
+.skills__items 
+    display: grid
+    grid-template-columns: repeat(3, 1fr)
+    grid-gap: 40px 140px
+.skills__item 
+    img
+        width: 40px
+        height: 40px
+        margin-bottom: 20px
+    p
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.15px
+        color: #000000
+
+.skills__slider 
+    margin: 0 -230px
+    .h3
+        font-weight: 900
+        font-size: 96px
+        line-height: 140px
+        letter-spacing: -0.02em
+        color: #C81F56
+        mix-blend-mode: darken
+        opacity: 0.1
+    .arrows 
+        margin: 0 60px
+        transform: translateY(75px)
+        display: flex
+        justify-content: space-between
+        position: relative
+        z-index: 11
+        img:first-child
+            cursor: pointer
+        img:last-child
+            cursor: pointer
+    .slides-wrap 
+        margin-top: -100px
+        padding-bottom: 10px
+        overflow: hidden
+        position: relative
+        z-index: 1
+    .slides 
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: auto
+        grid-column-gap: 20px
+    .slide 
+        display: grid
+        grid-template-columns: repeat(6, 216px)
+        grid-column-gap: 20px
+    .slide-card 
+        &:nth-child(1), &:nth-child(6)
+            opacity: 0.4
+        padding: 18px
+            bottom: 23px
+        width: 216px
+        height: 287px
+        position: relative //
+        //z-index: 1
+        background: #FFFFFF
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        border-radius: 20px
+        img:first-of-type
+            margin-bottom: 30px
+        p
+            margin-bottom: 23px
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.15px
+            color: #000000
+        span
+            display: block
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.75px
+            text-transform: uppercase
+            color: #C81F56
+        img:last-of-type
+            position: absolute
+            bottom: 23px
+            left: 18px
+    .dots 
+        margin-top: 35px
+        text-align: center
+        img
+            &:not(:last-child)
+                margin-right: 12px
+a.skills__btn
+    margin-top: 60px
+    width: 257px
+    height: 43px
+    border-radius: 20px
+    background: #FEB447
+    display: flex
+    justify-content: center
+    align-items: center
+    font-weight: 600
+    font-size: 14px
+    line-height: 17px
+    text-align: center
+    letter-spacing: 0.75px
+    text-transform: uppercase
+    color: #000000
+        
+// -- intensive-training
+section.intensive-training
+    padding: 20px 250px
+        
+    h2.title-main
+        margin-bottom: 20px
+    p
+        margin-bottom: 45px
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.15px
+        color: #000000
+.intensive-training__items
+    margin-left: -90px
+    display: flex
+    align-items: flex-end
+    .item
+        &:not(:last-child)
+            margin-right: 120px
+        img
+            margin-bottom: 18px
+        p
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.15px
+            text-align: center
+            color: #000000
+        
+// -- course
+section.course
+    margin-top: -200px
+    padding: 300px 255px 
+        bottom: 0
+    height: 2408px
+    background: url(../img/course/course.png) no-repeat top 400px left 77px, url(../img/course/course-plus.png) no-repeat center bottom 563px, url(../img/course/course-bg.png) no-repeat center
+    h2.title-main
+        margin-bottom: 110px
+        color: #FFFFFF
+.course__items 
+    transform: translateX(650px)
+    width: 320px
+    font-weight: 600
+    font-size: 20px
+    line-height: 30px
+    letter-spacing: 0.15px
+    color: #FFFFFF
+    @for $i from 1 through 3
+        .item:nth-child(#{$i})
+            background: url(../img/course/item-ico-0#{$i}.svg) no-repeat top 5px left
+    .item 
+        padding-left: 60px
+        margin-bottom: 40px
+.course__plus
+    h2.title-main
+        margin-top: 220px
+        color: #FFFFFF
+    .items
+        margin-top: 380px
+        display: flex
+        justify-content: space-between
+        .item
+            h3
+                margin-bottom: 11px
+                font-weight: bold
+                font-size: 24px
+                line-height: 35px
+                letter-spacing: -0.01em
+                color: #FFFFFF
+            p
+                font-weight: normal
+                font-size: 20px
+                line-height: 30px
+                letter-spacing: 0.15px
+                color: #FFFFFF
+.course__certificate 
+    padding-top: 115px
+    display: flex
+    //justify-content: space-between
+    .pic 
+        margin-right: 60px
+        width: 420px
+        height: 308px
+
+        img
+    .info 
+        padding-top: 10px
+        h3
+            margin-bottom: 10px
+            font-weight: bold
+            font-size: 34px
+            line-height: 50px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+        p
+            margin-bottom: 45px
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            letter-spacing: 0.15px
+            color: #FFFFFF
+    a.btn
+        width: 184px
+        height: 43px
+        border-radius: 20px
+        background: #FEB447
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 600 //
+        font-size: 14px
+        line-height: 17px
+        text-align: center
+        letter-spacing: 0.75px
+        text-transform: uppercase
+        color: #000000
+
+// -- distinction
+section.distinction
+    padding: 130px 250px
+    h3
+        margin-bottom: 60px
+        font-weight: 800
+        font-size: 44px
+        line-height: 59px
+        letter-spacing: -0.01em
+        color: #C81F56
+        b
+            color: #8D8D8D
+        strong
+            color: #FEB447
+.distinction__items 
+    padding-bottom: 100px
+    border-bottom: 2px solid #F5F5F5
+    display: grid
+    grid-template-columns: 350px auto
+    grid-gap: 120px 50px
+    .item:nth-child(2n-1)
+        font-weight: normal
+        font-size: 16px
+        line-height: 26px
+        letter-spacing: -0.01em
+        color: #000000
+        img
+            filter: grayscale(100%)
+    .item:nth-child(2n)
+        font-weight: 600
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.15px
+        color: #000000
+    .item 
+        display: flex
+        align-items: flex-start
+        img
+            margin-right: 20px
+        p
+
+.distinction__price 
+    margin-top: 40px
+    display: grid
+    grid-template-columns: auto auto
+    grid-gap: 0px 125px
+    align-items: end
+    .item:first-child
+        padding-bottom: 25px
+        span
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            color: #C4C4C4
+        p
+            font-weight: normal
+            font-size: 59.1611px
+            line-height: 72px
+            letter-spacing: -0.05em
+            text-transform: uppercase
+            white-space: nowrap
+            color: #C4C4C4
+            span
+                font-weight: 500
+                font-size: 36.9757px
+                line-height: 45px
+    .item:last-child
+        span
+            font-weight: bold
+            font-size: 34px
+            line-height: 50px
+            letter-spacing: -0.01em
+            text-transform: uppercase
+            color: #FE840E
+        p
+            margin-top: -8px
+            font-weight: 900
+            font-size: 96px
+            line-height: 140px
+            letter-spacing: -0.02em
+            white-space: nowrap
+            color: #FE840E
+            span
+                font-weight: 800
+                font-size: 60px
+                line-height: 88px
+                letter-spacing: -0.01em
+
+// -- request
+section.request
+    padding-bottom: 100px
+    h3
+        margin-bottom: 50px
+        font-weight: 800
+        font-size: 54px
+        line-height: 72px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+    p
+        margin-bottom: 30px
+        font-weight: bold
+        font-size: 34px
+        line-height: 50px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+.request__form 
+    padding: 50px 78px
+        bottom: 0
+    margin: 0 auto
+    width: 1164px
+    height: 346px
+    border-radius: 40px
+    background: url(../img/request/request-form-bg.jpg) no-repeat center
+    form
+        display: flex
+        input
+            height: 43px
+            border: 0
+            border-radius: 20px
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.75px
+            text-indent: 15px
+            text-transform: uppercase
+            &
+                margin-right: 20px
+            &:nth-of-type(1)
+                width: 494px
+            &:nth-of-type(2)
+                width: 290px
+            &[type="text"]
+                padding: 10px 15px
+            &::placeholder
+                color: rgba(254, 132, 14, 0.5)
+            &[type="submit"]
+                width: 184px
+                background: #FEB447
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #000000
+.request__share 
+    margin: 0 auto
+        top: 115px
+    width: 1164px
+    display: grid
+    grid-template-columns: 550px 485px
+    grid-gap: 0px 40px
+    .item:last-child img
+        margin-top: 20px
+    .item:last-child .text .num
+        background: linear-gradient(180deg, #FE840E 22.46%, #C81F56 100%) 
+        -webkit-background-clip: text 
+        background-clip: text 
+        color: transparent 
+    .item 
+        display: grid
+        grid-template-columns: auto auto
+        grid-gap: 10px 10px
+        img
+        .text 
+            .num 
+                font-weight: 900
+                font-size: 120px
+                line-height: 176px
+                letter-spacing: -0.05em
+                background: linear-gradient(180deg, #F5FA72 32.47%, #FE840E 150.65%)
+                -webkit-background-clip: text
+                background-clip: text
+                color: transparent
+            p
+                font-weight: bold
+                font-size: 24px
+                line-height: 32px
+                letter-spacing: -0.01em
+                color: #000000
+        a.btn 
+            width: 216px
+            height: 43px
+            border-radius: 20px
+            background: #FEB447
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600 //
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            letter-spacing: 0.75px
+            text-transform: uppercase
+            color: #000000
+
+// -- structure
+section.structure
+    padding: 145px 250px
+        top: 20px
+    height: 1750px
+    background: url(../img/structure/structure-bg.png) no-repeat center
+    h3
+        margin-bottom: 15px
+        font-weight: 800
+        font-size: 48px
+        line-height: 64px
+        letter-spacing: -0.01em
+        color: #000000
+    p
+        margin-bottom: 75px
+        font-weight: normal
+        font-size: 20px
+        line-height: 30px
+        letter-spacing: 0.15px
+        color: #000000
+.structure__items 
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-gap: 20px
+    .item
+        height: 348px
+        border-radius: 20px
+        filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.2))
+        position: relative
+    @for $i from 1 through 7
+        .item:nth-child(#{$i})
+            background: url(../img/structure/item-ico-0#{$i}-bg.svg) no-repeat left bottom 36px, url(../img/structure/item-ico-dots-bg.svg) no-repeat center right, #ffffff
+    .item:not(:last-child)
+        .num
+            position: absolute
+            top: 0
+            left: -5px
+            font-weight: 900 //
+            font-size: 120px
+            line-height: 176px
+            letter-spacing: -0.02em
+            color: #E3E3E3
+        img
+            position: absolute
+            top: 37px
+            right: 60px
+        p
+            position: absolute
+            left: 50px
+            bottom: -50px
+            font-weight: bold //
+            font-size: 34px
+            line-height: 50px
+            letter-spacing: -0.01em
+            color: #000000
+    .item:last-child
+        padding: 0
+            top: 30px
+            left: 42px
+        background: url(../img/structure/item-ico-finish-bg-1.svg) no-repeat right bottom, url(../img/structure/item-ico-finish-bg-2.svg) no-repeat right bottom,  linear-gradient(301.08deg, #FEB447 0%, #FE840E 98.69%)
+        h3
+            margin-bottom: 50px
+            font-weight: 800
+            font-size: 60px
+            line-height: 88px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+        p
+            font-weight: bold
+            font-size: 24px
+            line-height: 35px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+
+// -- aboutcompany
+section.aboutcompany
+    margin-top: 80px
+    padding: 60px 250px
+        bottom: 0
+    height: 830px
+    background: url(../img/aboutcompany/aboutcompany-bg.jpg) no-repeat center
+    position: relative //
+    h3
+        margin-bottom: 60px
+        font-weight: 800
+        font-size: 60px
+        line-height: 88px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+    p
+        letter-spacing: -0.01em
+        color: #FFFFFF
+        &:nth-of-type(1)
+            margin-bottom: 15px
+            font-weight: bold
+            font-size: 34px
+            line-height: 41px
+        &:nth-of-type(2)
+            margin-bottom: 90px
+            font-weight: 600
+            font-size: 24px
+            line-height: 35px
+        &:nth-of-type(3)
+            margin-bottom: 54px
+            font-weight: bold
+            font-size: 34px
+            line-height: 50px
+.aboutcompany__items 
+    display: grid
+    grid-template-columns: 453px 453px
+    grid-template-rows: 490px
+    grid-gap: 20px 
+    position: absolute
+    top: 610px
+    .item 
+        background: #FFFFFF
+        border-radius: 20px
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1)
+        img
+            //width: 453px
+            //height: 287px
+            border-radius: 20px
+        p
+            padding-left: 40px
+            margin-top: -100px
+            font-weight: 800
+            font-size: 50px
+            //line-height: 55px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+            span 
+                margin-top: -5px
+                display: block
+                font-size: 20px
+                
+        ul
+            transform: translateY(50px)
+            list-style: disc
+            font-weight: normal
+            font-size: 20px
+            line-height: 28px
+            letter-spacing: 0.15px
+            color: #000000
+            li
+                margin-bottom: 15px
+                margin-left: 40px
+
+// -- callback
+section.callback
+    margin: 0 auto
+    margin-top: 385px
+    padding: 42px 0
+        left: 78px
+        bottom: 0
+    width: 1164px
+    height: 209px
+    background: url(../img/callback/callback-bg.jpg) no-repeat center
+    border-radius: 40px
+    h3
+        font-weight: bold
+        font-size: 34px
+        line-height: 50px
+        letter-spacing: -0.01em
+        color: #FFFFFF
+    form
+        margin-top: 30px
+        display: flex
+        input
+            height: 43px
+            border: 0
+            border-radius: 20px
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            letter-spacing: 0.75px
+            text-indent: 15px
+            text-transform: uppercase
+            &
+                margin-right: 20px
+            &:nth-of-type(1)
+                width: 335px
+            &:nth-of-type(2)
+                width: 260px
+            &[type="text"]
+                padding: 10px 15px
+            &::placeholder
+                color: rgba(254, 132, 14, 0.5)
+            &[type="submit"]
+                width: 184px
+                background: #FE840E
+                display: flex
+                justify-content: center
+                align-items: center
+                color: #000000
+    .socials
+        a
+            margin-right: 20px
+            img
+
+// -- reviews
+section.reviews
+    padding: 115px 0
+        bottom: 130px
+    h2.title-main
+        text-align: center
+        margin-bottom: 35px
+.reviews__slider
+    .arrows
+        margin: 0 60px
+        transform: translateY(180px)
+        display: flex
+        justify-content: space-between
+        position: relative
+        z-index: 11
+        img
+            cursor: pointer
+            &:first-child
+            &:last-child
+    .slides-wrap
+        padding-top: 30px
+        overflow: hidden
+        .slides
+            margin-left: -210px
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: auto
+            grid-column-gap: 20px
+            .slide
+                display: grid
+                grid-auto-flow: column
+                grid-auto-columns: auto
+                grid-column-gap: 20px
+                .item
+                    &:nth-child(1), &:nth-child(4)
+                        opacity: 0.4
+                    width: 453px
+                    height: 239px
+                    background: #FFFFFF
+                    border: 1px solid #FEB447
+                    border-radius: 20px
+                    text-align: center
+                    position: relative
+                    z-index: 1
+                    img
+                        transform: translateY(-30px)
+                    p 
+                        margin: 0 auto
+                        width: 95%
+                        //height: 98px
+                        font-weight: normal
+                        font-size: 14px
+                        line-height: 20px
+                        text-align: center
+                        letter-spacing: -0.01em
+                        color: #000000
+                    span
+                        position: absolute
+                        left: 0
+                        right: 0
+                        bottom: 33px
+                        font-weight: 500
+                        font-size: 12px
+                        line-height: 16px
+                        text-align: center
+                        letter-spacing: -0.01em
+                        color: #000000
+    .dots
+        margin-top: 85px
+        text-align: center
+        img[src *="dot-active"]
+        img
+            margin-right: 20px
+    
+// -- contacts
+section.contacts
+    padding: 0
+        top: 65px
+        left: 230px
+    height: 603px
+    background: url(../img/contacts/contacts-bg.svg) no-repeat center right 144px
+    display: flex
+    //justify-content: center    
+    .pic
+        margin-right: 40px
+        padding: 0
+            top: 85px
+            left: 142px
+        width: 572px
+        height: 380px
+        border-radius: 20px
+        background: url(../img/contacts/map.png) no-repeat center
+        filter: drop-shadow(0px 8px 15px rgba(0, 0, 0, 0.1))
+        p
+            width: 289px
+            height: 38px
+            background: #C4C4C4
+            font-size: 16px
+            //line-height: 26px
+            line-height: 38px
+            text-align: center
+            letter-spacing: -0.01em
+            color: #000000
+    .info
+        h3
+            margin-top: 27px
+            margin-bottom: 50px
+            font-weight: bold
+            font-size: 34px
+            line-height: 50px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+        ul
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: -0.01em
+            color: #FFFFFF
+            li
+                padding-left: 25px
+                margin-bottom: 30px
+                $i: 0
+                @each $v in phone email local
+                    $i: $i + 1
+                    &:nth-child(#{$i})
+                        background: url(../img/contacts/#{$v}-ico.svg) no-repeat top 8px left
+
+    
+
+// --- Footer --- --------------------
+footer 
+    width: 100%
+    padding: 111px 255px
+        right: 302px
+        bottom: 215px
+.footer__items 
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    .item:last-child
+        width: 320px
+    .item 
+        a.logo 
+            margin-bottom: 20px
+            display: block
+        p:first-of-type
+            margin-bottom: 8px
+            font-weight: normal
+            font-size: 16px
+            line-height: 26px
+            letter-spacing: -0.01em
+            color: #000000
+        .socials 
+            margin-bottom: 55px
+            a
+                margin-right: 20px
+                display: inline-block
+                img
+        p:last-of-type
+            font-weight: 500
+            font-size: 12px
+            line-height: 16px
+            letter-spacing: -0.01em
+            a
+                color: rgba(0, 0, 0, 0.3)
+        a.btn 
+            margin-bottom: 15px
+            width: 217px
+            height: 43px
+            border-radius: 20px
+            background: #FE840E
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 14px
+            line-height: 17px
+            text-align: center
+            letter-spacing: 0.75px
+            text-transform: uppercase
+            color: #FFFFFF
+        ul.nav 
+            display: flex
+            flex-flow: wrap
+            font-weight: 500
+            font-size: 12px
+            line-height: 16px
+            text-align: center
+            letter-spacing: -0.01em
+            li
+                margin-right: 24px
+                margin-top: 20px
+                a
+                    color: rgba(0, 0, 0, 0.5)
+    
+
+
