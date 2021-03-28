@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document
+    body
+        div#popup 
+            #popup-bg
+            #popup-name
+
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                a.logo(href=""): img(src="./img/header/logo.png" alt="logo")
+                .col-1 
+                    .local Офис на Малиновского
+                    .catalog-btn Каталог
+                .col-2 
+                    .panel
+                        a.phone(href="tel:0500") 8-800-550-19-80
+                        ul.menu
+                            li: a(href="") Подбор запчастей
+                            li: a(href="") Доставка
+                            li: a(href="") Как купить
+                            li: a(href="") Оплата
+                            li: a(href="") Акции
+                            li: a(href="") Контакты
+                        .login 
+                            .user Войти
+                            .basket Корзина
+                    form(action="index.html")
+                        input(type="search" value="" placeholder="Что ищите?")
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                .main-top 
+                    .info
+                        img(src="./img/main/champion.jpg" alt="champion")
+                        h1 Фильтр масла <br/>в подарок
+                        a.more(href="") 
+                            | подробнее
+                            img(src="./img/main/arr-more-ico.svg" alt="") 
+                        .title New Energy
+                    .arrows 
+                        .prev: img(src="./img/main/arr-prev-ico.svg" alt="")
+                        .next: img(src="./img/main/arr-next-ico.svg" alt="")
+                    .cards
+                        .card
+                            .num 01
+                            h2 Бесплатный звонок
+                            p.
+                                На любые номера РФ <br/>
+                                <b>8 800 550-19-80</b>
+                            a.btn.wa(href="")
+                                img(src="./img/main/whatsapp-ico.svg" alt="")
+                                | +7 (928) 107-80-80
+                        .card
+                            .num 02
+                            h2 Бесплатный подбор
+                            p.
+                                Мы найдем самую низкую цену на оригинальную запчасть, достойную альтернативу или самый дешевый аналог.
+                            a.btn(href="") Заявка на подбор
+                        .card
+                            .num 03
+                            h2 Бесплатная доставка
+                            p.
+                                Согласуем и привезём запчасти в офис или домой в удобное для Вас время.
+                            a.btn(href="") Пункты выдачи
+                .main-bottom 
+                    .blocks
+                        .block-1
+                            h3 Щетки <br/>AWM
+                            a.more(href="") подробнее
+                        .block-2
+                            .time Весь январь
+                            .price Цена снижена
+                            h3 скидка 20% <br/>на весь <br/>DOT4
+                            a.more(href="") подробнее 
+                    ul.navigation
+                        li: a(href="") Подбор запчастей
+                        li: a(href="") Доставка
+                        li: a(href="") Как купить
+                        li: a(href="") Оплата
+                        li: a(href="") Договор оферты
+                        li: a(href="") Политика конфиденциальности
+                        li: a(href="") Реквизиты
+                        li: a(href="") Контакты
+                        li: a(href="") Акции
+
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                .socials
+                    a(href=""): img(src="./img/footer/vk-ico.svg" alt="vk")
+                    a(href=""): img(src="./img/footer/whatsapp-ico.svg" alt="whatsapp")
+                    a(href=""): img(src="./img/footer/insta-ico.svg" alt="insta")
+                .copy Дизайн — «Есть Идея!»
+            
+            
+            
+        script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
