@@ -1,0 +1,794 @@
+
+// ==== FONT-FACE 'Open Sans' ====
+/* open-sans-regular - latin */
+@font-face
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 400
+    src: url('../fonts/open-sans-v18-latin-regular.eot')
+
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/open-sans-v18-latin-regular.eot?#iefix') format("embedded-opentype"), url('../fonts/open-sans-v18-latin-regular.woff2') format("woff2"), url('../fonts/open-sans-v18-latin-regular.woff') format("woff"), url('../fonts/open-sans-v18-latin-regular.ttf') format("truetype"), url('../fonts/open-sans-v18-latin-regular.svg#OpenSans') format("svg")
+
+    /* Legacy iOS */
+
+/* open-sans-700 - latin */
+@font-face
+    font-family: 'Open Sans'
+    font-style: normal
+    font-weight: 700
+    src: url('../fonts/open-sans-v18-latin-700.eot')
+
+    /* IE9 Compat Modes */
+    src: local(""), url('../fonts/open-sans-v18-latin-700.eot?#iefix') format("embedded-opentype"), url('../fonts/open-sans-v18-latin-700.woff2') format("woff2"), url('../fonts/open-sans-v18-latin-700.woff') format("woff"), url('../fonts/open-sans-v18-latin-700.ttf') format("truetype"), url('../fonts/open-sans-v18-latin-700.svg#OpenSans') format("svg")
+
+    /* Legacy iOS */
+    
+// ==== IMPORT 'Open Sans' ====
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap')
+
+
+
+
+
+// =============== HTML ===============
+html 
+    box-sizing: border-box
+    scroll-behavior: smooth
+*, *::after, *::before 
+    box-sizing: inherit
+
+body 
+    padding: 0
+    background: #BDBDBD
+    //-- Font default
+    font-family: Open Sans, sans-serif
+    font-style: normal
+    font-size: 10px
+    //min-width: 1400px
+    @media screen and ( max-width:  320px )
+        background: #ffffff
+
+img 
+    max-width: 100%
+    height: auto
+
+a 
+    text-decoration: none
+
+
+// =============== #SITE ===============  
+#site 
+    width: 1400px
+    margin: 0 auto
+    a:hover
+        opacity: 0.8
+    @media screen and ( max-width:  992px)
+        max-width: 990px
+        //width: 100%
+    @media screen and ( max-width:  768px)
+        max-width: 768px
+        //width: 100%
+    @media screen and ( max-width:  320px)
+        max-width: 320px
+        //width: 100%
+
+    
+
+
+// --- Header --- --------------------
+header 
+    width: 100%
+
+.header-top 
+    padding: 0 15px
+        right: 30px
+    height: 117px
+    background: #ffffff
+    display: flex
+    align-items: center
+    @media screen and ( max-width:  320px )
+        padding: 0 10px
+            right: 15px
+        height: 53px
+    a.logo 
+        display: block
+        @media screen and ( max-width:  320px )
+            width: 101px
+            height: 37px
+
+
+    .address 
+        margin-left: 35px
+        @media screen and ( max-width:  320px )
+            margin-left: 8px
+        b
+            display: block
+            font-size: 24px
+            line-height: 28px
+            color: #000000
+            @media screen and ( max-width:  320px )
+                font-size: 14px
+                line-height: 16px
+        span
+            display: block
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            color: #000000
+            @media screen and ( max-width:  320px )
+                font-size: 12px
+                line-height: 16px
+                span
+                    display: none
+    .socials 
+        flex-grow: 1
+        text-align: right
+        @media screen and ( max-width:  320px )
+            display: none
+        a
+            display: inline-block
+            margin-left: 20px
+            img
+    .phone-burger
+        display: none
+        @media screen and ( max-width:  320px )
+            flex-grow: 1
+            text-align: right
+            display: block
+        img
+            &:last-child
+                margin-left: 15px
+                    
+.menu-mb 
+    background: url(../img/header/menu-mb-bg-ico.svg) repeat
+    display: none
+    grid-template-columns: auto 55px
+    //transform: translateY(-55px)
+    position: fixed
+    top: -2px
+    left: 0
+    z-index: 11
+    @media screen and ( max-width:  320px )
+        display: none
+    .container
+        padding-left: 15px
+        background: #ffffff
+        .block-one 
+            margin-bottom: 10px
+            height: 49px
+            display: grid
+            grid-template-columns: 1fr 1fr
+            font-weight: bold
+            font-size: 14px
+            line-height: 19px
+            color: #000000
+            div
+                display: flex
+                justify-content: center
+                align-items: center
+                &:last-child
+                    background: #00AFCC
+                    color: #FFFFFF
+                a
+                    color: #FFFFFF         
+        .block-two 
+            font-weight: normal
+            font-size: 16px
+            line-height: 22px
+            color: #000000
+            .li
+                margin-bottom: 20px
+                height: 25px
+                overflow: hidden
+                background: url(../img/header/aropen-menu-mb-ico.svg) no-repeat top 8px right 15px
+                ._li
+                    display: block
+                    margin-left: 25px
+                    font-size: 15px
+                    line-height: 41px
+                    a
+                        color: #000000
+        .block-three 
+            font-weight: bold
+            font-size: 14px
+            line-height: 19px
+            color: #FFFFFF
+            div
+                margin-left: -15px
+                padding-left: 15px
+                width: 264px
+                height: 55px
+                background: #00AFCC
+                display: flex
+                align-items: center
+                &:first-child
+                    margin-bottom: 2px
+    .close
+        padding: 15px
+        img
+
+.header-main
+    .panel
+        padding: 0 15px
+            right: 25px
+        height: 56px
+        background: #00AFCC
+        display: flex
+        align-items: center
+        @media screen and ( max-width:  320px )
+            height: 8px
+            *
+                display: none
+        ul
+            width: 100%
+            display: flex
+            align-items: center
+            font-weight: bold //
+            font-size: 20px
+            line-height: 27px
+            li
+                white-space: nowrap
+                &:not(:last-child)
+                    margin-right: 50px
+                &:last-child
+                    flex-grow: 1
+                    display: flex
+                    justify-content: flex-end
+                    align-items: center
+                    text-align: right
+                    > span
+                        margin-right: 25px
+                        display: inline-block
+                        width: 2px
+                        height: 52px
+                        background: #FFFFFF
+                        @media screen and ( max-width:  320px )
+                            display: none
+                a
+                    color: #FFFFFF
+                    span
+                        @media screen and ( max-width:  768px )
+                            display: none
+.header__slider
+    padding: 33px 15px
+        bottom: 20px
+    height: 400px
+    background: url(../img/header/header-bg-ico.svg) no-repeat center
+    position: relative
+    //.arrows
+    //    img
+    //        &:first-child
+    //        &:last-child
+    .slides-wrap
+        overflow: hidden
+        .slides
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: 100%
+            .slide
+                .item
+                    display: flex
+                    @media screen and ( max-width:  320px )
+                        padding: 0 15px
+                        display: block
+                    .pic
+                        margin-right: 70px
+                        flex: 0 0 530px
+                        @media screen and ( max-width:  992px )
+                            flex: 0 0 423px
+                            margin-right: 10px
+                        @media screen and ( max-width:  768px )
+                            flex: 0 0 349px
+                        @media screen and ( max-width:  320px )
+                            width: 265px
+                            height: 150px
+                        img
+                            //width: 900px
+                            //height: 320px
+                    .info
+                        p
+                            font-size: 52px
+                            line-height: 71px
+                            //white-space: wrap
+                            color: #FFFFFF
+                            @media screen and ( max-width:  992px )
+                                font-size: 44px
+                                line-height: 60px
+                            @media screen and ( max-width:  768px )
+                                padding-right: 10px
+                                font-size: 36px
+                                line-height: 49px
+                            @media screen and ( max-width:  320px )
+                                font-size: 24px
+                                line-height: 33px
+                        a.btn
+                            margin-top: 40px
+                            width: 300px
+                            height: 61px
+                            background: #FF7D00
+                            mix-blend-mode: normal
+                            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                            display: flex
+                            justify-content: center
+                            align-items: center
+                            font-weight: bold //
+                            font-size: 24px
+                            line-height: 33px
+                            text-align: center
+                            color: #FFFFFF
+                            @media screen and ( max-width:  992px )
+                                position: relative
+                                top: 1px
+                            @media screen and ( max-width:  320px )
+                                margin-top: 20px
+                                width: 100%
+                                height: 38px
+                                mix-blend-mode: normal
+                                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+                                border-radius: 8px
+                                font-size: 18px
+                                line-height: 25px
+
+    .dots
+        position: absolute
+        bottom: 30px
+        left: 0
+        right: 0
+        text-align: center
+        @media screen and ( max-width:  992px )
+        @media screen and ( max-width:  320px )
+            position: absolute
+            bottom: 18px
+        img
+            margin-right: 15px
+            &[src *="dot-active"]
+
+.header-bottom
+    padding: 35px 15px
+        bottom: 45px
+    height: 233px
+    background: #73E5FF
+    display: flex
+    justify-content: space-between
+    .info
+        width: 1010px
+        h1
+            margin-bottom: 15px
+            font-weight: bold
+            font-size: 40px
+            line-height: 54px
+            color: #000000
+            @media screen and ( max-width:  768px )
+                font-size: 32px
+                line-height: 44px
+            @media screen and ( max-width:  320px )
+                font-size: 24px
+                line-height: 33px
+        p
+            font-size: 20px
+            line-height: 28px
+            color: #000000
+            @media screen and ( max-width:  320px )
+                font-size: 14px
+                line-height: 20px
+    .pic
+        position: relative
+        top: -180px
+        img
+            @media screen and ( max-width:  992px )
+                width: 147px
+                position: relative
+                top: 40px
+            @media screen and ( max-width:  768px )
+                display: none
+
+
+
+
+// --- Main --- ----------------------
+main 
+    width: 100%
+
+// -- category
+section.category
+    padding: 50px 20px
+        bottom: 60px
+    background: #ffffff
+    @media screen and ( max-width:  768px )
+        margin-bottom: -400px
+    @media screen and ( max-width:  320px )
+        padding: 0 15px
+            right: 0
+h2.title-main
+    margin-bottom: 50px
+    font-weight: bold
+    font-size: 40px
+    line-height: 54px
+    color: #000000
+    @media screen and ( max-width:  992px )
+        font-size: 36px
+        line-height: 49px
+    @media screen and ( max-width:  768px )
+        font-size: 36px
+        line-height: 49px
+    @media screen and ( max-width:  320px )
+        padding-top: 20px
+        font-size: 24px
+        line-height: 33px
+.category__container 
+    height: 910px
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    @media screen and ( max-width:  768px )
+        height: 1500px
+    @media screen and ( max-width:  320px )
+        flex-wrap: nowrap
+        height: 2000px
+    .item 
+        margin-bottom: 80px
+        order: 4
+        @media screen and ( max-width:  768px )
+            margin-right: 30px
+            &:nth-child(1), &:nth-child(2)
+                order: 1
+            &:last-child
+                order: 2
+                & 
+                    .h-title, ul
+                        position: relative
+                        top: -120px
+                        left: 250px
+                    img
+                        position: relative
+                        top: -310px
+        @media screen and ( max-width:  320px )
+            display: flex
+            justify-content: space-between
+            margin-bottom: 30px
+            &:nth-child(2) img
+                width: 118px
+                height: 103px
+            &:nth-child(3) img
+                width: 125px
+                height: 176px
+            &:nth-child(5) img
+                width: 95px
+                height: 95px
+            &:nth-child(6) img
+                width: 111px
+                height: 98px
+
+
+
+                
+            &:last-child
+                order: 5
+                ul, img
+                    position: relative
+                    top: 0
+                    left: 0
+            ul
+                order: -1
+
+        img
+            margin-bottom: 20px
+        .h-title 
+            margin-bottom: 10px
+            font-weight: bold
+            font-size: 36px
+            line-height: 49px
+            color: #000000
+            @media screen and ( max-width:  320px )
+                display: none
+        ul
+            margin-bottom: 20px
+            font-weight: normal
+            font-size: 18px
+            line-height: 37px
+            @media screen and ( max-width:  320px )
+                font-size: 16px
+                line-height: 33px
+            .h-title-mb
+                margin-bottom: 10px
+                display: none
+                font-weight: bold
+                font-size: 36px
+                line-height: 49px
+                color: #000000
+                @media screen and ( max-width:  320px )
+                    display: block
+                    text-decoration: none
+                    font-size: 20px
+                    line-height: 27px
+            li
+                //margin-bottom: 5px
+                @media screen and ( max-width:  320px )
+                    
+                a
+                    text-decoration: underline
+                    color: #00636D
+
+// -- map
+section.map
+    padding-left: 15px
+    padding-top: 15px
+    height: 500px
+    background: url(../img/map/map-bg.jpg) no-repeat center
+    @media screen and ( max-width:  320px )
+        height: 500px + 470px
+        background: url(../img/map/map-bg.jpg) no-repeat top 0 right -250px
+        //margin-bottom: 455px
+        padding: 0
+
+dl.map__contain
+    padding: 20px
+        bottom: 25px
+    width: 450px
+    background: rgba(255, 255, 255, 0.7)
+    @media screen and ( max-width:  320px )
+        padding: 0 5px 20px 15px
+        width: 100%
+        background: #ffffff
+        position: relative
+        top: 485px
+    h2.title-main
+        margin-bottom: 35px
+    > div
+        margin-bottom: 15px
+        display: grid
+        grid-template-columns: 90px auto
+        grid-column-gap: 20px
+        @media screen and ( max-width:  320px )
+            display: block
+        &:last-of-type
+            margin-bottom: 25px
+            display: block
+        dt
+            font-weight: bold
+            font-size: 20px
+            line-height: 30px
+            color: #000000
+        dd
+            font-weight: normal
+            font-size: 20px
+            line-height: 30px
+            color: #000000
+dl.map__socials
+    display: grid
+    grid-template-columns: 50px auto
+    font-weight: normal
+    font-size: 18px
+    line-height: 37px
+    text-decoration-line: underline
+    dt
+    dd
+        @media screen and ( max-width:  320px )
+            margin-left: -10px
+    dd a
+        color: #00636D
+
+        
+// -- description
+section.description
+    padding: 40px 15px
+        bottom: 45px
+        right: 190px
+    background: #ffffff
+    @media screen and ( max-width:  992px )
+        padding-right: 15px
+    @media screen and ( max-width:  768px )
+        padding-right: 15px
+    @media screen and ( max-width:  320px )
+        padding-bottom: 30px
+    .text
+        @media screen and ( max-width:  320px )
+            //margin-bottom: 0px
+            height: 300px
+            overflow: hidden
+            position: relative
+            
+        h3
+            margin-bottom: 10px
+            font-weight: bold
+            font-size: 24px
+            line-height: 39px
+            color: #000000
+        p
+            margin-bottom: 40px
+            font-weight: normal
+            font-size: 16px
+            line-height: 28px
+            color: #000000
+            @media screen and ( max-width:  320px )
+                margin-bottom: 20px
+            span
+                display: block
+                margin-bottom: 10px
+    a.more
+        display: none
+        font-weight: normal
+        font-size: 16px
+        line-height: 28px
+        text-align: center
+        color: #00636D
+        @media screen and ( max-width:  320px )
+            display: block
+            
+        img
+            margin-left: 10px
+        
+// -- message
+section.message
+    padding: 25px 15px
+        right: 30px
+    height: 480px
+    background: url(../img/message/message-bg-ico.svg) no-repeat center
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    @media screen and ( max-width:  992px )
+        padding-right: 10px
+    @media screen and ( max-width:  768px )
+        padding-right: 10px
+    @media screen and ( max-width:  320px )
+        padding: 0
+        background: url(../img/message/message-bg-ico.svg) no-repeat center top
+        display: block
+        height: 855px
+    h2.title-main
+        margin-bottom: 25px
+        color: #FFFFFF
+form.message__form
+    @media screen and ( max-width:  320px )
+        padding: 0 15px
+            bottom: 20px
+        > *
+            width: 100% !important
+    input
+        margin-bottom: 10px
+        width: 599px
+        height: 42px
+        border: 0
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        display: flex
+        align-items: center
+        color: #666666
+        @media screen and ( max-width:  992px )
+            width: 452px
+        @media screen and ( max-width:  768px )
+            width: 354px
+            //height: 155px
+
+
+
+        &[type="text"]
+            padding: 10px 15px
+            &::placeholder
+            
+        &[type="submit"]
+            margin-bottom: 0
+            width: 291px
+            height: 61px
+            background: #FF7D00
+            mix-blend-mode: normal
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+            border-radius: 8px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: bold
+            font-size: 24px
+            line-height: 33px
+            text-align: center
+            color: #ffffff
+            @media screen and ( max-width:  320px )
+                width: 169px !important
+                height: 37px
+
+    textarea
+        margin-bottom: 10px
+        padding: 10px 15px
+        width: 599px
+        height: 155px
+        border: 0
+        display: flex
+        align-items: center
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #666666
+        @media screen and ( max-width:  992px )
+            width: 452px
+            height: 155px
+        @media screen and ( max-width:  768px )
+            width: 354px
+            height: 155px
+        &::placeholder
+.message__contacts
+    padding: 15px 0 0 60px
+    width: 672px
+    height: 427px
+    background: #ffffff
+    @media screen and ( max-width:  992px )
+        padding-right: 40px
+        width: auto
+        height: 427px
+    @media screen and ( max-width:  768px )
+        padding:
+            left: 30px
+            right: 30px
+        width: 360px
+        height: 427px
+    @media screen and ( max-width:  320px )
+        width: 100%
+        height: auto
+        padding-bottom: 20px
+
+    h2.title-main
+        margin-bottom: 30px
+        color: #00636D !important
+    ul
+        font-weight: normal
+        font-size: 24px
+        line-height: 38px
+        color: #000000
+        @media screen and ( max-width:  320px )
+            font-size: 20px
+            line-height: 41px
+        li
+            margin-bottom: 10px
+            padding: 4px 0
+                left: 65px
+            $i: 0
+            @each $v in [phone, email, viber, geo]
+                $i: $i + 1
+                &:nth-child(#{$i})
+                    background: url(../img/message/#{$v}-ico.svg) no-repeat center left
+    .socials
+        margin-top: 25px
+        img
+            margin-right: 20px
+
+
+
+
+// --- Footer --- --------------------
+footer 
+    width: 100%
+    padding: 30px 0 0 35px
+    background: #E4E4E4
+    @media screen and ( max-width:  320px )
+        padding-bottom: 20px
+        padding-left: 15px
+    a.logo
+        margin-bottom: 15px
+        display: block
+    p
+        margin-bottom: 15px
+        font-weight: normal
+        font-size: 16px
+        line-height: 22px
+        color: #000000
+        @media screen and ( max-width:  320px )
+            font-size: 12px
+            line-height: 16px
+    ul
+        display: flex
+        align-items: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 37px
+        text-decoration-line: underline
+        @media screen and ( max-width:  320px )
+            display: none
+        li
+            margin-right: 15px
+            a
+                color: #00636D
+
+
+

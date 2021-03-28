@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        //meta(name="viewport", content="width=device-width")
+        //meta(name="viewport", content="width=1400")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Студия печати Fox Photo
+    body
+
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    a.logo(href=""): img(src="./img/header/logo-ico.svg" alt="logo")
+                    .address
+                        b (342) 247-4-222
+                        span <span>Пермь,</span> ул. Пушкина, 66 
+                    .socials
+                        a(href=""): img(src="./img/header/insta-ico.svg" alt="insta")
+                        a(href=""): img(src="./img/header/vk-ico.svg" alt="vk")
+                    .phone-burger 
+                        img(src="./img/header/phone-ico.svg" alt="")
+                        img(src="./img/header/burger-ico.svg" alt="")
+                .menu-mb
+                    .container
+                        .block-one 
+                            div Виды печати
+                            div: a(href="")  Контакты
+                        .block-two 
+                            .li На одежде
+                            .li На посуде
+                                ._li: a(href="") Фляги
+                                ._li: a(href="") Тарелки
+                                ._li: a(href="") Кружки
+                            .li На аксессуарах
+                            .li Подарки
+                            .li Для дома
+                            .li Фотоуслуги
+                        .block-three
+                            div Смотреть наши работы
+                            div Конструктор футболок
+                    .close: img(src="./img/header/close-mb-ico.svg" alt="")
+
+                .header-main
+                    .panel 
+                        ul
+                            li: a(href="") Виды печати
+                            li: a(href="") Наши работы
+                            li: a(href="") Контакты
+                            li
+                                span
+                                a(href="") Конструктор <span>футболок<span>
+                    .header__slider
+                        //.arrows
+                        //    img(src="./img/header/arprev-ico.svg" alt="")
+                        //    img(src="./img/header/arnext-ico.svg" alt="")
+                        .slides-wrap
+                            .slides
+                                .slide
+                                    .item
+                                        .pic
+                                            img(src="./img/header/pic-01.svg" alt="")
+                                        .info 
+                                            p Печатаем картинки для подарков с душой
+                                            a.btn(href="") Связаться с нами 
+                                .slide
+                                    .item
+                                        .pic
+                                            img(src="./img/header/pic-01.svg" alt="")
+                                        .info 
+                                            p Печатаем картинки для подарков с душой 
+                                            a.btn(href="" style="background:green;") Связаться с нами 
+                                .slide
+                                    .item
+                                        .pic
+                                            img(src="./img/header/pic-01.svg" alt="")
+                                        .info 
+                                            p Печатаем картинки для подарков с душой 
+                                            a.btn(href="" style="background:blue;") Связаться с нами 
+                                
+                        .dots
+                            img(src="./img/header/dot-active-ico.svg" alt="")
+                            img(src="./img/header/dot-ico.svg" alt="")
+                .header-bottom
+                    .info 
+                        h1 Мы — студия печати Fox Photo
+                        p Мы FoxPhoto! Студия печати на одежде, посуде и аксессуарах в центре Перми. У нас честные цены на печать и доставка от 100р. А ещё вы можете заказать печать визиток и фото на документы.
+                    .pic 
+                        img(src="./img/header/backpack-ico.svg" alt="")
+                       
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // --- category ---
+                section.category
+                    h2.title-main На чем мы печатаем
+                    .category__container 
+                        .item 
+                            img(src="./img/category/teeshirt-ico.svg" alt="")
+                            .h-title Одежда
+                            ul
+                                .h-title-mb Одежда
+                                li: a(href="") Футболки
+                                li: a(href="") Свитшоты
+                                li: a(href="") Толстовки
+                                li: a(href="") Носки
+                        .item 
+                            img(src="./img/category/cup-ico.svg" alt="")
+                            .h-title Посуда
+                            ul
+                                .h-title-mb Посуда
+                                li: a(href="") Кружки
+                                li: a(href="") Фляги
+                                li: a(href="") Тарелки
+                        .item 
+                            .h-title Аксессуары
+                            ul
+                                .h-title-mb Аксессуары
+                                li: a(href="") Чехлы
+                                li: a(href="") Брелоки
+                                li: a(href="") Галстуки
+                                li: a(href="") Кепки
+                                li: a(href="") Сумки
+                                li: a(href="") Рюкзаки
+                            img(src="./img/category/backpack-ico.svg" alt="")
+                        .item 
+                            .h-title Подарки
+                            ul
+                                .h-title-mb Подарки
+                                li: a(href="") Подарочные наборы
+                                li: a(href="") Упаковка
+                        .item 
+                            img(src="./img/category/forhome-ico.svg" alt="")
+                            .h-title Для дома
+                            ul
+                                .h-title-mb Для дома
+                                li: a(href="") Холсты
+                                li: a(href="") Модульные картины
+                                li: a(href="") Подушки
+                                li: a(href="") Фартуки
+                                li: a(href="") Магниты
+                                li: a(href="") Фотокамни
+                                li: a(href="") Фотокристаллы
+                                li: a(href="") Коврики для мыши
+                                li: a(href="") Календари
+                                li: a(href="") Пазлы
+                                li: a(href="") Часы
+                                li: a(href="") Новогодние сувениры
+                        .item 
+                            .h-title Фотоуслуги
+                            ul
+                                .h-title-mb Фотоуслуги
+                                li: a(href="") Фото на документы
+                                li: a(href="") Печать фотографий
+                                li: a(href="") Реставрация фото
+                                li: a(href="") Фото на памятники
+                                li: a(href="") Печать документов
+                            img(src="./img/category/photo-ico.svg" alt="")
+
+                // --- map ---
+                section.map
+                    dl.map__contain  
+                        h2.title-main Как нас найти 
+                        div
+                            dt Адрес
+                            dd г. Пермь, ул. Пушкина, 66 вывеска «Фото, ксерокс»1 этаж
+                        div
+                            dt Телефон
+                            dd (342) 247-4-222
+                        div    
+                            dt Время работы
+                            dd будни — с 11.00 до 20.00 <br/>выходные — с 11.00 до 18.00
+                        dl.map__socials
+                            dt: img(src="./img/map/vk-ico.svg" alt="vk")
+                            dd: a(href="") vk.com/foxphoto59
+                            dt: img(src="./img/map/insta-ico.svg" alt="insta")
+                            dd: a(href="") instagram.com/foxphotoperm
+            
+                // --- description ---
+                section.description
+                    .text
+                        p Фотосалон Fox Photo Пермь предлагает широкий спектр услуг, связанных с фотографией: фото на различные виды документов, реставрация фотографии, печать фотографий на профессиональной фотобумаге, печать фото на холсте, нанесение Ваших изображений на кружки, футболки, магниты, брелоки и т.д.
+                        h3 Напечатаем ваши фотографии
+                        p
+                            span Если у Вас накопились фотографии с отпусков, праздников или просто запомнившихся дней, мы предлагаем Вам не надеяться на бесперебойную работу компьютера и распечатать любимые фотографии, чтобы в случае поломки компьютерной техники не остаться без приятных сердцу и глазу воспоминаний. Тем более, что распечатать фото через интернет Пермь теперь можно, не выходя из дома или офиса.
+                            span Наш фотосалон предлагает Вам весьма востребованную услугу среди наших клиентов – печать фото через интернет Пермь. Для того, чтобы заказать фото через интернет Пермь, нужно отправить Ваши фотографии нам на почту fox-photo@mail.ru, после чего Вам остается лишь дождаться готовности фотографий.
+                        h3 Сделаем одежду уникальной
+                        p Мы активно развиваемся и продолжаем радовать наших клиентов качественными и приятными глазу вещицами. Так, например, в холодное время года у нас заказывают теплые толстовки и свитшоты с надписями. Для жарких летних деньков подходят хлопковые футболки и майки с любыми принтами.
+                        h3 Оживим интерьер
+                        p Популярная услуга — печать фото на холсте — уже давно полюбилась нашим заказчикам. Холсты очень органично вписываются в интерьер, а разнообразие стилей оформления фотографии будет радовать самый изысканный вкус.
+                    a.more Подробнее
+                        img(src="./img/description/arrow-ico.svg" alt="")
+                
+                // --- message ---
+                section.message
+                    form.message__form(action="index.html")
+                        h2.title-main Оставьте сообщение
+                        input(type="text" value="" placeholder="Ваше имя")
+                        input(type="text" value="" placeholder="Контактный телефон")
+                        textarea(name="" placeholder="Сообщение")
+                        input(type="submit" value="Отправить")
+                    .message__contacts 
+                        h2.title-main Контакты
+                        ul 
+                            li + 7 (342) 2 474 222
+                            li fox-photo@mail.ru
+                            li +7 (982) 452 50 60
+                            li Пермь, ул. Пушкина, 66
+                        .socials
+                            a(href=""): img(src="./img/message/vk-ico.svg" alt="vk")
+                            a(href=""): img(src="./img/message/insta-ico.svg" alt="insta")
+                        
+
+
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                a.logo(href=""): img(src="./img/footer/logo-ico.svg" alt="logo")
+                p © FoxPhoto, 2018. Все права защищены
+                ul
+                    li: a(href="") Виды печати
+                    li: a(href="") Наши работы
+                    li: a(href="") Цены
+                    li: a(href="") Контакты
+            
+            
+        //script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
