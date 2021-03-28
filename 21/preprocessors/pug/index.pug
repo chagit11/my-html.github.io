@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Еврофлекс - ведущий производитель упаковки
+    body
+        div#popup 
+            #popup-bg
+            #popup-name
+
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    a.logo(href="")
+                        img(src="./img/header/logo.png" alt="logo")
+                        span федеральный производитель упаковки
+                    ul.menu
+                        li: a(href="") Продукция
+                        li: a(href="") Отраслевые решения
+                        li: a(href="") Производство
+                        li: a(href="") Преимущества
+                    .phone 
+                        span +7 (495) 123-45-67
+                        a.btn(href="tel:0500") Обратный звонок
+                .header-main
+                    .text 
+                        p.desc <b>Еврофлекс</b> - ведущий производитель упаковки для пищевой промышленности и сельского хозяйства
+                        p.title Пленка БОПП с макроперфорацией до 12 отверстий
+                        .advantages 
+                            .item 
+                                img(src="./img/header/advantages-01-ico.svg" alt="")
+                                p СОБСТВЕННОЕ ПРОИЗВОДСТВО
+                            .item 
+                                img(src="./img/header/advantages-02-ico.svg" alt="")
+                                p СУПЕР-УСЛОВИЯ НОВЫХ КЛИЕНТОВ
+                            .item 
+                                img(src="./img/header/advantages-03-ico.svg" alt="")
+                                p КАЧЕСТВО, СКЛАД, СРОКИ ПРОИЗВОДСТВА 
+                    form(action="index.html")
+                        .desc 
+                            p Получите расчет за 15 мин и спецпредложение на первый заказ!
+                            span Количество спепредложений в рамках месяца ограничено
+                        label 
+                            b Ваше имя*
+                            input(type="text" value="" placeholder="Петров Петр")
+                        label 
+                            b Ваш номер*
+                            input(type="text" value="" placeholder="+7 (___) ___-__-__")
+                        input(type="submit" value="Получить СПЕЦПРЕДЛОЖЕНИЕ")
+                        .confid 
+                            img(src="./img/header/confid-ico.svg" alt="")
+                            | Мы гарантируем конфиденциальность данных
+
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // --- production ---
+                section.production
+                    h2.title-main НАША ПРОДУКЦИЯ
+                    .production__tabs
+                        .production__tab.production__tab_active
+                            img(src="./img/production/cloth-linear.png" alt="")
+                            h3 Полотно LINEAR
+                        .production__tab
+                            img(src="./img/production/cloth-zigzag.png" alt="")
+                            h3 Полотно ZIG-ZAG
+                        .production__tab
+                            img(src="./img/production/cloth-custom.png" alt="")
+                            h3 Полотно CUSTOM
+                    .production__slider
+                        .production__arrows
+                            img(src="./img/production/arprev-ico.svg" alt="")
+                            img(src="./img/production/arnext-ico.svg" alt="")
+                        .production__slides-wrap
+                            .production__slides
+                                .production__slide
+                                    .pic: img(src="./img/production/cloth-linear-zoom.png" alt="")
+                                    .info 
+                                        h4 Полотно LINEAR
+                                        p Схема перфорации, в которой отверстия делаются в линию, одно за другим. Единственными настраиваемыми параметрами являются расстояние между линиями (от 10 мм) и расстояние между отверстиями в линиях (от 30 мм). Диаметры отверстий от 3 мм до 50 мм.
+                                        a(href="") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                                .production__slide
+                                    .pic: img(src="./img/production/cloth-linear-zoom.png" alt="")
+                                    .info 
+                                        h4 Полотно ZIG-ZAG
+                                        p Схема перфорации, в которой отверстия делаются в линию, одно за другим. Единственными настраиваемыми параметрами являются расстояние между линиями (от 10 мм) и расстояние между отверстиями в линиях (от 30 мм). Диаметры отверстий от 3 мм до 50 мм.
+                                        a(href="") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+                                .production__slide
+                                    .pic: img(src="./img/production/cloth-linear-zoom.png" alt="")
+                                    .info 
+                                        h4 Полотно CUSTOM
+                                        p Схема перфорации, в которой отверстия делаются в линию, одно за другим. Единственными настраиваемыми параметрами являются расстояние между линиями (от 10 мм) и расстояние между отверстиями в линиях (от 30 мм). Диаметры отверстий от 3 мм до 50 мм.
+                                        a(href="") БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
+
+                // --- industry ---
+                section.industry
+                    h2.title-main ОТРАСЛЕВЫЕ РЕШЕНИЯ
+                    .industry__items
+                        .industry__item 
+                            h5 Пленка для упаковки <br/>овощей и фруктов
+                            ul 
+                                li LDPE или BOPP пленка с отверстиями от 6 до 50 мм, возможно программмируемое расположение отверстий
+                                li Нанесение печати до 8 цветов
+                                li Автоматические линии фасовки
+                        .industry__item 
+                            h5 Пакеты для упаковки <br/>овощей и фруктов
+                            ul 
+                                li Готовые пакеты для фасовки овощей и фруктов с макроперфорацией
+                                li Нанесение печати до 8 цветов
+                                li Есть готовая линейка пакетов, всегда в наличии на складе
+                        .industry__item 
+                            h5 Пленка для упаковки <br/>цветов и растений
+                            ul 
+                                li BOPP пленка с макроперфорацией, возможно программируемое расположение отверстий
+                                li Нанесение печати до 8 цветов
+                                li Возможно программируемое расположение отверстий
+                        .industry__item 
+                            h5 Пленка для <br/>мульчирования
+                            ul 
+                                li Пленка для прикрытия почвы с отверстиями для точной рассадки растений 30 мм – 50 мм
+                        .industry__item 
+                            h5 Пленка для грибов
+                            ul 
+                                li Перфорированная пленка для покрытия почвы при выращивании грибов
+                                li Диаметр отверстий от 6 до 50 мм
+                        .industry__item 
+                            h5 Производство пленки
+                            ul 
+                                li Вентиляционные отверстия для овощей и трав
+                                li Диаметр отверстий от 6 до 8 мм
+                        .industry__item 
+                            h5 Пакеты для игрушек
+                            ul 
+                                li Вентиляционные отверстия для предотвращения удушья
+                                li Отверстия 6 мм
+                        .industry__item 
+                            h5 Пакеты для ракушек
+                            ul 
+                                li Отверстия для отвода воды и геля
+                                li Диаметр отверстий от 6 мм
+                        .industry__item 
+                            h5 Пакеты для <br/>винограда
+                            ul 
+                                li Пакеты для винограда с ручкой, печатью и макроперфорацией
+                                li Отверстия 6 или 8 мм
+                        .industry__item 
+                            h5 Упаковочная бумага <br/>с отверстиями 
+                            ul 
+                                li Диаметр отверстий от 6 до 50 мм
+                    .industry__openclose 
+                        span ОТКРЫТЬ ВСЕ РЕШЕНИЯ
+                        img(src="./img/industry/openclose-ico.svg" alt="")
+                    .industry__consultation 
+                        p Здесь приведены только некоторые наши решения. <br/>Получите консультацию и расчет бесплатно!
+                        a.btn(href="") Получить бесплатную консультацию
+
+                // --- manufacture ---
+                section.manufacture
+                    h2.title-main НАШЕ ПРОИЗВОДСТВО
+                    .manufacture__desc 
+                        p Наша компания работает в сфере производства полимерных упаковочных материалов уже более. Мы имеем огромный опыт в обеспечении потребителей качественной упаковочной продукцией. Наши квалифицированные специалисты постоянно работают над поиском новых решений в упаковке, для удовлетворения всех потребностей наших клиентов.
+                            span Наши клиенты – производственные предприятия различных направлений, сетевая и несетевая розница, торговые оптовые компании, фермерские хозяйства и т.д.
+                        .title-ul Еврофлекс - это:
+                        ul 
+                            li — Непрерывное расширение спектра выпускаемой продукции и географии поставок
+                            li — Офисы в Москве, СПБ, Новосибирске, Краснодаре
+                            li — Поможем реализовать ваши идеи в упаковке вашей продукции
+                            li — Продажа напрямую без посредников
+                            li — Типовая продукция всегда в наличии на складах
+                            li — Отлаженная система контроля качества выпускаемой продукции
+                            li — Доставка в любую точку РФ или СНГ
+                        .text-red Будем рады знакомству и сотрудничеству с Вами!     
+                    .manufacture__stat 
+                        .item
+                            big 95%
+                            p наших клиентов пришли по <br/>рекомендациям своих друзей <br/>и коллег
+                        .item
+                            big на 25%
+                            p нарастили роизводственные <br/>мощности за последний <br/>квартал
+                        .item
+                            big более 200
+                            p компаний успешно используют <br/>нашу продукцию в своем <br/>бизнесе
+                        .item
+                            big 3,5 года
+                            p средний срок <br/>сотрудничества с <br/>клиентами
+                    .manufacture__slider
+                        .manufacture__arrows
+                            img(src="./img/manufacture/arprev-ico.svg" alt="")
+                            img(src="./img/manufacture/arnext-ico.svg" alt="")
+                        .manufacture__slides-wrap
+                            .manufacture__slides
+                                .manufacture__slide
+                                    img(src="./img/manufacture/slider-pic-01.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-02.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-03.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-04.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-05.jpg" alt="")
+                                .manufacture__slide
+                                    img(src="./img/manufacture/slider-pic-01.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-02.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-03.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-04.jpg" alt="")
+                                    img(src="./img/manufacture/slider-pic-05.jpg" alt="")
+                        .manufacture__dots
+                            img(src="./img/manufacture/dot-active-ico.svg" alt="")
+                            img(src="./img/manufacture/dot-ico.svg" alt="")
+
+                // --- advantages ---
+                section.advantages
+                    h2.title-main НАШИ ПРЕИМУЩЕСТВА
+                    .advantages__items 
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-01.svg" alt="") 
+                            p супер-условия <br/>по сотрудничеству
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-02.svg" alt="") 
+                            p отличные цены
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-03.svg" alt="") 
+                            p программируемое <br/>расположение отверстий
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-04.svg" alt="") 
+                            p диаметр отверстий <br/>от 6 мм до 50 мм
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-05.svg" alt="") 
+                            p возможность нанесения <br/>12 отверстий в ряд
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-06.svg" alt="") 
+                            p нанесение печати <br/>до 8 цветов
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-07.svg" alt="") 
+                            p ширина материала <br/>от 100 мм до 1350 мм
+                        .advantages__item
+                            img(src="./img/advantages/pic-ico-08.svg" alt="") 
+                            p доставка по всей РФ
+
+                // --- interesting ---
+                section.interesting
+                    .interesting__info
+                        h2.title-main ЧТО ВАМ ТАК ЖЕ МОЖЕТ БЫТЬ <br/> ИНТЕРЕСНО?
+                        ul 
+                            li: a(href="")  Пакеты для овощей
+                            li: a(href="")  Пакеты для мусора
+                            li: a(href="")  ПЭТ контейнеры для овощей
+                            li: a(href="")  Пакеты с клапаном из CPP и LDPE
+                            li: a(href="")  Пакеты - майка
+                            li: a(href="")  Пленка BOPP
+                    form.interesting__form(action="index.html")
+                        .desc 
+                            p Получите расчет за 15 мин и спецпредложение на первый заказ!
+                            span Количество спепредложений в рамках месяца ограничено
+                        label 
+                            b Ваше имя*
+                            input(type="text" value="" placeholder="Петров Петр")
+                        label 
+                            b Ваш номер*
+                            input(type="text" value="" placeholder="+7 (___) ___-__-__")
+                        input(type="submit" value="Получить СПЕЦПРЕДЛОЖЕНИЕ")
+                        .confid 
+                            img(src="./img/interesting/confid-ico.svg" alt="")
+                            | Мы гарантируем конфиденциальность данных
+
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                p 2018,  Все названия, логотипы и товарные знаки являются собственностью корпорации ООО “Company name”
+                    span.
+                        Посещение данного сайта и использование содержащейся на нем информации регулируется условиями нашего "Правового <br/>
+                        положения". Ознакомьтесь с нашей "Политикой конфиденциальности".
+            
+            
+            
+        //script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
