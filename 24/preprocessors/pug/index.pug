@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Агентство с международным именем Blitz Estate
+    body
+    
+        
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    .header-top__one
+                        div: img(src="./img/header/btn-menu.svg" alt="")
+                        div Меню
+                    .header-top__two
+                        a.logo(href=""): img(src="./img/header/logo.svg" alt="logo")
+                        div Продажа недвижимости <br/>в Москва-Сити
+                    .header-top__three
+                        div +7 (495) 199-19-99
+                        div Заказать звонок
+
+                .header-main
+                    .header-main__one
+                        h1 Агентство <br/>с международным <br/>именем Blitz Estate
+                        p Поможем продать, купить и арендовать <br/>недвижимость в Москве, районе Сити и области
+                    .header-main__two
+                        div 
+                            b 17
+                            span Работаем в <br/>17 странах
+                        div 
+                            b 1963
+                            span Помогли 1963-м <br/>клиентам
+                        div 
+                            b 10
+                            span Лет на рынке <br/>недвижимости
+                    .header-main__three
+                        div Пройди тест и получи в подарок бутылку <br/>шампанского <b>Veuve Clicquot</b>
+                        div.btn Подобрать недвижимость
+                    
+                
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // --- test ---
+                section.test
+                    h2.main-title Пройдити тест из 5 вопросов
+                    p.main-desc Мы подберём 20 покупателей готовых купить вашу недвижимость в течение 24 часов
+                    .test__container 
+                        .block-1
+                            .row-1 Выберите местоположение объекта
+                            .row-2
+                                div 
+                                    img(src="./img/test/pic-01.jpg" alt="")
+                                    p В России
+                                div 
+                                    img(src="./img/test/pic-02.jpg" alt="")
+                                    p За границой
+
+                            .row-3 
+                                span Вы ответили на: 0/5 вопросов
+                                span Продолжить
+                        .block-2
+                            ul 
+                                li Поможем Вам приобрести, продать или арендовать необходимую недвижимость
+                                li Продадим вашу недвижимость за 21 день или выкупим сами по стоимостьи в договоре
+                                li Забронируем понравившуюся квартиру и зафиксируем стоимость для вас на момент бронирования
+            
+                // --- services ---
+                section.services
+                    h2.main-title Наши услуги на международном рынке
+                    .services__container 
+                        .item 
+                            .info 
+                                div Жилая недвижимость
+                        .item 
+                            .info 
+                                div Доходная недвижимость
+                        .item 
+                            .info 
+                                div Инвестиционные операции
+                        .item 
+                            .info 
+                                div Покупка яхт
+                        .item 
+                            .info 
+                                div Доверительное управление
+                        .item 
+                            .info 
+                                div Консьерж сервис
+
+                // --- apartments ---
+                section.apartments
+                    h2.main-title Выберите апартаменты в Москва-Сити
+                    p.main-desc Мы включили в наш каталог все апартаменты доступные для покупки в Москва-Сити
+                    ul.apartments__row 
+                        li.all Показать все
+                        li От 20-30 млн
+                        li От 30-50 млн
+                        li От 50-100 млн
+                        li Более 100 млн
+                    .apartments__grids 
+                        .grid.grid-1
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-01.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-01.jpg" alt="") 
+                                .title Апартаменты в «башне ОКО»
+                                .num Лот № 4536
+                                .info 
+                                    div 
+                                        span 25 600 000 ₽
+                                        span 365 714 ₽ за м²
+                                    div 
+                                        span Площадь 70 м²
+                                        span Этаж 52
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-02.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-02.jpg" alt="")
+                                .title Апартаменты в «башне Империя»
+                                .num Лот № 4547
+                                .info 
+                                    div 
+                                        span 27 900 000 ₽
+                                        span 420 000 ₽ за м²
+                                    div 
+                                        span Площадь 62 м²
+                                        span Этаж 35
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-03.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-03.jpg" alt="")
+                                .title Апартаменты в «Neva Towers»
+                                .num Лот № 4548
+                                .info 
+                                    div 
+                                        span 19 000 000 ₽
+                                        span 475 000 ₽ за м²
+                                    div 
+                                        span Площадь 40 м²
+                                        span Этаж 16
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-04.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-04.jpg" alt="")
+                                .title Апартаменты в комплексе «Федерация»
+                                .num Лот № 4549
+                                .info 
+                                    div 
+                                        span 59 500 000 ₽
+                                        span 540 909 ₽ за м²
+                                    div 
+                                        span Площадь 110 м²
+                                        span Этаж 84
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-05.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-05.jpg" alt="")
+                                .title Апартаменты в «башне ОКО»
+                                .num Лот № 4550
+                                .info 
+                                    div 
+                                        span 34 900 000 ₽
+                                        span 396 590 ₽ за м²
+                                    div 
+                                        span Площадь 88 м²
+                                        span Этаж 29
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-06.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-06.jpg" alt="")
+                                .title Апартаменты в  «Город столиц»
+                                .num Лот № 4551
+                                .info 
+                                    div 
+                                        span 28 400 000 ₽
+                                        span 498 245 ₽ за м²
+                                    div 
+                                        span Площадь 57 м²
+                                        span Этаж 48
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-07.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-07.jpg" alt="") 
+                                .title Апартаменты в «башне ОКО»
+                                .num Лот № 4552
+                                .info 
+                                    div 
+                                        span 38 200 000 ₽
+                                        span 553 623 ₽ за м²
+                                    div 
+                                        span Площадь 69 м²
+                                        span Этаж 58
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-08.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-08.jpg" alt="")
+                                .title Апартаменты в «башне Империя»
+                                .num Лот № 4553
+                                .info 
+                                    div 
+                                        span 41 000 000 ₽
+                                        span 554 054 ₽ за м²
+                                    div 
+                                        span Площадь 74 м²
+                                        span Этаж 41
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-09.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-09.jpg" alt="")
+                                .title Апартаменты в   «Город столиц»
+                                .num Лот № 4554
+                                .info 
+                                    div 
+                                        span 53 200 000 ₽
+                                        span 565 957 ₽ за м²
+                                    div 
+                                        span Площадь 94 м²
+                                        span Этаж 59
+                                a.btn Назначить просмотр
+                            .item
+                                picture 
+                                    source(srcset="./img/apartments/webp/pic-010.webp" type="image/webp")
+                                    img(src="./img/apartments/pic-010.jpg" alt="")
+                                .title Апартаменты в «Neva Towers»
+                                .num Лот № 4555
+                                .info 
+                                    div 
+                                        span 89 900 000 ₽
+                                        span 642 142 ₽ за м²
+                                    div 
+                                        span Площадь 140 м²
+                                        span Этаж 61
+                                a.btn Назначить просмотр
+                    .apartments__more Показать еще
+                        img(src="./img/apartments/arrow-more.svg" alt="")            
+
+                // --- blitz-estate ---
+                section.blitz-estate
+                    .text
+                        h2.main-title Blitz Estate - на рынке недвижимости с 2008 года
+                        p 
+                            span Blitz Estate – международная компания по управлению недвижимостью и финансами. Основана в 2008 г. в Австрии. На сегодня представлена в Англии, Испании, Латвии, ОАЭ, Австрии и России, кроме того имеет партнерскую сеть более чем в десяти странах мира.
+                            span Мы предоставляем услуги полного цикла по приобретению и продаже недвижимости и управлению активами, предоставляя клиентам неизменно высокое качество сервиса. Наш подход позволяет оптимизировать инвестиционный портфель, диверсифицировать риски и обеспечить полную конфиденциальность сделки.
+                        a.btn(href="") Узнать больше
+                    .pics
+                        .pic: img(src="./img/blitz-estate/pic-01.jpg" alt="")
+                        .pic: img(src="./img/blitz-estate/pic-02.jpg" alt="")
+                        .pic: img(src="./img/blitz-estate/pic-03.jpg" alt="")
+                        .pic: img(src="./img/blitz-estate/pic-04.jpg" alt="")
+                        .pic: img(src="./img/blitz-estate/pic-05.jpg" alt="")
+
+                // --- direction ---
+                section.direction
+                    h2.main-title Направления нашего агентства
+                    .grid
+                        .item 
+                            .title Аренда жилой недвижимости
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Аренда коммерческой недвижимости
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Отдел блиц-сделок
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Продажа новостроек
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Продажа жилой недвижимости на вторичном рынке
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Продажа коммерческой недвижимости
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Инвестиционные проекты
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                        .item 
+                            .title Недвижимость за рубежом
+                            dl.leader 
+                                dt Руководитель:
+                                dd Александр Смирнов
+                            a.phone(href="tel:0500")  +7(495)199-19-99
+                            a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                    .block-links 
+                        a.link(href="").
+                            Blitz Estate – международная<br/>
+                            компания по управлению<br/>
+                            недвижимостью и финансами
+                        a.link(href="").
+                            Blitz Estate – международная<br/>
+                            компания по управлению<br/>
+                            недвижимостью и финансами
+                        a.link(href="").
+                            Blitz Estate – международная<br/>
+                            компания по управлению<br/>
+                            недвижимостью и финансами
+
+                // --- leader ---
+                section.leader
+                    .text
+                        h2.main-title Руководитель агентства <br/>Blitz Estate
+                        dl.about 
+                            dt Георгий Мебония
+                            dd 
+                                span Вице-президент по проектам в ММДЦ «Москва-Сити», Генеральный директор компании Blitz Estate в России.
+                                span Имея европейский опыт работы и показывая верность своему делу являемся стратегическим партнером ММДЦ «Москва-Сити с 2013 года на эксклюзивной реализации объектов приватных к продаже.
+                                span Благодаря кропотливому и теплому отношению нам удается быстро и эффективно оказывать нашим клиентам услуги высочайшего уровня в сфере недвижимости.
+                        a.btn Задать вопрос
+
+
+
+
+            
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                .footer__block-1
+                    dl
+                        dt Время работы: 
+                        dd Пн-Пт: 8:00-23:00, Сб-Вс: 9:00-21:00
+                    div Пресненская набережная, дом 12 Башня <br/>"Федерация"  Восток, 31 этаж, Офис Р
+                    div 
+                        span ОГРН: 1187746683464
+                        span ИНН: 7703462548
+                .footer__block-2
+                    a.logo(href=""): img(src="./img/footer/logo.svg" alt="logo")
+                    span Продажа недвижимости <br/>в Москва-Сити
+                .footer__block-3
+                    a.phone()  +7 (495) 199-19-99
+                    a.email(href="mailto:moscow@blitz.estate")  moscow@blitz.estate
+                    a.btn(href="tel:0500") Заказать звонок
+            
+        //script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
