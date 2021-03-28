@@ -1,0 +1,293 @@
+
+// ==== FONT-FACE '' ====
+
+    
+// ==== IMPORT '' ====
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Koulen&family=Mukta+Vaani&family=Roboto&family=Work+Sans&display=swap')
+
+
+
+
+
+// =============== HTML ===============
+html 
+    box-sizing: border-box
+    scroll-behavior: smooth
+*, *::after, *::before 
+    box-sizing: inherit
+
+body 
+    padding: 0
+    background: #A67676
+    //-- Font default
+    font-family: Scada, sans-serif
+    font-style: normal
+    font-size: 10px
+
+img 
+    max-width: 100%
+    height: auto
+
+a 
+    text-decoration: none
+
+
+// =============== #POPUP ===============  
+div#popup
+    display: none
+    width: 100%
+    height: 100%
+    //-
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 111
+    #popup-bg
+        background: rgba(0, 0, 0, 0.8)
+        width: 100%
+        height: 100%
+    #popup-name
+        display: none
+        $width: 400px
+        $height: 300px
+        position: fixed
+        left: calc(50% - (#{$width} / 2))
+        top: calc(50% - (#{$height} / 2))
+        z-index: 222
+        width: $width
+        height: $height
+        //-
+        background: #FFFFFF
+// =============== #SITE ===============  
+#site 
+    width: 1920px
+    margin: 0 auto
+    background: #F4F4F4
+    a:hover
+        opacity: 0.8
+
+
+    
+
+
+// --- Header --- --------------------
+header 
+    padding: 0 290px
+    //-
+    width: 100%
+    height: 1083px
+    background: url(../img/header/header-plant-bg.png) no-repeat bottom right 560px, url(../img/header/header-word-bg-ico.svg) no-repeat top 490px left 290px 
+
+.header-top
+    padding: 72px 0
+    //-
+    display: flex
+    justify-content: space-between
+    align-items: center
+    //-
+.header-main
+    padding-top: 490px
+    width: 100%
+    h1
+        font-family: Akronim
+        font-style: normal
+        font-weight: normal
+        font-size: 48px
+        line-height: 55px
+        color: #7A797A
+
+
+
+// --- Main --- ----------------------
+main 
+    width: 100%
+
+
+// -- potted-cacti
+section.potted-cacti
+    padding-top: 140px
+    padding-left: 290px
+    height: 793px
+    background: #4A4A4A
+    //-
+    display: flex
+    //align-items: center
+    //-
+    & 
+        position: relative                 
+    .socials 
+        padding-top: 337px //-
+        display: flex
+        flex-flow: column
+        align-items: center //-
+        position: absolute
+        left: 42px
+        img
+            margin-bottom: 20px
+    .wrapper 
+        height: 929px
+        //-
+        display: flex
+        align-items: stretch
+        //-
+        .pic 
+            margin-right: 138px
+            img
+        .info 
+            width: 433px
+            h2
+                margin-top: 53px
+                margin-bottom: 30px
+                //-
+                font-family: Work Sans
+                font-style: normal
+                font-weight: normal
+                font-size: 81px
+                line-height: 100px
+                letter-spacing: 18.9844px
+                color: #FFFFFF
+            p
+                font-family: Mukta Vaani
+                font-style: normal
+                font-weight: normal
+                font-size: 24px
+                line-height: 35px
+                text-align: justify
+                color: #FFFFFF
+            .line
+                margin-top: 40px
+                width: 433px
+                height: 3px
+                background: rgba(255, 255, 255, 0.6)
+                //-
+                display: flex
+                align-items: center
+                //-
+                .line-active
+                    width: 125px
+                    height: 6px
+                    background: #FFFFFF
+
+            & 
+                position: relative
+            img[src *="arnext"]
+                cursor: pointer
+                position: absolute
+                top: 230px
+                right: -110px
+            .gallery-more 
+                width: 431px
+                height: 91px
+                border: 3px solid #979797 
+                
+                display: flex
+                justify-content: center
+                align-items: center 
+                
+                position: absolute
+                bottom: 60px 
+                
+                font-family: Koulen
+                font-style: normal
+                font-weight: normal
+                font-size: 36px
+                line-height: 66px
+                letter-spacing: 8px
+                white-space: nowrap
+                color: #7A797A
+                cursor: pointer
+                img[src *="armore"]
+                    position: absolute
+                    //bottom: 90px 
+                    right: -125px
+
+// -- vases-pots
+section.vases-pots
+    padding: 0 450px
+    margin-top: 507px
+    
+    .items 
+        margin-bottom: 110px
+        //-
+        display: flex
+        justify-content: center
+        //-
+        .item:first-child
+            margin-right: 25px
+            padding-top: 47px
+            width: 53px
+            height: 550px
+            font-family: Roboto
+            font-style: normal
+            font-weight: normal
+            font-size: 48px
+            line-height: 115.3%
+            letter-spacing: 10.6667px
+            word-wrap: break-word
+            color: #7A797A
+        .item:nth-child(2)
+            margin-right: 20px
+            width: 380px
+            p
+                margin: 0 auto
+                width: 285px
+        .item:nth-child(3)
+            width: 570px
+            p
+                margin: 0 auto
+                width: 415px
+        .item:not(:first-child)
+            img
+                margin-bottom: 25px
+                display: block
+                height: 420px
+                width: 100%
+            p
+                font-family: Mukta Vaani
+                font-style: normal
+                font-weight: normal
+                font-size: 24px
+                line-height: 35px
+                text-align: center
+                color: #4A4A4A
+    &
+        position: relative
+    .gallery-more
+        width: 431px
+        height: 91px
+        border: 3px solid #979797 
+        
+        display: flex
+        justify-content: center
+        align-items: center 
+        
+        position: absolute
+        right: 577px
+        
+        font-family: Koulen
+        font-style: normal
+        font-weight: normal
+        font-size: 36px
+        line-height: 66px
+        letter-spacing: 8px
+        white-space: nowrap
+        color: #7A797A
+        cursor: pointer
+        img[src *="armore"]
+            position: absolute
+            right: -120px
+                
+                    
+
+
+    
+    
+
+
+// --- Footer --- --------------------
+footer 
+    width: 100%
+    height: 280px
+    background: url(../img/footer/plant.png) no-repeat left 107px bottom
+
+

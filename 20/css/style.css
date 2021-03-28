@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Akronim&family=Koulen&family=Mukta+Vaani&family=Roboto&family=Work+Sans&display=swap");
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+  background: #A67676;
+  font-family: Scada, sans-serif;
+  font-style: normal;
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+div#popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+div#popup #popup-bg {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+div#popup #popup-name {
+  display: none;
+  position: fixed;
+  left: calc(50% - (400px / 2));
+  top: calc(50% - (300px / 2));
+  z-index: 222;
+  width: 400px;
+  height: 300px;
+  background: #FFFFFF;
+}
+
+#site {
+  width: 1920px;
+  margin: 0 auto;
+  background: #F4F4F4;
+}
+#site a:hover {
+  opacity: 0.8;
+}
+
+header {
+  padding: 0 290px;
+  width: 100%;
+  height: 1083px;
+  background: url(../img/header/header-plant-bg.png) no-repeat bottom right 560px, url(../img/header/header-word-bg-ico.svg) no-repeat top 490px left 290px;
+}
+
+.header-top {
+  padding: 72px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-main {
+  padding-top: 490px;
+  width: 100%;
+}
+.header-main h1 {
+  font-family: Akronim;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 55px;
+  color: #7A797A;
+}
+
+main {
+  width: 100%;
+}
+
+section.potted-cacti {
+  padding-top: 140px;
+  padding-left: 290px;
+  height: 793px;
+  background: #4A4A4A;
+  display: flex;
+}
+section.potted-cacti {
+  position: relative;
+}
+section.potted-cacti .socials {
+  padding-top: 337px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  position: absolute;
+  left: 42px;
+}
+section.potted-cacti .socials img {
+  margin-bottom: 20px;
+}
+section.potted-cacti .wrapper {
+  height: 929px;
+  display: flex;
+  align-items: stretch;
+}
+section.potted-cacti .wrapper .pic {
+  margin-right: 138px;
+}
+section.potted-cacti .wrapper .info {
+  width: 433px;
+}
+section.potted-cacti .wrapper .info h2 {
+  margin-top: 53px;
+  margin-bottom: 30px;
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 81px;
+  line-height: 100px;
+  letter-spacing: 18.9844px;
+  color: #FFFFFF;
+}
+section.potted-cacti .wrapper .info p {
+  font-family: Mukta Vaani;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: justify;
+  color: #FFFFFF;
+}
+section.potted-cacti .wrapper .info .line {
+  margin-top: 40px;
+  width: 433px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  align-items: center;
+}
+section.potted-cacti .wrapper .info .line .line-active {
+  width: 125px;
+  height: 6px;
+  background: #FFFFFF;
+}
+section.potted-cacti .wrapper .info {
+  position: relative;
+}
+section.potted-cacti .wrapper .info img[src*=arnext] {
+  cursor: pointer;
+  position: absolute;
+  top: 230px;
+  right: -110px;
+}
+section.potted-cacti .wrapper .info .gallery-more {
+  width: 431px;
+  height: 91px;
+  border: 3px solid #979797;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 60px;
+  font-family: Koulen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 66px;
+  letter-spacing: 8px;
+  white-space: nowrap;
+  color: #7A797A;
+  cursor: pointer;
+}
+section.potted-cacti .wrapper .info .gallery-more img[src*=armore] {
+  position: absolute;
+  right: -125px;
+}
+
+section.vases-pots {
+  padding: 0 450px;
+  margin-top: 507px;
+}
+section.vases-pots .items {
+  margin-bottom: 110px;
+  display: flex;
+  justify-content: center;
+}
+section.vases-pots .items .item:first-child {
+  margin-right: 25px;
+  padding-top: 47px;
+  width: 53px;
+  height: 550px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 115.3%;
+  letter-spacing: 10.6667px;
+  word-wrap: break-word;
+  color: #7A797A;
+}
+section.vases-pots .items .item:nth-child(2) {
+  margin-right: 20px;
+  width: 380px;
+}
+section.vases-pots .items .item:nth-child(2) p {
+  margin: 0 auto;
+  width: 285px;
+}
+section.vases-pots .items .item:nth-child(3) {
+  width: 570px;
+}
+section.vases-pots .items .item:nth-child(3) p {
+  margin: 0 auto;
+  width: 415px;
+}
+section.vases-pots .items .item:not(:first-child) img {
+  margin-bottom: 25px;
+  display: block;
+  height: 420px;
+  width: 100%;
+}
+section.vases-pots .items .item:not(:first-child) p {
+  font-family: Mukta Vaani;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 35px;
+  text-align: center;
+  color: #4A4A4A;
+}
+section.vases-pots {
+  position: relative;
+}
+section.vases-pots .gallery-more {
+  width: 431px;
+  height: 91px;
+  border: 3px solid #979797;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 577px;
+  font-family: Koulen;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 66px;
+  letter-spacing: 8px;
+  white-space: nowrap;
+  color: #7A797A;
+  cursor: pointer;
+}
+section.vases-pots .gallery-more img[src*=armore] {
+  position: absolute;
+  right: -120px;
+}
+
+footer {
+  width: 100%;
+  height: 280px;
+  background: url(../img/footer/plant.png) no-repeat left 107px bottom;
+}
