@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Изготовление печатей и штампов
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+        
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    .__top
+                        .logo: a(href=""): img(src="./img/header/logo.svg" alt="logo")
+                        .info 
+                            .geo 
+                                span Сухаревская
+                                span Карта > 
+                            .phone +7 (926) 863-75-25
+                        a.btn-phone(href="tel:+79268637525")
+                            picture
+                                source(srcset="./img/header/webp/phone.webp" type="image/webp")
+                                img(src="./img/header/phone.svg" alt="")
+                    nav.menu
+                        ul
+                            li: a(href="") ЦЕНЫ
+                            li: a(href="") СДЕЛАТЬ ЗАКАЗ
+                            li: a(href="") ДОСТАВКА
+                            li: a(href="") КОНТАКТЫ
+                            li: a(href="") ОПТОВАЯ ПРОДАЖА
+                .header-main
+                    .callback 
+                        form.callback__form(action="index.html")
+                            .title Быстрая заявка
+                            p Номер телефона:
+                            input(type="text" value="" placeholder="8 (ХХХ) ХХХ-ХХ-ХХ")
+                            input(type="submit" value="Перезвоните мне!")
+                    .block-right 
+                        .item Заказ печатей <br/>от 290р
+                        .item Изготовление <br/>за 1 час
+                        .item Оперативная доставка <br/>по Москве
+                .header-bottom 
+                    .call-now Заказать <br/>сейчас!
+                    
+                
+                
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // --- prices ---
+                section.prices
+                    h2.main-title ЦЕНЫ
+                    .prices__items 
+                        .item.item-1
+                            .col-left 
+                                .top 
+                                    img(src="./img/prices/stamp-01.png" alt="")
+                                    .title ПЕЧАТИ
+                                    span 1 ДЕНЬ
+                                .main 
+                                    div 
+                                        span НОВАЯ ПЕЧАТЬ
+                                        span.line
+                                        span 290₽
+                                    div 
+                                        span ПЕЧАТЬ ПО ОТТИСКУ
+                                        span.line
+                                        span 390₽
+                                    div 
+                                        span ФАКСИМИЛЕ
+                                        span.line
+                                        span от 590₽
+                                
+                            .col-right 
+                                .top 
+                                    span 1-2 ЧАСА
+                                .main 
+                                    div 
+                                        span НОВАЯ ПЕЧАТЬ
+                                        span.line
+                                        span 500₽
+                                    div 
+                                        span ПЕЧАТЬ ПО ОТТИСКУ
+                                        span.line
+                                        span от 790₽
+                                    div 
+                                        span ФАКСИМИЛЕ
+                                        span.line
+                                        span от 950₽
+                        .item.item-2
+                            .col-left 
+                                .top 
+                                    img(src="./img/prices/stamp-02.png" alt="")
+                                    .title ШТАМПЫ
+                                    span 1 ДЕНЬ
+                                .main 
+                                    div 
+                                        span 20х40 мм
+                                        span.line
+                                        span 290₽
+                                    div 
+                                        span 30х50 мм
+                                        span.line
+                                        span 400₽
+                                    div 
+                                        span 60х100 мм
+                                        span.line
+                                        span 600₽
+                                
+                            .col-right 
+                                .top 
+                                    span 1-2 ЧАСА
+                                .main 
+                                    div 
+                                        span 20х40 мм
+                                        span.line
+                                        span 500₽
+                                    div 
+                                        span 30х50 мм
+                                        span.line
+                                        span 790₽
+                                    div 
+                                        span 60х100 мм
+                                        span.line
+                                        span 1200₽
+
+                // --- popular-goods ---
+                section.popular-goods
+                    h2.main-title ПОПУЛЯРНЫЕ ТОВАРЫ
+                    img(src="./img/popular-goods/popular-goods-bg-01.png" alt="")
+                    .items 
+                        .item 
+                            .title Карманная печать
+                            p 
+                                span 550р/ новая
+                                span 750р/ по оттиску
+                        .item 
+                            .title Автоматическая <br/>печать
+                            p 
+                                span 550р/ новая
+                                span 750р/ по оттиску
+                        .item 
+                            .title Карманная <br/>печать
+                            p 
+                                span 550р/ новая
+                                span 750р/ по оттиску
+
+                // --- order-online ---
+                section.order-online
+                    h2.main-title ОНЛАЙН-ЗАКАЗ
+                    .container 
+                        .block-left 
+                            dl.order
+                                dt Ваш заказ:
+                                dd
+                                    .type: span Новая печать
+                                    .rig Оснастка: <span>ручная</span>
+                                    .number Кол-во: 
+                                        <span>-</span>
+                                        <span>1</span>
+                                        <span>+</span>
+                            dl.itogo 
+                                dt Итого:
+                                dd 390₽
+                        form.block-main(action="index.html")
+                            .view-printing 
+                                .title Выберите вид печати
+                                .items 
+                                    .item 
+                                        img(src="./img/order-online/view-printing-01.png" alt="")
+                                        label(for="view-printing-1")
+                                            input(type="radio" name="view-printing" id="view-printing-1" checked)
+                                            span
+                                            | Печать
+                                    .item 
+                                        img(src="./img/order-online/view-printing-02.png" alt="")
+                                        label(for="view-printing-2")
+                                            input(type="radio" name="view-printing" id="view-printing-2")
+                                            span
+                                            | Печать
+                                    .item 
+                                        img(src="./img/order-online/view-printing-03.png" alt="")
+                                        label(for="view-printing-3")
+                                            input(type="radio" name="view-printing" id="view-printing-3")
+                                            span
+                                            | Печать
+                            .type-printing 
+                                .title Выберите тип
+                                .items 
+                                    .item 
+                                        img(src="./img/order-online/type-printing-01.png" alt="")
+                                        label(for="type-printing-1")
+                                            input(type="radio" name="type-printing" id="type-printing-1" checked)
+                                            span
+                                            | Новая печать
+                                        img(src="./img/order-online/type-printing-question.svg" alt="")
+                                    .item 
+                                        img(src="./img/order-online/type-printing-02.png" alt="")
+                                        label(for="type-printing-2")
+                                            input(type="radio" name="type-printing" id="type-printing-2")
+                                            span
+                                            | По оттиску
+                                        img(src="./img/order-online/type-printing-question.svg" alt="")
+                            .time-printing 
+                                .title Срок изготовления
+                                .items 
+                                    .item 
+                                        label(for="time-printing-1")
+                                            input(type="radio" name="time-printing" id="time-printing-1" checked)
+                                            span
+                                            | На завтра
+                                    .item 
+                                        label(for="time-printing-2")
+                                            input(type="radio" name="time-printing" id="time-printing-2")
+                                            span
+                                            | Срочно (1-2часа)
+                            .number-printing 
+                                .title Количество
+                                .items 
+                                    .item 
+                                        .label
+                                            span: img(src="./img/order-online/number-printing-minus.svg" alt="")
+                                            span
+                                                span 1
+                                                input(type="text" name="number-printing" value="1")
+                                            span: img(src="./img/order-online/number-printing-plus.svg" alt="")
+                            .type-organization 
+                                .title Тип организации
+                                .items 
+                                    .item 
+                                        label(for="type-organization-1")
+                                            input(type="radio" name="type-organization" id="type-organization-1" checked)
+                                            span
+                                            | ИП
+                                    .item
+                                        label(for="type-organization-2")
+                                            input(type="radio" name="type-organization" id="type-organization-2")
+                                            span
+                                            | ООО
+                                    .item
+                                        label(for="type-organization-3")
+                                            input(type="radio" name="type-organization" id="type-organization-3")
+                                            span
+                                            | ЗАО
+                                    .item
+                                        label(for="type-organization-4")
+                                            input(type="radio" name="type-organization" id="type-organization-4")
+                                            span
+                                            | ОАО
+                                    .item
+                                        label(for="type-organization-5")
+                                            input(type="radio" name="type-organization" id="type-organization-5")
+                                            span
+                                            | Врачебная
+                                    .item
+                                        label(for="type-organization-6")
+                                            input(type="radio" name="type-organization" id="type-organization-6")
+                                            span
+                                            | Другое
+                            .data-organization 
+                                label(for="name-org") 
+                                    .title Наименование организации
+                                    input(type="text" name="" placeholder="Например, ИП Константин Константинопольский" id="name-org")
+                                label(for="city-org") 
+                                    .title Город
+                                    input(type="text" name="" placeholder="Москва" id="city-org")
+                                label(for="ogrn-org") 
+                                    .title ОГРН
+                                    input(type="text" name="" placeholder="123456789876543" id="ogrn-org")
+                                label(for="inn-org") 
+                                    .title ИНН
+                                    input(type="text" name="" placeholder="12345678986765" id="inn-org")
+                            .model-printing 
+                                .title Выберите макет
+                                .items 
+                                    .item 
+                                        img(src="./img/order-online/model-printing-01.png" alt="")
+                                        label(for="model-printing-1")
+                                            input(type="radio" name="model-printing" id="model-printing-1" checked)
+                                            span
+                                            | ИП 0001
+                                    .item 
+                                        img(src="./img/order-online/model-printing-02.png" alt="")
+                                        label(for="model-printing-2")
+                                            input(type="radio" name="model-printing" id="model-printing-2")
+                                            span
+                                            | ИП 0002
+                                    .item 
+                                        img(src="./img/order-online/model-printing-03.png" alt="")
+                                        label(for="model-printing-3")
+                                            input(type="radio" name="model-printing" id="model-printing-3")
+                                            span
+                                            | ИП 0003
+                                    .item 
+                                        img(src="./img/order-online/model-printing-04.png" alt="")
+                                        label(for="model-printing-4")
+                                            input(type="radio" name="model-printing" id="model-printing-4")
+                                            span
+                                            | ИП 0004
+                                    .item 
+                                        img(src="./img/order-online/model-printing-05.png" alt="")
+                                        label(for="model-printing-5")
+                                            input(type="radio" name="model-printing" id="model-printing-5")
+                                            span
+                                            | ИП 0005
+                                    .item 
+                                        img(src="./img/order-online/model-printing-06.png" alt="")
+                                        label(for="model-printing-6")
+                                            input(type="radio" name="model-printing" id="model-printing-6")
+                                            span
+                                            | ИП 0006
+                                    .item 
+                                        img(src="./img/order-online/model-printing-07.png" alt="")
+                                        label(for="model-printing-7")
+                                            input(type="radio" name="model-printing" id="model-printing-7")
+                                            span
+                                            | ИП 0007
+                                    .item 
+                                        img(src="./img/order-online/model-printing-08.png" alt="")
+                                        label(for="model-printing-8")
+                                            input(type="radio" name="model-printing" id="model-printing-8")
+                                            span
+                                            | ИП 0008
+                                    .item 
+                                        img(src="./img/order-online/model-printing-09.png" alt="")
+                                        label(for="model-printing-9")
+                                            input(type="radio" name="model-printing" id="model-printing-9")
+                                            span
+                                            | ИП 0009
+                            .rig-printing 
+                                .title Выберите оснастку
+                                .items 
+                                    .item 
+                                        img(src="./img/order-online/rig-printing-01.png" alt="")
+                                        label(for="rig-printing-1")
+                                            input(type="radio" name="rig-printing" id="rig-printing-1" checked)
+                                            span
+                                            | Ручная
+                                    .item 
+                                        img(src="./img/order-online/rig-printing-02.png" alt="")
+                                        label(for="rig-printing-2")
+                                            input(type="radio" name="rig-printing" id="rig-printing-2")
+                                            span
+                                            | Ручная
+                                    .item 
+                                        img(src="./img/order-online/rig-printing-03.png" alt="")
+                                        label(for="rig-printing-3")
+                                            input(type="radio" name="rig-printing" id="rig-printing-3")
+                                            span
+                                            | Ручная
+                                    .item 
+                                        img(src="./img/order-online/rig-printing-04.png" alt="")
+                                        label(for="rig-printing-4")
+                                            input(type="radio" name="rig-printing" id="rig-printing-4")
+                                            span
+                                            | Ручная
+                                    .item 
+                                        img(src="./img/order-online/rig-printing-05.png" alt="")
+                                        label(for="rig-printing-5")
+                                            input(type="radio" name="rig-printing" id="rig-printing-5")
+                                            span
+                                            | Ручная
+                            .delivery-printing 
+                                .title Способ получения
+                                .items 
+                                    .item 
+                                        label(for="delivery-printing-1")
+                                            input(type="radio" name="delivery-printing" id="delivery-printing-1" checked)
+                                            span
+                                            | Самовывоз
+                                    .item 
+                                        label(for="delivery-printing-2")
+                                            input(type="radio" name="delivery-printing" id="delivery-printing-2")
+                                            span
+                                            | Доставка
+                            .address-printing 
+                                .title Адрес доставки
+                                .items 
+                                    .item 
+                                        label(for="address-printing")
+                                            input(type="text" name="address-printing" placeholder="Например, Панкратьевский переулок 41к1" id="address-printing")
+                            .comment-printing 
+                                .title Комментарий
+                                .items 
+                                    .item 
+                                        label(for="comment-printing")
+                                            textarea(name="comment-printing" placeholder="Если у вас есть уточнение к заказу, либо дополнительный заказ, напишите его сюда." id="comment-printing")
+                            .btn-submit 
+                                .items 
+                                    .item 
+                                        input(type="submit" value="Оформить заказ")
+                                    .item 
+                                        span Оплата производится при получении заказа.
+                                    
+
+
+            
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                .logo: img(src="./img/footer/logo.svg" alt="logo")
+                nav.menu
+                    ul
+                        li: a(href="") ЦЕНЫ
+                        li: a(href="") СДЕЛАТЬ ЗАКАЗ
+                        li: a(href="") ДОСТАВКА
+                        li: a(href="") КОНТАКТЫ
+                        li: a(href="") ОПТОВАЯ ПРОДАЖА
+            
+            
+        //script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
