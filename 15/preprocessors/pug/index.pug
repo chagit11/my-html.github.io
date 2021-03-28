@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title ГЕНЕРАЛЬНЫЙ ПРОЕКТИРОВЩИК
+    body
+        div#site
+            
+            
+            
+        
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    a.logo(href=""): img(src="./img/svg/logo-ico.svg", alt="")
+                    ul.menu
+                        li: a(href="") ПРОЕКТЫ
+                        li: a(href="") УСЛУГИ
+                        li: a(href="") О КОМПАНИИ
+                        li: a(href="") СМИ О НАС
+                        li: a(href="") КОНТАКТЫ
+                    a.phone(href="tel:0500") +7 (301) 250 18 18
+                    .search-block: img(src="./img/svg/header-search-ico.svg", alt="")
+                    .forstaff
+                        img(src="./img/svg/header-msg-ico.svg", alt="") 
+                        a(href="") Для сотрудников
+                    .login
+                        img(src="./img/svg/header-login-ico.svg", alt="")
+                        a Личный кабинет
+                    .login-popup
+                        .dark-bg
+                        .popup
+                            .logo: img(src="./img/logo-popup.png" alt="")
+                            p.
+                                Заполните форму, <br>
+                                и представитель Антарктиды свяжется <br>
+                                с вами в ближайшее время
+                            form(action="index.html")
+                                input(type="text" placeholder="Введите имя" required)
+                                input(type="text" placeholder="Введите телефон" required)
+                                input(type="button", value="ОТПРАВИТЬ")
+                                a(href="" target="_blank").
+                                    Нажимая кнопку, вы соглашаетесь с политикой <br>
+                                    конфиденциальности и на обработку персональных данных
+                    .success
+                        img(src="./img/svg/popup-close-ico.svg" alt="")
+                        p.
+                            Спасибо! <br>
+                            Ваши данные успешно отправлены            
+                .header-main
+                    h1 ГЕНЕРАЛЬНЫЙ <br>ПРОЕКТИРОВЩИК
+                    .wrap
+                        p Реализуем весь спектр услуг — от первого наброска <br>до ввода объекта в эксплуатацию.
+                        a.btn(href="#callback") ОБСУДИТЬ ПРОЕКТ
+                .header-bottom
+                    .items
+                        .item
+                            .numb 14
+                            p Лет на рынке <br>строительного <br>проектирования
+                        .item
+                            .numb 1350
+                            p Разработанных <br>уникальных проектов
+                        .item
+                            .numb 9001
+                            p Работаемпо стандарту <br>качества ISO
+                    .scroll
+                        span S
+                        span C
+                        span R
+                        span O
+                        span L
+                        span L
+                        .arrow
+                            img(src="./img/svg/scroll/scroll-green-ico.svg", alt="") 
+                            img(src="./img/svg/scroll/scroll-white-ico.svg", alt="") 
+                            img(src="./img/svg/scroll/scroll-white-ico.svg", alt="") 
+
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                //
+                .projects
+                    h2.title-main Выполненные проекты
+                    .items
+                        .item
+                            img(src="./img/projects/forum-01.png", alt="")
+                            img(src="./img/projects/forum-02.png", alt="")
+                            img(src="./img/projects/forum-03.png", alt="")
+                            p Реконструкция многофункционального <br>центра «Форум”
+                            .div 
+                        .item
+                            img(src="./img/projects/oreshkova-01.png", alt="")
+                            img(src="./img/projects/oreshkova-02.png", alt="")
+                            img(src="./img/projects/oreshkova-03.png", alt="")
+                            p Реконструкция парка им. Орешкова
+                            .div 
+                        .item
+                            img(src="./img/projects/imax-01.png", alt="")
+                            img(src="./img/projects/imax-02.png", alt="")
+                            p Культурно-развлекательный центр <br>«IMAX»
+                            .div 
+                        .item
+                            img(src="./img/projects/sverdlova-01.png", alt="")
+                            img(src="./img/projects/sverdlova-02.png", alt="")
+                            img(src="./img/projects/sverdlova-03.png", alt="")
+                            p Многоквартирный жилой дом <br>по ул. Свердлова
+                            .div 
+                    a.btn-more СМОТРЕТЬ ВСЕ ПРОЕКТЫ
+                //
+                .services
+                    .info
+                        h2.title-main Наши услуги
+                        p.
+                            Проектная компания «Антарктида» предлагает комплексный подход <br>
+                            к проектированию: мы пройдём весь путь от создания проекта <br>
+                            до сопровождения строительства и ввода объекта в эксплуатацию.
+                    .items
+                        ul.item
+                            h3 Консалтинг
+                            li Расчёт стоимости
+                            li Разработка проекта
+                            li Разработка и согласование технического задания
+                            li План застройки
+                            li Эскизный проект
+                            li Технико-экономическое обоснование
+                            li Исходно-разрешительная документация
+                            li Обследование зданий и сооружений
+                            li Инженерные изыскания
+                            a.more(href="") 
+                                | УЗНАТЬ БОЛЬШЕ
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                        ul.item
+                            h3 Проектирование
+                            li Проектная документация
+                            li Экологическая, техническая экспертизы <br>проектной документации
+                            li Согласование документации <br>в ресурсоснабжающих организациях
+                            li Разрешение на строительство
+                            li Рабочая документация
+                            li BIM-технологии
+                            li Повторное применения <br>проектной документации
+                            a.more(href="") 
+                                | УЗНАТЬ БОЛЬШЕ
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                        ul.item
+                            h3 Сопровождение
+                            li Авторский надзор
+                            li Строительный контроль
+                            li Государственный надзор (ГАСН)
+                            li Ввод в эксплуатацию
+                            a.more(href="") 
+                                | УЗНАТЬ БОЛЬШЕ
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                                img(src="./img/svg/services-arrmore-ico.svg", alt="")
+                //
+                .callback#callback
+                    h2.title-main Появились вопросы?
+                    form.form
+                        p: input(type="text" placeholder="Введите имя")
+                        p: input(type="text" placeholder="Введите телефон")
+                        p: input(type="text" placeholder="О чём хотите спросить?")
+                        p: input(type="submit", value="ОТПРАВИТЬ")
+                        p.
+                            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности <br>
+                            и обработки персональных данных
+                //
+                .director
+                    .wrap
+                        .info
+                            span.
+                                «Этапу возведения зданий, сооружений, других объектов <br>
+                                строительства всегда предшествует этап проектирования, будь <br>
+                                это здание небольшого кафе или застройка целого квартала. <br>
+                                Он подразумевает создание чертежей, спецификаций, смет, <br>
+                                прохождение экспертиз.
+    
+                            strong.
+                                От грамотного выполнения проектных работ зависят <br>
+                                расходы средств, времени при строительстве и качество <br>
+                                готового продукта.»
+                            h3 Космаков Николай Иванович
+                            p.
+                                ГЕНЕРАЛЬНЫЙ ДИРЕКТОР КОМПАНИИ, ЧЛЕН АССОЦИАЦИИ СОВЕТА <br>
+                                ПРОЕКТИРОВЩИКОВ И ЛИГИ ИЗЫСКАТЕЛЕЙ
+                        .pic
+                            img(src="./img/director.jpg", alt="")
+                    .div
+                //
+                .technologies
+                    h2.title-main Технологии, используемые в работе
+                    p.
+                        BIM (Building Information Model <br>
+                        или Modeling) — информационное <br>
+                        моделирование зданий и сооружений.
+                    p
+                        span.
+                            Это программа ещё до начала строительства покажет вам готовый объект — как в натуральном виде, вплоть до цвета фасада, так и в разрезе. В том числе выделит каждую инженерную сеть отдельно: водную, газовую, электрическую, канализационную, коммуникацоннную
+                        span.
+                            В соответствии с последними мировыми трендами и требованиями законов России появилась необходимость применять в своих проектах информационное моделирование BIM.
+                    .play
+                        img(src="./img/technologies-play.png", alt="alt")
+                        span.
+                            СМОТРЕТЬ ВИДЕО <br>
+                            ПРОЕКТИРОВАНИЯ <br>
+                            ЗДАНИЯ
+                //
+                .ourwork
+                    h2.title-main Наш подход <br>к работе
+                    .col
+                        .text
+                            h3.
+                                Быстрая окупаемость <br>
+                                затрат на проектирование
+                            p.
+                                Эффективное использование каждого квадратного метра за счет продуманности при проектировании минимизирует необходимость внесения изменений <br>
+                                в документацию. <br>
+                                Это существенно экономит затраты при строительстве <br>
+                                и эксплуатации объекта и окупает стоимость проектных работ.
+                        .text
+                            h3.
+                                Лучшие решения, новые материалы и проверенные <br>
+                                технологии
+                            p.
+                                Мы следим за появлением новых материалов и <br>
+                                технологий. Каждую новинку тестируем. Подберем <br>
+                                оптимальный вариант под ваши требования.
+                        .text
+                            h3.
+                                Оперативное <br>
+                                взаимодействие
+                            p.
+                                В течении суток даем коммерческое предложение.
+                    .col
+                        .text
+                            h3.
+                                Интересы клиента <br>
+                                превыше всего
+                            p.
+                                Умеем и знаем, что нет ничего невозможного, специалисты компании достигнут поставленных целей <br>
+                                и задач от самых простых, до самых сложных. Благополучие клиента и благосостояние в сфере <br>
+                                нашей ответственности.
+                        .text
+                            h3.
+                                Вы гарантированно <br>
+                                пройдёте экологическую <br>
+                                экспертизу
+                            p.
+                                Ежегодно наши специалисты успешно проходят <br>
+                                экологическую экспертизу для 50+ объектов
+                        .text
+                            h3.
+                                С нами легко получить <br>
+                                разрешение 
+                            p.
+                                Ежегодно наши специалисты успешно проходят <br>
+                                экологическую экспертизу для 50+ объектов
+                //
+                .thank
+                    .wrap
+                        .info
+                        .pic
+                            img(src="./img/thank/thank.jpg", alt="alt")
+                    .slider
+                        h2.title-main Нам говорят спасибо
+                        .slider-wrap
+                            .arrows
+                                img(src="./img/svg/thank-arleft-ico.svg", alt="alt")
+                                img(src="./img/svg/thank-arright-ico.svg", alt="alt")
+                            .slides
+                                .slide
+                                    p
+                                        span.
+                                            ООО “БЕСТ ПЛЮС” благодарит ООО “АНТАРКТИДА” <br>
+                                            за качественную и в установленный срок выполненную работу, <br>
+                                            все наши пожелания были учтены и внесены в проект.
+                                        span.
+                                            Надеемся на дальнейшее сотрудничество и готовы привлекать <br>
+                                            ООО “АНТАРКТИДА” в качестве надежного партнёра <br>
+                                            для осуществления наших будущих строительных проектов. 
+                                    .info
+                                        img(src="./img/thank/logo.png", alt="")    
+                                        img(src="./img/thank/doc.png", alt="")
+                                        .text
+                                            h3 Байминов В.Н.
+                                            p ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «БЕСТ ПЛЮС» 
+                                .slide
+                                    p
+                                        span.
+                                            ООО “БЕСТ ПЛЮС” благодарит ООО “АНТАРКТИДА” <br>
+                                            за качественную и в установленный срок выполненную работу, <br>
+                                            все наши пожелания были учтены и внесены в проект.
+                                        span.
+                                            Надеемся на дальнейшее сотрудничество и готовы привлекать <br>
+                                            ООО “АНТАРКТИДА” в качестве надежного партнёра <br>
+                                            для осуществления наших будущих строительных проектов. 
+                                    .info
+                                        img(src="./img/thank/logo.png", alt="")    
+                                        img(src="./img/thank/doc.png", alt="")
+                                        .text
+                                            h3 Байминов В.Н.
+                                            p ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «БЕСТ ПЛЮС» 
+                                .slide
+                                    p
+                                        span.
+                                            ООО “БЕСТ ПЛЮС” благодарит ООО “АНТАРКТИДА” <br>
+                                            за качественную и в установленный срок выполненную работу, <br>
+                                            все наши пожелания были учтены и внесены в проект.
+                                        span.
+                                            Надеемся на дальнейшее сотрудничество и готовы привлекать <br>
+                                            ООО “АНТАРКТИДА” в качестве надежного партнёра <br>
+                                            для осуществления наших будущих строительных проектов. 
+                                    .info
+                                        img(src="./img/thank/logo.png", alt="")    
+                                        img(src="./img/thank/doc.png", alt="")
+                                        .text
+                                            h3 Байминов В.Н.
+                                            p ГЕНЕРАЛЬНЫЙ ДИРЕКТОР ООО «БЕСТ ПЛЮС» 
+                            .btns-dot
+                                //img(src="./img/svg/thank-dot-ico.svg", alt="")
+                                img(src="./img/svg/thank-actdot-ico.svg", alt="")
+                //
+                .smi
+                    .col
+                        h2.title-main О нас говорят <br>СМИ
+                    .grid
+                        .item
+                            img(src="./img/smi/smi-01.jpg", alt="")
+                            p.
+                                Улан-Удэнский проектировщик рассказал, 
+                                какие здания появятся в городе
+                            a.more 
+                                | ЧИТАТЬ СТАТЬЮ
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                        .item
+                            img(src="./img/smi/smi-02.jpg", alt="")
+                            p.
+                                Здание IMAX отметили на всероссийском уровне.
+                                Его фотографии попали на сраницы журнала 
+                                «Проект Россия»
+                            a.more 
+                                | ЧИТАТЬ СТАТЬЮ
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                        .item
+                            img(src="./img/smi/smi-03.jpg", alt="")
+                            p.
+                                В Улан-Удэ появится еще одна зона отдыха. 
+                                Изменения ждут бульвар по улице Фрунзе
+
+                            a.more 
+                                | ЧИТАТЬ СТАТЬЮ
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                        .item
+                            img(src="./img/smi/smi-04.jpg", alt="")
+                            p.
+                                В парке Юбилейный Улан-Удэ появится зона свадебных фотосессий
+                            a.more 
+                                | ЧИТАТЬ СТАТЬЮ
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                                img(src="./img/svg/smi-arrow-ico.svg", alt="")
+                //
+                .contacts
+                    h2.title-main Контакты
+                    .items
+                        .item
+                            h3: span г. Улан-Удэ
+                            .info
+                                .col
+                                    .phone 
+                                        img(src="./img/svg/contacts-phone-ico.svg", alt="")
+                                        | +7 (301) 250 18 18
+                                    .email 
+                                        img(src="./img/svg/contacts-email-ico.svg", alt="")
+                                        | info@antarktida.su 
+                                .col
+                                    .address Ул. Свердлова 6B
+                                    .time 670033 <br>пн-пт с 9:00 до 18:00 
+                        .item
+                            h3: span г. Москва
+                            .info
+                                .col
+                                    .phone 
+                                        img(src="./img/svg/contacts-phone-ico.svg", alt="")
+                                        | +7 (999) 999 99 99
+                                    .email 
+                                        img(src="./img/svg/contacts-email-ico.svg", alt="")
+                                        | info@antarktida.su 
+                                .col
+                                    .address ул. Карьер, дом 2а <br>стр.1, оф. 318
+                                    .time 117449 <br>пн-пт с 9:00 до 18:00 
+                //
+                .callback-two
+                    h2.title-main 
+                        b Свяжитесь с нами
+                        span Заполните форму, и представитель Антарктиды <br>свяжется с вами в ближайшее время
+                    form.form
+                        p: input(type="text" placeholder="Введите имя")
+                        p: input(type="text" placeholder="Введите телефон")
+                        p: input(type="text" placeholder="О чём хотите спросить?")
+                        p: input(type="submit", value="ОТПРАВИТЬ")
+                        p.
+                            Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности <br>
+                            и обработки персональных данных
+
+
+
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                .footer-main
+                    a.logo(href=""): img(src="./img/svg/logo-ico.svg" alt="")
+                    ul
+                        li: a(href="") ПРОЕКТЫ
+                        li: a(href="") УСЛУГИ
+                        li: a(href="") О КОМПАНИИ
+                        li: a(href="") СМИ О НАС
+                        li: a(href="") КОНТАКТЫ
+                    .cncts
+                        .col
+                            b +7 (301) 250 18 18
+                            span info@antarktida.su 
+                            span г. Улан-Удэ, ул. Свердлова 6В
+                        .col
+                            b +7 (999) 999 99 99
+                            span info@antarktida.su 
+                            span г. Москва, ул. Карьер, <br>дом 2а, стр.1, оф. 318
+                .footer-bottom
+                    .copyright © 2006–2020, ООО Антарктида
+                    .rules 
+                        a(href="") Политика конфиденциальности
+                        a(href="") Политика обработки персональных данных 
+                        a(href="") Реквизиты
+                    .socials
+                        a(href=""): img(src="./img/svg/footer-vk-ico.svg" alt="")
+                        a(href=""): img(src="./img/svg/footer-fb-ico.svg" alt="")
+                    .artotop
+                        img(src="./img/svg/footer-artotop-ico.svg" alt="")
+            
+            .popup-doc
+                .dark-bg
+                img(src="./img/thank/doc.png" alt="") 
+                                        
+
+        script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
