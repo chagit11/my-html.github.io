@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document
+    body
+        div#popup 
+            #popup-bg
+            #popup-name
+
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    a.logo(href=""): img(src="./img/header/logo.png" alt="logo")
+                    .wrap
+                        img.whatsapp(src="./img/svg/whatsapp-ico.svg" alt="")
+                        .phone-consultation
+                            //img(src="./img/svg/phone-consultation-ico.svg" alt="")
+                            span Получить консультацию
+                            span + 7 900 124-44-04
+                        .menu-btn: img(src="./img/svg/menu-ico.svg" alt="")
+                ul.menu
+                    li: a(href="") Наши преимущества
+                    li: a(href="") Готовые предложения
+                    li: a(href="") Каталог оборудования
+                    li: a(href="") Объекты
+                    li: a(href="") Калькулятор тарифного плана
+                    li: a(href="") Наши работы
+                    li: a(href="") Контакты
+                            
+                .header-main
+                    h1.
+                        Установка видеонабюдения <br/>
+                        под ключ <br/>
+                        в Ростове-на-Дону
+                    ul
+                        li Гарантия 3 года
+                        li Онлайн просмотр со смартфона
+                        li Круглосуточная поддержка
+                .header-bottom
+                    form(action="index.html")
+                        p Укажите номер телефона и получите бесплатную консультацию
+                        input(type="text" value="" placeholder="+ 7 (___) ___ __ __")
+                        input(type="submit" value="Заказать звонок")
+
+                    
+                
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // -- complects --
+                section.complects
+                    h2.title-main Комплекты
+                    .cards
+                        .card
+                            h3.
+                                AJAX   StarterKit white <br/>
+                                Комплект беспроводной смарт-сигнализации
+                            img(src="./img/complects/pic-01.png" alt="")
+                            .price 14 990 руб.
+                            p.
+                                Подключается к пульту охранной компании <br/>
+                                Автоматизирует безопасность сценариями <br/>
+                                Всегда онлайг
+                            a.btn(href="") Подробнее
+                        .card
+                            h3.
+                                AJAX   StarterKit white <br/>
+                                Комплект беспроводной смарт-сигнализации
+                            img(src="./img/complects/pic-02.png" alt="")
+                            .price 14 990 руб.
+                            p.
+                                Подключается к пульту охранной компании <br/>
+                                Автоматизирует безопасность сценариями <br/>
+                                Всегда онлайг
+                            a.btn(href="") Подробнее
+                        .card
+                            h3.
+                                AJAX   StarterKit white <br/>
+                                Комплект беспроводной смарт-сигнализации
+                            img(src="./img/complects/pic-03.png" alt="")
+                            .price 14 990 руб.
+                            p.
+                                Подключается к пульту охранной компании <br/>
+                                Автоматизирует безопасность сценариями <br/>
+                                Всегда онлайг
+                            a.btn(href="") Подробнее
+                    .more Показать все оборудование
+
+                // -- services --
+                section.services
+                    h2.title-main Наши услуги
+                    .cards
+                        .card
+                            img(src="./img/services/pic-01.jpg" alt="")
+                            h3 Видеонаблюдение
+                            p.
+                                Разработка, установка 
+                                и обслуживание
+                                систем видеонаблюдения
+                                различного назначения.
+                            a.btn Подробнее
+                        .card
+                            img(src="./img/services/pic-02.jpg" alt="")
+                            h3 Структурированные <br/>кабельные сети
+                            p.
+                                Разработка, установка 
+                                и обслуживание
+                                систем видеонаблюдения
+                                различного назначения.
+                            a.btn Подробнее
+                        .card
+                            img(src="./img/services/pic-03.jpg" alt="")
+                            h3 Установка сигнализации
+                            p.
+                                Разработка, установка 
+                                и обслуживание
+                                систем видеонаблюдения
+                                различного назначения.
+                            a.btn Подробнее
+                        .card
+                            img(src="./img/services/pic-04.jpg" alt="")
+                            h3 Установка видеодомофона
+                            p.
+                                Разработка, установка 
+                                и обслуживание
+                                систем видеонаблюдения
+                                различного назначения.
+                            a.btn Подробнее
+                        .card
+                            img(src="./img/services/pic-05.jpg" alt="")
+                            h3 Сервис и обслуживание
+                            p.
+                                Разработка, установка 
+                                и обслуживание
+                                систем видеонаблюдения
+                                различного назначения.
+                            a.btn Подробнее
+                        .card
+                            img(src="./img/services/pic-06.jpg" alt="")
+                            h3 Системы контроля <br/>и управления доступом
+                            p.
+                                Разработка, установка 
+                                и обслуживание
+                                систем видеонаблюдения
+                                различного назначения.
+                            a.btn Подробнее
+                    #popup-services
+
+                // -- company --
+                section.company
+                    h2.title-main Почему компания Reccam?
+                    .items
+                        .item 
+                            .index 01
+                            .stat 
+                                b 7 из 10 <br/>КЛИЕНТОВ
+                                span обратились <br/> к нам повторно
+                        .item 
+                            .index 02
+                            .stat 
+                                b 5 ЛЕТ
+                                span опыта работы <br/>с системами <br/> безопасности
+                        .item 
+                            .index 03
+                            .stat 
+                                b 9 из 10 <br/>КЛИЕНТОВ
+                                span порекомендовали нас <br/>друзьям и коллегам
+                        .item 
+                            .index 04
+                            .stat 
+                                b 9 из 10 <br/>ПРОЕКТОВ
+                                span запущены <br/>точно в срок
+                        .item 
+                            .index 05
+                            .stat 
+                                b БОЛЕЕ 2000 
+                                span видеокамер <br/>установлено <br/>за всё время
+                        .item 
+                            .index 06
+                            .stat 
+                                b ВСЕГДА
+                                span делаем то, <br/>что обещали
+
+                // --- installation --- 
+                section.installation
+                    h2.title-main Где мы устанавливаем видеонаблюдение
+                    .cards
+                        .card
+                            img(src="./img/svg/installation/ico-01.svg" alt="")
+                            p.
+                                Видеонаблюдение <br/>
+                                для частного дома
+                            a.btn(href="") Подробнее
+                        .card
+                            img(src="./img/svg/installation/ico-02.svg" alt="")
+                            p.
+                                Видеонаблюдение <br/>
+                                в подъезде
+                            a.btn(href="") Подробнее
+                        .card
+                            img(src="./img/svg/installation/ico-03.svg" alt="")
+                            p.
+                                Видеонаблюдение <br/>
+                                для магазина  
+                            a.btn(href="") Подробнее
+                        .card
+                            img(src="./img/svg/installation/ico-04.svg" alt="")
+                            p.
+                                Видеонаблюдение<br/>
+                                для офиса
+                            a.btn(href="") Подробнее
+                        .card
+                            img(src="./img/svg/installation/ico-05.svg" alt="")
+                            p.
+                                Видеонаблюдение в цех
+                            a.btn(href="") Подробнее
+                        .card
+                            img(src="./img/svg/installation/ico-06.svg" alt="")
+                            p.
+                                Видеонаблюдение <br/>
+                                для ресторанов
+                            a.btn(href="") Подробнее
+
+                // --- finproj ---
+                section.finproj
+                    h2.title-main Готовые варианты проектов
+                    .slider
+                        .slider-arrows
+                            img(src="./img/svg/arrprev-ico.svg" alt="")
+                            img(src="./img/svg/arrnext-ico.svg" alt="")
+                        .slider-wrapper
+                            .slides
+                                .pic: img(src="./img/finproj/pic-01.jpg" alt="")
+                                .info
+                                    h3 Проект из 4-х камер <br/>"Под ключ"
+                                    p.
+                                        - 4 камеры 2 Мр <br/>
+                                        - 4-х канальный видеорегистратор <br/>
+                                        - 14 дней хранения архива <br/>
+                                        - Просмотр через телефон <br/>
+                                        - Монтаж <br/>
+                                    a.btn(href="") Заказать
+                                    .price <span>22 000 </span> руб.
+
+                // --- procwork ---
+                section.procwork
+                    h2.title-main Этапы работы
+                    img(src="./img/svg/procwork-ico.svg" alt="")
+                    .items
+                        .item 
+                            h4 Заполнение заявки
+                            p.
+                                Проектный менеджер <br/>
+                                связывается <br/>
+                                с Вами и готовит  <br/>
+                                предварительный <br/>
+                                расчёт стоимости проекта
+                        .item 
+                            h4 Установка и настройка
+                            p.
+                                Вы вносите аванс за <br/>
+                                оборудование любым удобным <br/>
+                                для Вас способом. Выполняется <br/>
+                                монтаж и настройка <br/>
+                                оборудования
+                        .item 
+                            h4 Обследование объекта
+                            p.
+                                Наш инженер выезжает на <br/>
+                                обследование объекта. <br/>
+                                Согласовываются изменения. <br/>
+                                Готовится конечное <br/>
+                                предложение
+                        .item 
+                            h4 Приёмка готовой системы
+                            p.
+                                Вы принимаете <br/>
+                                выполненную работу,<br/>
+                                подписываете акт и <br/>
+                                оплачиваете оставшуюся <br/>
+                                стоимость работ
+
+                // --- manufacturers --- 
+                section.manufacturers
+                    h2.title-main Производители систем безопасности
+                    p.
+                        Компания Reccam использует современное и проверенное оборудование для систем <br/>
+                        видеоналюдения от ведущих проиизводителей
+                    .items
+                        .item: img(src="./img/manufacturers/pic-04.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-04.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-04.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-04.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-08.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-08.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-08.jpg" alt="")
+                        .item: img(src="./img/manufacturers/pic-08.jpg" alt="")
+
+                // --- catalog ---
+                section.catalog
+                    h2.title-main Каталог оборудования систем видеонабоюдения
+                    ul.navigation
+                        li.active IP Камеры
+                        li Уличные камеры
+                        li Купольные камеры
+                        li Внутренние камеры
+                        li Беспроводные камеры
+                        li Видеорегистраторы
+                    .cards
+                        .card
+                            h3 IP-видеокамера Hikvision <br/>DS-2CD2042WD-I (4мм)
+                            img(src="./img/catalog/pic-01.jpg" alt="")
+                            .price <span>11 241 руб.</span>    12 490 руб.
+                            p.
+                                Детализация изображения - 4 мпкс<br/>
+                                Угол обзора - 83 градуса<br/>
+                            a.btn(href="") Подробнее
+                        .card
+                            h3 IP-камера Hikvision <br/>DS-2CD2122FWD-IS (2.8мм)
+                            img(src="./img/catalog/pic-02.jpg" alt="")
+                            .price <span>9 390 руб.</span>    10 990 руб.
+                            p.
+                                Детализация изображения - 2 мпкс<br/>
+                                Угол обзора - 109.4 градуса<br/>
+                                Дальность ик-подсветки - 30 метров
+                            a.btn(href="") Подробнее
+                        .card
+                            h3 IP-видеокамера Hikvision <br/>DS-I200 (2.8 mm)
+                            img(src="./img/catalog/pic-03.jpg" alt="")
+                            .price <span>6590 руб. </span>    7 690 руб.
+                            p.
+                                Детализация изображения - 2 мпкс<br/>
+                                Угол обзора - 105,8 градуса<br/>
+                                Дальность ик-подсветки - 30 метров
+                            a.btn(href="") Подробнее
+                    .more Показать все оборудование
+
+                // --- servmaint ---
+                section.servmaint
+                    h2.title-main Сервис и обслуживание
+                    p Компания  Reccam производит техническое обслуживание, текущий ремонт и сервис систем <br/>видеонаблюдения и охранного телевидения независимо от их уровня сложности.
+                    .calculator
+                        h3 Калькулятор расчета тарифного плана
+                        form
+                            h4 Выберите глубину хранения записей:
+                            .range
+                                .display 7 суток
+                                .row
+                                    input(type="range" name="" min="0" max="100" value="10")
+                                    .range-info.
+                                        <b>20</b>  Клипов доступных к выгрузке в месяц, шт. <br/>
+                                        <b>10</b>  Клипов одновременно хранимых на сервере, шт. <br/>
+                                        <b>30</b>  Неудаляемые закладки на сервере, мин.    
+                            .typebitrate
+                                .type
+                                    h5 Выберите тип записи:
+                                    .radio
+                                        input(type="radio" name="type" id="tr1" checked)
+                                        label(for="tr1") <span><b></b></span> Полная запись
+                                        input(type="radio" name="type" id="tr2")
+                                        label(for="tr2") <span><b></b></span> Запись событий
+                                .bitrate
+                                    h5 Выберите битрейт записи:
+                                    .radio
+                                        input(type="radio" name="bitrate" id="br1" checked)
+                                        label(for="br1") <span><b></b></span> 512 Кбит/с
+                                        input(type="radio" name="bitrate" id="br2")
+                                        label(for="br2") <span><b></b></span> 1 Мбит/с
+                                        input(type="radio" name="bitrate" id="br3")
+                                        label(for="br3") <span><b></b></span> 2 Мбит/с
+                                        input(type="radio" name="bitrate" id="br4")
+                                        label(for="br4") <span><b></b></span> 1,5 Мбит/с
+                            .payment
+                                h4 Расчет стоимости оборудования
+                                .row
+                                    .amount
+                                        h5 Какое количество камер планируете подключить?
+                                        .radio
+                                            input(type="radio" name="amount" id="ar1" checked)
+                                            label(for="ar1") <span><b></b></span> 1
+                                            input(type="radio" name="amount" id="ar2")
+                                            label(for="ar2") <span><b></b></span> 2
+                                            input(type="radio" name="amount" id="ar3")
+                                            label(for="ar3") <span><b></b></span> 3
+                                    .purchase
+                                        h5 Выберите сопосб покупки оборудования после тестового периода:
+                                        .radio
+                                            input(type="radio" name="purchase" id="pr1" checked)
+                                            label(for="pr1") <span><b></b></span> Аренда
+                                            input(type="radio" name="purchase" id="pr2")
+                                            label(for="pr2") <span><b></b></span> Покупка
+                                            input(type="radio" name="purchase" id="pr3")
+                                            label(for="pr3") <span><b></b></span> Рассрочка
+                            .price
+                                h4 Стоимость
+                                .row
+                                    span Тарифный план <b>450 руб./мес.</b>
+                                    span Оборудование <b>260 руб./мес.</b>
+                                    span Установка камер <b>0 руб.</b>
+                            .btn Оставить заявку
+
+                // --- questions ---
+                section.questions
+                    h2.title-main Популярные вопросы
+                    .container
+                        .row
+                            .ques
+                                h6 Возможен ли просмотр с телефона/планшета/компьютера
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Сколько хранится архив?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Что включено в стоимость?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Какое разрешение у камер?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Как я могу посмотреть нужную мне запись?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Будет ли у вас доступ к моим данным?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Будет ли записываться звук?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Возможна ли съемка ночью?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        .row
+                            .ques
+                                h6 Нужен ли Интернет для работы виденаблюдения?
+                                img(src="./img/svg/ques-plus-ico.svg" alt="")
+                            p Просмотр возможен с любого устройства на платформах Android и iOS: смартфона, планшета и даже Smart TV. Для просмотра камер с ПК необходима установка ПО. При этом вы может смотреть как прямой эфир, так и архив
+                        
+                // --- callback ---
+                section.callback
+                    h2.title-main Остались вопросы?
+                    p
+                        span Звоните: +7 900 124-44-04 
+                        span Пишите: reccam-rnd@mail.ru
+                        span Или просто оставьте номер телефона, <br/>мы перезвоним и ответим на все Ваши вопросы
+                    form(action="index.html")
+                        input(type="text" value="" placeholder="Имя")
+                        input(type="text" value="" placeholder="+ 7 (___) ___ __ __")
+                        input(type="submit" value="Перезвоните мне")
+                
+                // --- ourworks ---
+                section.ourworks
+                    h2.title-main Наши работы
+                    .slider  
+                        .slides 
+                            .slide 
+                                h3 Установка системы <br/>видеонаблюдения на входе
+                                .container 
+                                    .pic
+                                        .imgs 
+                                            img(src="./img/ourworks/pic-010.jpg" alt="")
+                                            img(src="./img/ourworks/pic-011.jpg" alt="")
+                                        p Произведена установка четырех IP видеокамер в салоне красоты. Работа была сделана менее чем за 1 день (ночью), чтобы не нарушать работу сотрудников. 
+                                    .info 
+                                        .price
+                                            b 1 день
+                                            span Срок работ
+                                            b 2 шт.
+                                            span Количество камер
+                                            b 37 500 р.
+                                            span Стоимость работ
+                                        .arrow 
+                                            img(src="./img/svg/ourworks-arr-grey-ico.svg" alt="")
+                                            img(src="./img/svg/ourworks-arr-orange-ico.svg" alt="")
+                                             
+                                    
+
+
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                .map 
+                    .local 
+                        p Ростов-на-Дону, ул. 
+                        span
+                        img(src="./img/svg/footer-local-ico.svg" alt="")                     
+                .contacts
+                    h3 Контакты
+                    p 
+                        span г. Ростов-на-Дону, ул. 
+                        span reccam-rnd@mail.ru
+                    p 
+                        span Получить консультацию
+                        b + 7 900 124-44-04
+
+                         
+            
+            
+            
+        script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
