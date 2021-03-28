@@ -1,0 +1,845 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+html {
+  box-sizing: border-box;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.Montserrat_norm_12_15, .callnow form .wrap span input[type=checkbox] {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+  color: #333333;
+}
+
+.Montserrat_norm_16_20, .footer .row .col p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+  color: #333333;
+}
+
+.Montserrat_norm_16_130 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130.4%;
+  color: #0E0F12;
+}
+
+.Montserrat_norm_16_21, .reviews .row .col .more, p.desc-h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.Montserrat_500_18_22, .header .top ul.menu li a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #333333;
+}
+
+.Montserrat_500_20_24, .footer .row, .callnow form .wrap input[type=submit], .callnow form input[type=text], .callnow form input[type=phone], .carpark .btns, .btn-yellow {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: #333333;
+}
+
+.Montserrat_600_24_29, .header .top .phone, h3.title-h3, p.desc-main, .btn-red div:nth-child(1) {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  color: #333333;
+}
+
+.Montserrat_600_30_37, .prices .row .col .price, .header .main p, h2.title-main {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 37px;
+  color: #333333;
+}
+
+.Montserrat_bold_70_126, .header .main h1 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 70px;
+  line-height: 126.9%;
+  color: #333333;
+}
+
+.flex, .footer .row, .header .bottom .items .item, .header .bottom .items, .header .bottom, .header .top ul.menu, .header .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.grid_2x2, .process .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.grid_1x2, .carpark .slider .slide, .process .grid .col {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid_1x3, .callnow form, .reviews .row, .carpark .btns, .prices .row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid_1x4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#site {
+  width: 1920px;
+  margin: 0 auto;
+}
+
+.btn-yellow {
+  user-select: none;
+  cursor: pointer;
+  width: 250px;
+  height: 50px;
+  line-height: 50px;
+  background: #FED100;
+  text-align: center;
+}
+
+.btn-red {
+  cursor: pointer;
+}
+.btn-red div:nth-child(1) {
+  width: 304px;
+  height: 60px;
+  line-height: 60px;
+  background: #FF352B;
+  text-align: center;
+  color: #F2F2F2;
+  position: relative;
+  z-index: 2;
+}
+.btn-red div:nth-child(2) {
+  width: 304px;
+  height: 60px;
+  border: 2px solid #F2F2F2;
+  position: relative;
+  top: -50px;
+  left: 10px;
+  z-index: 1;
+}
+
+h2.title-main {
+  text-align: center;
+}
+
+p.desc-main {
+  text-align: center;
+}
+
+.header {
+  width: 100%;
+  height: 650px;
+  padding: 0 305px;
+  background-repeat: no-repeat;
+  background: url(../img/courier.png) no-repeat, #FED100 url(../img/truck-bg.png) no-repeat;
+  background-position: top 42px left 920px, top 180px right 203px;
+}
+.header .top {
+  padding-top: 40px;
+}
+.header .top ul.menu li {
+  margin-right: 50px;
+}
+.header .top ul.menu li:hover {
+  opacity: 0.4;
+}
+.header .top .phone {
+  text-decoration: underline;
+  cursor: pointer;
+  user-select: none;
+}
+.header .main {
+  padding-top: 60px;
+}
+.header .main h1 {
+  margin-bottom: 30px;
+}
+.header .main p {
+  margin-bottom: 50px;
+}
+.header .bottom {
+  position: relative;
+  top: -50px;
+}
+.header .bottom .items {
+  justify-content: start;
+}
+.header .bottom .items .item {
+  justify-content: start;
+  margin-right: 40px;
+}
+.header .bottom .items .item img {
+  margin-right: 10px;
+}
+.header .bottom .phone-btn {
+  width: 136px;
+  height: 136px;
+  border-radius: 50%;
+  background: url(../img/phone-btn03.png) no-repeat center, rgba(61, 155, 233, 0.3) url(../img/phone-btn02.png) no-repeat center;
+}
+
+.main {
+  width: 100%;
+  padding-top: 95px;
+}
+
+.process {
+  padding: 0 407px;
+}
+.process .grid {
+  grid-gap: 70px 120px;
+  margin-top: 65px;
+}
+.process .grid .col {
+  grid-column-gap: 42px;
+}
+.process .grid .col img {
+  padding-top: 5px;
+}
+.process .grid .col .text p.desc-h3 {
+  margin-top: 15px;
+}
+
+.prices {
+  padding: 0 305px;
+  padding-top: 100px;
+}
+.prices p.desc-main {
+  margin-top: 20px;
+}
+.prices .row {
+  grid-column-gap: 20px;
+  margin-top: 60px;
+}
+.prices .row .col {
+  padding: 80px 83px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  box-sizing: border-box;
+  text-align: center;
+}
+.prices .row .col:hover {
+  border: 1px solid #FED100;
+}
+.prices .row .col h3.title-h3 {
+  margin-bottom: 60px;
+}
+.prices .row .col p.desc-h3 {
+  margin-bottom: 35px;
+}
+.prices .row .col .price {
+  margin-top: 50px;
+}
+.prices .row .col .btn-yellow {
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.carpark {
+  padding: 100px 460px;
+  padding-bottom: 40px;
+}
+.carpark h2.title-main {
+  margin-bottom: 15px;
+}
+.carpark p.desc-main {
+  margin-bottom: 50px;
+}
+.carpark .btns {
+  grid-column-gap: 20px;
+  width: calc((200px*3) + (20px*3));
+  margin: 0 auto;
+  margin-bottom: 45px;
+  text-align: center;
+}
+.carpark .btns .btn {
+  height: 50px;
+  line-height: 50px;
+  background: #FFFFFF;
+  border: 1px solid #EBEBEB;
+  user-select: none;
+  cursor: pointer;
+}
+.carpark .btns .btn:hover {
+  border: 1px solid #FED100;
+}
+.carpark .slider-mob {
+  display: none;
+}
+.carpark .slider .slide {
+  grid-column-gap: 100px;
+  align-items: center;
+}
+.carpark .slider .slide .col > * {
+  margin-bottom: 25px;
+}
+.carpark .slider .slide .col .title-h3 {
+  margin-bottom: 40px;
+}
+.carpark .slider .slide .col img {
+  margin-right: 15px;
+}
+.carpark .slider .slide .col .btn-yellow {
+  margin-top: 35px;
+}
+.reviews {
+  padding: 100px 310px;
+  background: #FED100;
+}
+.reviews h2.title-main {
+  margin-bottom: 60px;
+}
+.reviews .row {
+  grid-column-gap: 20px;
+}
+.reviews .row .col {
+  grid-column-gap: 20px;
+}
+.reviews .row .col > * {
+  margin-bottom: 15px;
+}
+.reviews .row .col .meta {
+  display: flex;
+  align-items: center;
+}
+.reviews .row .col .meta img:first-child {
+  margin-left: 10px;
+}
+.reviews .row .col .more {
+  text-decoration: underline;
+  user-select: none;
+  cursor: pointer;
+}
+.reviews .btn-yellow.btn-more {
+  margin: 0 auto;
+  margin-top: 60px;
+  border: 1px solid #333333;
+}
+
+.callnow {
+  padding: 120px 460px;
+}
+.callnow h2.title-main {
+  text-align-last: left;
+}
+.callnow p.desc-h3 {
+  margin-top: 10px;
+}
+.callnow form {
+  margin-top: 35px;
+  grid-column-gap: 70px;
+  align-items: center;
+}
+.callnow form input[type=text], .callnow form input[type=phone] {
+  width: 300px;
+  padding-bottom: 10px;
+  border: 0;
+  border-bottom: 1px solid #333333;
+}
+.callnow form .wrap div {
+  width: 250px;
+  height: 50px;
+  border: 2px solid #FED100;
+  margin-bottom: -40px;
+  margin-left: 5px;
+}
+.callnow form .wrap input[type=submit] {
+  width: 250px;
+  height: 50px;
+  margin-top: -50px;
+  border: 0;
+  background: #FF352B;
+  color: #ffffff;
+}
+.callnow form .wrap span {
+  display: inline-block;
+  margin-top: 15px;
+  white-space: nowrap;
+}
+.callnow form .wrap span input[type=checkbox] {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.map {
+  height: 666px;
+  padding-top: 160px;
+  padding-left: 450px;
+  background: url(../img/map-bg.jpg) no-repeat center;
+}
+.map .col {
+  width: 368px;
+  height: 326px;
+  padding: 40px 35px;
+  background: #fff;
+}
+.map .col h2.title-main {
+  margin-bottom: 40px;
+  text-align-last: left;
+}
+.map .col p.desc-h3:last-of-type {
+  text-decoration: underline;
+}
+.map .col p.desc-h3 {
+  margin-bottom: 20px;
+}
+.map .col p.desc-h3 img {
+  margin-right: 15px;
+}
+.map .col .socials {
+  margin-top: 55px;
+  text-align: right;
+}
+.map .col .socials img {
+  margin-right: 10px;
+}
+
+.footer {
+  width: 100%;
+  padding: 100px 305px;
+  background: #FED100;
+}
+.footer .row {
+  align-items: start;
+}
+.footer .row .col h2.title-main {
+  margin-bottom: 45px;
+  text-align: left;
+}
+.footer .row .col p {
+  margin-bottom: 35px;
+}
+.footer .row .col p a {
+  color: #000;
+}
+.footer .row .col .socials {
+  text-align: center;
+}
+.footer .row .col .socials img {
+  margin-right: 30px;
+}
+.footer .row .col a.email {
+  display: block;
+  margin-top: 15px;
+  text-decoration: underline;
+  color: #000;
+}
+.footer .row .col .btn-yellow {
+  border: 1px solid #333333;
+}
+.footer .row .col a.phone {
+  display: block;
+  margin-top: 5px;
+  text-align: center;
+  text-decoration: underline;
+  color: #000;
+}
+.footer .row ul.col li {
+  margin-bottom: 15px;
+}
+.footer .row ul.col li a {
+  color: #000;
+}
+
+@media screen and (max-width: 320px) {
+  #site {
+    width: 320px;
+  }
+
+  .header {
+    width: 100%;
+    height: 600px;
+    padding: 27px 13px 0 13px;
+    background: #FED100 url(../img/courier.png) no-repeat;
+    background-position: top 123px left 45px;
+    background-size: 248px;
+    position: relative;
+  }
+  .header .top {
+    padding-top: 0;
+  }
+  .header .top img.logo {
+    width: 62px;
+    height: 20px;
+  }
+  .header .top ul.menu {
+    display: none;
+  }
+  .header .top ul.menu li {
+    margin-right: 50px;
+  }
+  .header .top ul.menu li:hover {
+    opacity: 0.4;
+  }
+  .header .top .phone {
+    display: none;
+  }
+  .header .main {
+    padding-top: 15px;
+    text-align: center;
+  }
+  .header .main h1 {
+    margin-bottom: 5px;
+    font-size: 28px;
+    line-height: 126.9%;
+  }
+  .header .main p {
+    margin-bottom: 0;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .header .main .btn-red {
+    font-size: 20px;
+    line-height: 24px;
+    position: absolute;
+    bottom: 40px;
+  }
+  .header .main .btn-red div:nth-child(1) {
+    width: 292px;
+    height: 60px;
+    line-height: 60px;
+  }
+  .header .main .btn-red div:nth-child(2) {
+    display: none;
+  }
+  .header .bottom {
+    display: none;
+  }
+
+  .main {
+    padding: 0;
+    margin-bottom: 45px;
+  }
+
+  .process {
+    padding: 0;
+    padding-top: 40px;
+  }
+  .process h2.title-main {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .process .grid {
+    margin-top: 40px;
+    display: block;
+  }
+  .process .grid .col {
+    display: grid;
+    grid-template-columns: 1fr 4.5fr;
+    align-items: center;
+    padding-left: 40px;
+    padding-bottom: 25px;
+  }
+  .process .grid .col img {
+    width: 60px;
+    height: 50px;
+    padding-top: 0;
+  }
+  .process .grid .col .text h3.title-h3 {
+    font-size: 16px;
+    line-height: 129.9%;
+    text-align-last: left;
+  }
+  .process .grid .col .text p.desc-h3 {
+    display: none;
+  }
+
+  .prices {
+    padding: 0;
+    padding-top: 100px;
+  }
+  .prices h2.title-main {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .prices p.desc-main {
+    display: none;
+  }
+  .prices .row {
+    margin-top: 40px;
+    display: block;
+  }
+  .prices .row .col:nth-child(1), .prices .row .col:nth-child(3) {
+    display: none;
+  }
+  .prices .row .col {
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .prices .row .col:hover {
+    border: 1px solid #FED100;
+  }
+  .prices .row .col h3.title-h3 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .prices .row .col p.desc-h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  .prices .row .col .price {
+    margin-top: 40px;
+  }
+  .prices .row .col .btn-yellow {
+    width: 290px;
+    margin-top: 50px;
+  }
+  .prices .row .col .btn-yellow::after {
+    display: block;
+    content: "Все цены";
+    margin-top: 15px;
+    text-decoration: underline;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 131.4%;
+    text-align: center;
+    color: #333333;
+  }
+
+  .carpark {
+    padding: 90px 0;
+    padding-bottom: 40px;
+  }
+  .carpark h2.title-main {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .carpark p.desc-main {
+    display: none;
+  }
+  .carpark .btns {
+    grid-column-gap: 0;
+    width: 300px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .carpark .btns .btn {
+    border: 1px solid red;
+    border: 0;
+    user-select: none;
+    cursor: pointer;
+  }
+  .carpark .btns .btn:hover {
+    border: 1px solid #FED100;
+  }
+  .carpark .slider-mob {
+    display: block;
+  }
+  .carpark .slider-mob .slide h3.title-h3 {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+  }
+  .carpark .slider-mob .slide-btns {
+    margin-top: 15px;
+    text-align: center;
+  }
+  .carpark .slider-mob .slide-btns img {
+    margin-right: 15px;
+  }
+
+  .carpark .slider {
+    display: none;
+  }
+
+  .btn-yellow {
+    margin: 30px auto;
+    width: 292px;
+    height: 60px;
+    line-height: 60px;
+  }
+
+  .reviews {
+    padding: 100px 0;
+    background: #FED100;
+  }
+  .reviews h2.title-main {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .reviews .row {
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    grid-column-gap: 10px;
+    overflow: hidden;
+  }
+  .reviews .row .col {
+    padding: 0 10px;
+  }
+  .reviews .row .col > * {
+    margin-bottom: 15px;
+  }
+  .reviews .row .col h3.title-h3 {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .reviews .btn-yellow.btn-more {
+    margin: 0 auto;
+    margin-top: 40px;
+    border: 1px solid #333333;
+  }
+
+  .callnow {
+    padding: 100px 0 0 0;
+  }
+  .callnow h2.title-main {
+    width: 222px;
+    margin: auto auto;
+    text-align-last: center;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .callnow p.desc-h3 {
+    margin-top: 10px;
+    text-align-last: center;
+    font-size: 15px;
+    line-height: 131.4%;
+  }
+  .callnow form {
+    margin-top: 35px;
+    padding: 0 15px;
+    display: block;
+  }
+  .callnow form input[type=text], .callnow form input[type=phone] {
+    width: 290px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  .callnow form .wrap {
+    margin: 0 auto;
+  }
+  .callnow form .wrap div {
+    display: none;
+  }
+  .callnow form .wrap input[type=submit] {
+    width: 290px;
+    height: 60px;
+    margin-top: 20px;
+  }
+  .map {
+    height: auto;
+    padding-top: 0;
+    padding-left: 0;
+    margin-top: 70px;
+    background: 0;
+  }
+  .map .map-img-bg {
+    width: 320px;
+    height: 524px;
+    background: url(../img/map-bg.jpg) no-repeat center;
+  }
+  .map .col {
+    width: auto;
+    height: auto;
+    padding: 40px 0 0 44px;
+  }
+  .map .col h2.title-main {
+    display: none;
+  }
+  .map .col p.desc-h3 {
+    margin-bottom: 20px;
+    font-size: 15px;
+    line-height: 131.4%;
+  }
+  .map .col p.desc-h3 img {
+    display: none;
+  }
+  .map .col .socials {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+    padding: 100px 0 50px 0;
+    background: #FED100;
+  }
+  .footer .row {
+    align-items: start;
+    display: block;
+    text-align: center;
+  }
+  .footer .row .col h2.title-main {
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  .footer .row .col p {
+    margin-bottom: 18px;
+    font-size: 16px;
+    line-height: 130.4%;
+  }
+  .footer .row .col .btn-yellow {
+    margin-top: 45px;
+  }
+  .footer .row .col a.phone {
+    display: none;
+  }
+  .footer .row ul.col {
+    margin-top: 45px;
+    margin-bottom: 45px;
+  }
+}
