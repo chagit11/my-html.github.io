@@ -1,0 +1,473 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap')
+
+
+
+
+
+// --------------- 
+html 
+    box-sizing: border-box
+*, *::after, *::before 
+    box-sizing: inherit
+
+body 
+    padding: 0
+
+img 
+    max-width: 100%
+    height: auto
+
+a 
+    text-decoration: none
+
+// ---------------  
+#site 
+    width: 1920px
+    margin: 0 auto
+    font-family: Montserrat
+    font-style: normal
+    a
+        cursor: pointer
+        &:hover
+            opacity: 0.6
+
+
+
+// Header 
+header 
+    margin-bottom: 320px
+    //
+    width: 100%
+    height: 757px
+    background: url(../img/header-kamaz.png) no-repeat top 120px right 312px, url(../img/header-bg.png) no-repeat center  
+
+.header-top 
+    padding: 57px 307px
+    //
+    display: flex
+    justify-content: space-between
+    align-items: center
+    a.logo 
+        img
+
+    a.phone 
+        font-weight: 600
+        font-size: 24px
+        line-height: 98.44%
+        color: #333333
+
+    ul.menu 
+        display: grid
+        grid-template-columns: repeat(4, auto)
+        grid-column-gap: 54px
+        li
+            a
+                font-weight: 500
+                font-size: 18px
+                line-height: 18px
+                color: #333333
+.header-main 
+    padding: 51px 307px
+    padding-bottom: 103px
+    span
+        display: block
+        margin-bottom: 15px
+        //
+        font-weight: 500
+        font-size: 30px
+        line-height: 98.44%
+        color: #333333
+    h1
+        margin-bottom: 10px
+        //
+        font-weight: 900
+        font-size: 70px
+        line-height: 98.44%
+        letter-spacing: 0.035em
+        font-variant: small-caps
+        color: #333333
+    p
+        margin-bottom: 60px
+        //
+        font-weight: 500
+        font-size: 24px
+        line-height: 109.44%
+        color: #333333
+    .btn 
+        display: flex
+        justify-content: center
+        align-items: center
+        //
+        width: 312px
+        height: 64px
+        background: #3D9BE9
+        border-radius: 3px
+        //
+        font-weight: bold
+        font-size: 20px
+        line-height: 106.94%
+        letter-spacing: 0.02em
+        color: #FFFFFF
+        cursor: pointer
+.header-bottom 
+    padding: 0 312px
+    .cards 
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 30px
+        .card 
+            padding: 40px 0 50px 0
+            border: 1px solid #E6E6E6
+            border-top: none
+            box-shadow: 0 10px 10px -10px rgba(0,0,0,0.5)
+            border-radius: 6px
+            background: #FEFEFE
+            //
+            text-align: center
+            >*
+                padding-bottom: 20px
+            img
+            h4
+                font-weight: 600
+                font-size: 22px
+                line-height: 22px
+                text-align: center
+                color: #333333
+            p
+                font-weight: normal
+                font-size: 16px
+                line-height: 140%
+                text-align: center
+                color: #333333
+
+
+
+
+// Main 
+main 
+    width: 100%
+h2.title-main 
+    margin-bottom: 55px
+    //
+    font-weight: 600
+    font-size: 30px
+    line-height: 112.94%
+    text-align: center
+    color: #333333
+
+.advantage 
+    h2.title-main 
+        
+    .contain-bg 
+        padding-top: 130px
+        //
+        height: 742px
+        background: url(../img/advantage-bg.jpg) no-repeat center
+        .items 
+            margin: 0 312px
+            //
+            display: grid
+            grid-template-columns: repeat(3, 310px)
+            justify-content: space-between
+            .item 
+                h3
+                    margin-bottom: 20px
+                    //
+                    font-weight: 600
+                    font-size: 22px
+                    line-height: 22px
+                    text-align: center
+                    color: #333333
+                p
+                    font-weight: normal
+                    font-size: 16px
+                    line-height: 140%
+                    text-align: center
+                    color: #333333
+.prices 
+    padding-top: 80px
+    padding: 80px 343px 0 427px
+    //
+    h2.title-main
+    .cols
+        display: grid
+        grid-template-columns: 192px 192px 575px
+        justify-content: space-between
+        .col 
+            h4
+                margin-bottom: 17px
+                //
+                font-weight: 600
+                font-size: 22px
+                line-height: 98.44%
+                text-align: center
+                color: #333333
+            p
+                margin-bottom: 47px
+                //
+                font-weight: normal
+                font-size: 16px
+                line-height: 98.44%
+                text-align: center
+                color: #333333
+            .div
+                margin-bottom: 40px
+                padding: 0 12px
+                padding-bottom: 10px
+                border-bottom: 1px solid rgba(51, 51, 51, 0.1)
+                //
+                display: flex
+                justify-content: space-between
+                //
+                font-weight: 500
+                font-size: 20px
+                line-height: 120%
+                color: #333333
+                span
+
+            .items 
+
+                .item 
+                    h4
+                        margin-bottom: 10px
+                        //
+                        font-weight: 600
+                        font-size: 22px
+                        line-height: 98.44%
+                        text-align: left
+                        color: #333333
+                    p
+                        font-weight: normal
+                        font-size: 16px
+                        line-height: 139.5%
+                        text-align: left
+                        color: #333333
+                    .phone 
+                        margin-bottom: 44px
+                        //
+                        font-weight: 600
+                        font-size: 24px
+                        line-height: 98.44%
+                        color: rgba(51, 51, 51, 0.8)
+                    .pricelist 
+                        img
+                            margin-right: 20px
+                        span
+                            font-weight: 500
+                            font-size: 16px
+                            line-height: 131%
+                            color: #333333
+.conditions 
+    margin-top: 190px
+    padding-bottom: 165px
+    h2.title-main
+        margin-bottom: 90px
+    .contain
+        display: flex
+        justify-content: center
+        ol
+            width: 435px
+            //
+            font-weight: normal
+            font-size: 16px
+            line-height: 139.5%
+            color: #333333
+            //
+            counter-reset: myCounter
+            //
+            position: relative
+            top: -25px
+            li
+                margin-bottom: 30px
+                &::before
+                    counter-increment: myCounter
+                    content: "0" counter(myCounter)
+                    //
+                    display: block
+                    width: 17px
+                    height: 22px
+                    margin-right: 20px
+                    //
+                    position: relative
+                    left: -40px
+                    top: 23px
+        img
+
+.callback 
+    padding-top: 105px
+    padding-left: 282px
+    //
+    background: #F8F8F8
+    h2.title-main 
+        margin-bottom: 10px
+    p
+        margin-bottom: 40px
+        //
+        font-weight: normal
+        font-size: 16px
+        line-height: 20px
+        text-align: center
+        color: #333333
+    .form 
+        display: grid
+        grid-template-columns: 660px auto
+        grid-column-gap: 60px
+        align-items: center
+        .pic-bg
+            width: 660px
+            height: 560px
+            background: url(../img/callback-bg-02.png) no-repeat bottom -5px right 0, url(../img/callback-bg-01.jpg) no-repeat left 0
+        form
+            >*
+                margin-bottom: 50px
+                //
+                width: 250px
+                display: block
+            >input
+                padding-bottom: 14px
+                padding-left: 10px
+                //
+                border: 0
+                border-bottom: 1px solid #333333
+                background: transparent
+                //
+                font-weight: normal
+                font-size: 16px
+                line-height: 20px
+                color: rgba(51, 51, 51, 0.7)
+            >input[type=submit]
+                margin-top: 70px
+                margin-bottom: 13px
+                padding-bottom: 0
+                //
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 50px
+                background: #3D9BE9
+                border: 0
+                border-radius: 3px
+                //
+                font-weight: 500
+                font-size: 20px
+                line-height: 24px
+                color: #FDFDFD
+                &:hover
+                    opacity: 0.7
+            p
+                label
+                    font-weight: normal
+                    font-size: 12px
+                    line-height: 15px
+                    text-align: center
+                    letter-spacing: 0.015em
+                    color: #333333
+                    cursor: pointer
+                input[type=checkbox]
+                    margin-right: 5px
+                    cursor: pointer
+
+
+.clients
+    padding-top: 155px
+    h2.title-main
+        margin-bottom: 60px
+    .contain
+        padding: 0 300px
+        //
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: center
+        .item
+            img
+
+.map 
+    margin-top: 176px
+    padding-top: 150px
+    padding-left: 420px
+    //
+    height: 590px
+    background: url(../img/map.jpg) no-repeat center
+    .card 
+        padding-top: 43px
+        padding-left: 45px
+        width: 385px
+        height: 330px
+        background: #ffffff
+        .logo 
+            margin-bottom: 35px
+            img
+        ul
+            font-weight: normal
+            font-size: 16px
+            line-height: 131%
+            color: #333333
+            li
+                margin-bottom: 15px
+                text-indent: -10px
+                
+
+// Footer 
+footer 
+    padding: 60px 315px 85px 400px
+    //
+    width: 100%
+    height: 354px
+    background: #333333
+    .items 
+        display: flex
+        justify-content: space-between
+        .item 
+            a.logo 
+                margin-bottom: 35px
+                //
+                display: block
+            p
+                margin-bottom: 20px
+                //
+                font-weight: normal
+                font-size: 16px
+                line-height: 140.9%
+                a
+                    color: #FFFFFF
+        ul.item
+            padding-top: 48px
+            //
+            font-weight: 500
+            font-size: 18px
+            line-height: 18px
+            li
+                margin-bottom: 15px
+                a
+                    color: #FFFFFF
+
+        .contacts
+            padding-top: 48px
+            //
+            p
+                margin-bottom: 15px
+                //
+                font-weight: 500
+                font-size: 18px
+                line-height: 131%
+                color: #FFFFFF
+            .btn 
+                margin-top: 30px
+                //
+                display: block
+                width: 250px
+                height: 50px
+                line-height: 50px
+                background: #3D9BE9
+                border-radius: 3px
+                //
+                font-weight: 500
+                font-size: 20px
+                //line-height: 24px
+                text-align: center
+                color: #F2F2F2
+
+
+
+
