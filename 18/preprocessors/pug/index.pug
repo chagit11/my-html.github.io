@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document
+    body
+        div#popup 
+            #popup-bg
+            #popup-name
+
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top
+                    a.logo(href=""): img(src="./img/header/logo.svg" alt="logo")
+                    ul.menu
+                        li: a(href="") Обо мне
+                        li: a(href="") Фотоотчет
+                        li: a(href="") Расписание
+                        li: a(href="") Цена
+                        li: a(href="") Блог
+                        li: a(href="") Контакты
+                    .socials
+                        a(href=""): img(src="./img/header/socials/yt.svg" alt="yt")
+                        a(href=""): img(src="./img/header/socials/vk.svg" alt="vk")
+                        a(href=""): img(src="./img/header/socials/insta.svg" alt="insta")
+                        a(href=""): img(src="./img/header/socials/fb.svg" alt="fb")
+                .header-main
+                    h1 Cook&Travel
+                    p Мастер-классы <br/> Повара-путешественника
+                    a.btn Записаться
+                
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // --- aboutme ---
+                section.aboutme
+                    //h2.title-main обо мне
+                    .cols 
+                        .pic: img(src="./img/aboutme/iam.png" alt="aboutme")
+                        .rating 
+                            p 
+                                sub мне
+                                span 30
+                                sup лет
+                            p 
+                                sub посетил
+                                span 73
+                                sup страны
+                            p 
+                                sub провел
+                                span 101
+                                sup мастер-класс
+                        .desc 
+                            h2.title-main обо мне
+                            p
+                                | Привет. Меня зовут Олег <br/>
+                                | Я профессиональный повар <br/>
+                                | Обладатель звезды Мишлен
+                                span.
+                                    Путешествую по миру, <br/>
+                                    Провожу мастер-классы, <br/>
+                                    Обучаю правильному питанию.
+                                span Вдохновляю людей готовить <br/> с энтузиазмом. 
+                
+                // --- gallery ---
+                section.gallery
+                    .slider 
+                        .arrows 
+                            img(src="./img/slider/arr-black-ico.svg" alt="")
+                        .slides-wrap 
+                            .slides 
+                                .slide 
+                                    img(src="./img/slider/pic-01-1.jpg" alt="")
+                                    img(src="./img/slider/pic-01-2.jpg" alt="")
+                                    img(src="./img/slider/pic-01-3.jpg" alt="")
+                                .slide 
+                                    img(src="./img/slider/pic-01-2.jpg" alt="")
+                                    img(src="./img/slider/pic-01-1.jpg" alt="")
+                                    img(src="./img/slider/pic-01-3.jpg" alt="")
+                                .slide 
+                                    img(src="./img/slider/pic-01-1.jpg" alt="")
+                                    img(src="./img/slider/pic-01-3.jpg" alt="")
+                                    img(src="./img/slider/pic-01-2.jpg" alt="")
+                                .slide 
+                                    img(src="./img/slider/pic-01-1.jpg" alt="")
+                                    img(src="./img/slider/pic-01-3.jpg" alt="")
+                                    img(src="./img/slider/pic-01-2.jpg" alt="")
+                        .dots 
+                            img(src="./img/slider/dot-yellow-ico.svg" alt="")
+                            img(src="./img/slider/dot-black-ico.svg" alt="")
+
+                // --- master-class ---
+                section.master-class
+                    h2.title-main Расписание мастер-классов
+                    .places 
+                        .row
+                            .country США 
+                            .city ВАШИНТОН
+                            .date 28.06.2020
+                            a(href=""): img(src="./img/master-class/more-ico.svg" alt="")
+                        .row
+                            .country Индия 
+                            .city ДЕЛИ
+                            .date 18.07.2020
+                            a(href=""): img(src="./img/master-class/more-ico.svg" alt="")
+                        .row
+                            .country Китай 
+                            .city ПЕКИН
+                            .date 03.08.2020
+                            a(href=""): img(src="./img/master-class/more-ico.svg" alt="")
+                        .row
+                            .country Германия 
+                            .city БЕРЛИН
+                            .date 11.09.2020
+                            a(href=""): img(src="./img/master-class/more-ico.svg" alt="")
+                    .descripton 
+                        .pics 
+                            img(src="./img/master-class/pic-01.jpg" alt="")
+                            img(src="./img/master-class/pic-02.jpg" alt="")
+                            img(src="./img/master-class/pic-03.jpg" alt="")
+                            img(src="./img/master-class/pic-04.jpg" alt="")
+                            img(src="./img/master-class/pic-05.jpg" alt="")
+                            img(src="./img/master-class/pic-06.jpg" alt="")
+                        .info 
+                            h4 На мастер - классе:
+                            p.
+                                - Мы приготовим 5 экзотических  блюд<br/>
+                                - Научимся сервировке <br/>
+                                - Я расскажу тонкости разных традиций<br/>
+                                - Вы получите книгу с рецептами<br/>
+                                - Много положительных эмоций <br/>
+                            .price Стоимость мастер-класса <br/> <b>15990 ₽</b> 
+                            .more Программу мастер-класса <br/>смотрите <a href="">тут</a>
+                            a.btn(href="") Записаться
+
+                // --- blog ---
+                section.blog
+                    h2.title-main Блог
+                    .items
+                        .item 
+                            .text
+                                h3 Вьетнам
+                                p.
+                                    Вьетнамская кухня — <br/>
+                                    отдельный повод <br/>
+                                    для путешествия <br/>
+                                    в эту страну.
+                                a.more(href="") Подробнее...
+                            .pic 
+                                img(src="./img/blog/pic-01.jpg" alt="")
+                        .item 
+                            .pic 
+                                img(src="./img/blog/pic-02.jpg" alt="")
+                            .text
+                                h3 Аляска
+                                p.
+                                    Если вас не смущает то, <br/>
+                                    из кого был сделан ваш стейк — вы легко сможете оценить <br/>
+                                    это блюдо в самых разных уголках Аляски.
+                                a.more(href="") Подробнее...
+                        .item 
+                            .text
+                                h3 Париж
+                                p.
+                                    Еда является важнейший <br/>
+                                    частью французской культуры, <br/>
+                                    поэтому некоторые блюда <br/>
+                                    и их подача смогут удивить <br/>
+                                    даже самых требовательных <br/>
+                                    туристов.
+                                a.more(href="") Подробнее...
+                            .pic 
+                                img(src="./img/blog/pic-03.jpg" alt="")
+
+                // --- signup ---
+                section.signup
+                    form(action="index.html")
+                        input(type="text" value="" placeholder="Имя")
+                        input(type="text" value="" placeholder="Телефон")
+                        input(type="text" value="" placeholder="Е-mail")
+                        input(type="text" value="" placeholder="Комментарий")
+                        input(type="submit" value="ЗАПИСАТЬСЯ")
+                        label(for="igree")
+                            input(type="checkbox" name="" id="igree")
+                            .checkbox 
+                                img(src="./img/signup/checkmark-ico.svg" alt="")
+                            | Даю согласие на оброботку  данных
+                            
+
+
+
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                a.logo(href=""): img(src="./img/footer/logo.svg" alt="logo")
+                .regulations 
+                    p: a(href="")  Политика <br/> конфиденциальности
+                    p: a(href="")  Публичная оферта
+                ul.nav
+                    li: a(href="")  Обо мне
+                    li: a(href="") Фотоотчет
+                    li: a(href="") Расписание
+                    li: a(href="") Блог
+                .pay 
+                    img(src="./img/footer/mastercard-ico.svg" alt="")
+                    img(src="./img/footer/mastercard-ico.svg" alt="")
+                    //img(src="./img/footer/visa-ico.svg" alt="")
+                .socials
+                    a(href="") Instagram
+                    a(href="") Facebook
+                    a(href="") Vkontakte
+                    a(href="") Youtube
+
+
+
+        //script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js") 
+        

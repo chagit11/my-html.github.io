@@ -1,0 +1,552 @@
+/* montserrat-regular - latin */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap");
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/montserrat-v15-latin-regular.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-regular.woff") format("woff"), url("../fonts/montserrat-v15-latin-regular.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-regular.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/montserrat-v15-latin-500.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-500.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-500.woff") format("woff"), url("../fonts/montserrat-v15-latin-500.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-500.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/montserrat-v15-latin-600.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-600.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-600.woff") format("woff"), url("../fonts/montserrat-v15-latin-600.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-600.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/montserrat-v15-latin-700.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-700.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-700.woff") format("woff"), url("../fonts/montserrat-v15-latin-700.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-700.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+/* montserrat-900 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/montserrat-v15-latin-900.eot");
+  /* IE9 Compat Modes */
+  src: local(""), url("../fonts/montserrat-v15-latin-900.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-v15-latin-900.woff2") format("woff2"), url("../fonts/montserrat-v15-latin-900.woff") format("woff"), url("../fonts/montserrat-v15-latin-900.ttf") format("truetype"), url("../fonts/montserrat-v15-latin-900.svg#Montserrat") format("svg");
+  /* Legacy iOS */
+}
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*, *::after, *::before {
+  box-sizing: inherit;
+}
+
+body {
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+div#popup {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+}
+div#popup #popup-bg {
+  background: rgba(0, 0, 0, 0.8);
+  width: 100%;
+  height: 100%;
+}
+div#popup #popup-name {
+  display: none;
+  position: fixed;
+  left: calc(50% - (400px / 2));
+  top: calc(50% - (300px / 2));
+  z-index: 222;
+  width: 400px;
+  height: 300px;
+  background: #FFFFFF;
+}
+
+#site {
+  width: 1200px;
+  margin: 0 auto;
+  font-family: Montserrat;
+  font-style: normal;
+}
+#site a:hover {
+  opacity: 0.8;
+}
+
+header {
+  padding: 0 30px;
+  width: 100%;
+  height: 803px;
+  background: url(../img/header/header-bg.jpg) no-repeat center;
+}
+
+.header-top {
+  height: 110px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-top ul.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-top ul.menu li {
+  margin-right: 25px;
+}
+.header-top ul.menu li a {
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: #0B141D;
+}
+.header-top .socials a:not(:last-of-type) {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.header-main {
+  margin: 0;
+  margin-top: 100px;
+}
+.header-main h1 {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 80px;
+  line-height: 98px;
+  text-shadow: 3px 3px 0 #F8D930;
+  color: #0B141D;
+}
+.header-main p {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0B141D;
+}
+.header-main a.btn {
+  margin-top: 80px;
+  width: 260px;
+  height: 60px;
+  background: #F8D930;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0B141D;
+}
+
+main {
+  width: 100%;
+}
+
+h2.title-main {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #0B141D;
+}
+
+section.aboutme {
+  height: 747px;
+  background: #FFFFFF;
+  background: url(../img/aboutme/branch-bg.jpg) no-repeat right bottom;
+}
+section.aboutme .cols {
+  display: flex;
+}
+section.aboutme .cols .rating {
+  padding-top: 185px;
+}
+section.aboutme .cols .rating p:last-of-type,
+section.aboutme .cols .rating p:first-of-type {
+  margin-left: -28px;
+}
+section.aboutme .cols .rating p {
+  padding-bottom: 110px;
+  display: flex;
+  align-items: flex-end;
+  font-weight: normal;
+  font-size: 14px;
+  color: #0B141D;
+  /** &:first-of-type span::after
+  *  content: '30'
+  *  display: inline-block
+  *  transform: translate(-106px, -2.5px)
+  *  color: transparent
+  *  -webkit-text-stroke: 2px #F8D930
+  *  //margin-right: -106px **/
+}
+section.aboutme .cols .rating p sub {
+  display: inline-block;
+  transform: translateY(-59px);
+}
+section.aboutme .cols .rating p span {
+  margin: 0 5px;
+  display: inline-block;
+  font-weight: 900;
+  font-size: 80px;
+  color: transparent;
+  -webkit-text-stroke: 2px #0B141D;
+}
+section.aboutme .cols .rating p sup {
+  display: inline-block;
+  transform: translateY(-10px);
+  white-space: nowrap;
+}
+section.aboutme .cols .desc {
+  padding-top: 90px;
+  padding-left: 58px;
+}
+section.aboutme .cols .desc h2.title-main {
+  margin-bottom: 80px;
+}
+section.aboutme .cols .desc p {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.aboutme .cols .desc p span:first-of-type {
+  margin-top: 65px;
+}
+section.aboutme .cols .desc p span {
+  margin-bottom: 60px;
+  display: block;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0B141D;
+}
+
+section.gallery {
+  padding: 120px 0 0 60px;
+  padding-bottom: 70px;
+  background: #C7DCE8;
+}
+section.gallery .slider .arrows img:first-child {
+  transform: translate(-50px, 315px);
+}
+section.gallery .slider .slides-wrap {
+  overflow: hidden;
+}
+section.gallery .slider .slides-wrap .slides {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1140px;
+}
+section.gallery .slider .slides-wrap .slides .slide {
+  display: flex;
+}
+section.gallery .slider .dots {
+  margin-top: 35px;
+  margin-right: 20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+section.gallery .slider .dots img {
+  margin-right: 20px;
+}
+
+section.master-class {
+  margin-top: 90px;
+}
+section.master-class h2.title-main {
+  margin-left: 740px;
+  margin-bottom: 80px;
+}
+section.master-class .places {
+  padding: 0 30px;
+}
+section.master-class .places .row:last-of-type {
+  border-bottom: 1px solid #FDD418;
+}
+section.master-class .places .row {
+  padding: 40px 0;
+  border-top: 1px solid #FDD418;
+  display: flex;
+  align-items: center;
+}
+section.master-class .places .row .country {
+  width: 360px;
+  font-weight: normal;
+  font-size: 30px;
+  color: #0B141D;
+}
+section.master-class .places .row .city {
+  width: 350px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #B4B4B4;
+}
+section.master-class .places .row .date {
+  width: 403px;
+  font-weight: normal;
+  font-size: 16px;
+  color: #0B141D;
+}
+section.master-class .places .row a {
+  display: block;
+}
+section.master-class .descripton {
+  margin-top: 89px;
+  display: grid;
+  grid-template-columns: 700px auto;
+  grid-gap: 0px 40px;
+}
+section.master-class .descripton .pics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+section.master-class .descripton .pics img {
+  margin-bottom: 15px;
+  width: auto;
+  height: 200px;
+}
+section.master-class .descripton .info > * {
+  margin-bottom: 30px;
+}
+section.master-class .descripton .info h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.master-class .descripton .info p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.master-class .descripton .info .price {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.master-class .descripton .info .price b {
+  font-weight: 600;
+}
+section.master-class .descripton .info .more {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.master-class .descripton .info .more a {
+  text-decoration: underline;
+  color: #0B141D;
+}
+section.master-class .descripton .info a.btn {
+  margin-top: 60px;
+  width: 260px;
+  height: 60px;
+  background: #F8D930;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  color: #0B141D;
+}
+
+section.blog {
+  margin-top: 150px;
+  padding-bottom: 55px;
+  background: url(../img/blog/branch-bg.jpg) no-repeat left bottom;
+}
+section.blog h2.title-main {
+  margin-left: 740px;
+  margin-bottom: 80px;
+}
+section.blog .items .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+section.blog .items .item:not(:last-child) {
+  margin-bottom: 135px;
+}
+section.blog .items .item:last-child .text {
+  margin-left: 385px;
+}
+section.blog .items .item:last-child .pic {
+  margin-right: 30px;
+}
+section.blog .items .item .text {
+  margin-left: 30px;
+}
+section.blog .items .item .text h3 {
+  margin-bottom: 30px;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.blog .items .item .text p {
+  margin-bottom: 40px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  color: #0B141D;
+}
+section.blog .items .item .text a.more {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #0B141D;
+}
+section.signup {
+  padding: 230px 120px;
+  padding-bottom: 0;
+  margin-top: 90px;
+  height: 814px;
+  background: url(../img/signup/signup-bg.jpg) no-repeat center;
+  display: flex;
+  justify-content: flex-end;
+}
+section.signup form {
+  display: flex;
+  flex-direction: column;
+}
+section.signup form input[type=text] {
+  padding: 15px 20px;
+  margin-bottom: 25px;
+  width: 337px;
+  border: 0;
+  border-bottom: 1px solid #FDD418;
+  background: transparent;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #FDD418;
+}
+section.signup form input[type=text]::placeholder {
+  color: #FDD418;
+}
+section.signup form input[type=submit] {
+  margin-top: 75px;
+  width: 308px;
+  height: 65px;
+  border: 2px solid #FDD418;
+  border-radius: 3px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.26em;
+  color: #FDD418;
+}
+section.signup form label {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FDD418;
+}
+section.signup form label input[type=checkbox] {
+  display: none;
+}
+section.signup form label input[type=checkbox]:checked + .checkbox img {
+  display: inline-block;
+}
+section.signup form label .checkbox {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FDD418;
+  border-radius: 1px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+section.signup form label .checkbox img {
+  display: none;
+}
+
+footer {
+  padding: 60px 33px;
+  background: #0C1729;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: capitalize;
+  color: #FDD418;
+}
+footer a.logo {
+  display: block;
+}
+footer .regulations p {
+  margin-bottom: 45px;
+}
+footer .regulations p a {
+  color: #FDD418;
+}
+footer ul.nav li {
+  margin-bottom: 9px;
+}
+footer ul.nav li a {
+  color: #FDD418;
+}
+footer .pay {
+  margin-left: 120px;
+}
+footer .pay img {
+  display: block;
+  margin-bottom: 25px;
+}
+footer .socials a {
+  margin-bottom: 9px;
+  display: block;
+  color: #FDD418;
+}
