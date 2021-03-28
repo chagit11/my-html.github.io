@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/reset.css")
+    link(rel="stylesheet", href="./css/style.css")
+    title Document
+  body
+  div#site
+    // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+    header.header
+      //
+      .header-top
+        .logo
+          a(href=""): img(src="./img/svg/logo-ico.svg")
+
+        ul.menu
+          li: a(href="") О компании
+          li: a(href="") Портфолио
+          li: a(href="") Каталог
+          li: a(href="") Сервис
+          li: a(href="") Контакты
+
+      .header-main
+        h1.header-title Светотехническое оборудование <br>в Петербурге
+        p.header-desc
+          | Продажа, аренда светотехнического оборудования. Оформление официальных мероприятий под ключ.
+        a.header-btn(href="") ПЕРЕЙТИ
+
+      
+    
+    
+    // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+    main.main
+      //- M I X I N S ----------->
+      //-
+      mixin main-title(text)
+        h2.main-title 
+          span <br>
+          span
+          =text
+      //-
+      mixin pag-btn(parent)
+        div(class=parent+"__pag-btn")
+          img(src="./img/svg/pag-left.svg")
+          img(src="./img/svg/pag-right.svg")
+
+      //ПРОЕКТЫ
+      .projects 
+        +main-title("Наши проекты")
+        +pag-btn("projects")
+
+        .projects__pics-wrap
+          .projects__pics.projects__pics_active
+            .projects__pic
+              img(src="./img/projects-pic01.jpg")
+              .projects__pic-info
+                h3 ССК “ОЛИМП”
+                p Световое оформление форума “Шубы-2019”
+            .projects__pic
+              img(src="./img/projects-pic02.jpg")
+              .projects__pic-info
+                h3 ССК “ОЛИМП”
+                p Световое оформление форума “Шубы-2019”
+          .projects__pics
+            .projects__pic
+              img(src="./img/projects-pic01.jpg")
+              .projects__pic-info
+                h3 222222
+                p Световое оформление форума “Шубы-2019”
+            .projects__pic
+              img(src="./img/projects-pic02.jpg")
+              .projects__pic-info
+                h3 2222222
+                p Световое оформление форума “Шубы-2019”
+        
+        
+      //КАТАЛОГ
+      .catalog
+        +main-title("Каталог продукции")
+        .catalog__switch
+          span Robe    
+          span Compulite
+        .catalog-row
+          .catalog__pics.catalog__pics_active
+            a(href=""): .catalog__pic
+              img(src="./img/catalog-pic01.png")
+              h3 Статичные светодиодные приборы
+            a(href=""): .catalog__pic
+              img(src="./img/catalog-pic02.png")
+              h3 Контроллеры
+            a(href=""): .catalog__pic
+              img(src="./img/catalog-pic03.png")
+              h3 Аксессуары
+          .catalog__pics
+            a(href=""): .catalog__pic
+              img(src="./img/catalog-pic01.png")
+              h3 Статичные светодиодные приборы 111
+            a(href=""): .catalog__pic
+              img(src="./img/catalog-pic02.png")
+              h3 Контроллеры 2222
+            a(href=""): .catalog__pic
+              img(src="./img/catalog-pic03.png")
+              h3 Аксессуары 333
+      
+      //АРЕНДА
+      .rent
+        +main-title("Аренда оборудования")
+        .rent-row
+          .rent__desc
+            p Мы занимаемся прокатом светового и сценического оборудования ведущих мировых производителей, таких как Robe, SGM, StudioDue, ChainMaster, Milos, Universal Effects, ArtLighting, MobilTech, Lampo, Martin, Spotlight, Compulite, Eurolite и др.
+          .rent__info
+            .rent__info-row
+              h3.rent__info-title Новое оборудование, предоставляемое в аренду:
+              +pag-btn("rent")
+            .rent__info-wrap  
+              .rent__info-card.rent__info-card_active
+                  img(src="./img/rent-pic01.png")
+                  ul
+                    h4 Robe Robin ParFect 100
+                    li Источник света 12 светодиодов RGBW по 15 Вт каждый
+                    li Угол раскрытия 7°
+                    li В комплекте рассеивающая линза 40°
+                    li Потребляемая мощность 200 Вт
+              .rent__info-card
+                  img(src="./img/catalog-pic01.png")
+                  ul
+                    h4 222222222222
+                    li Источник света 12 светодиодов RGBW по 15 Вт каждый
+                    li Угол раскрытия 7°
+                    li В комплекте рассеивающая линза 40°
+                    li Потребляемая мощность 200 Вт
+              .rent__info-card
+                  img(src="./img/catalog-pic02.png")
+                  ul
+                    h4 333333333333
+                    li Источник света 12 светодиодов RGBW по 15 Вт каждый
+                    li Угол раскрытия 7°
+                    li В комплекте рассеивающая линза 40°
+                    li Потребляемая мощность 200 Вт
+              .rent__info-card
+                  img(src="./img/catalog-pic03.png")
+                  ul
+                    h4 44444444444
+                    li Источник света 12 светодиодов RGBW по 15 Вт каждый
+                    li Угол раскрытия 7°
+                    li В комплекте рассеивающая линза 40°
+                    li Потребляемая мощность 200 Вт
+              .rent__info-card
+                  img(src="./img/catalog-pic01.png")
+                  ul
+                    h4 555555555555
+                    li Источник света 12 светодиодов RGBW по 15 Вт каждый
+                    li Угол раскрытия 7°
+                    li В комплекте рассеивающая линза 40°
+                    li Потребляемая мощность 200 Вт
+              .rent__info-card
+                  img(src="./img/catalog-pic01.png")
+                  ul
+                    h4 66666666666
+                    li Источник света 12 светодиодов RGBW по 15 Вт каждый
+                    li Угол раскрытия 7°
+                    li В комплекте рассеивающая линза 40°
+                    li Потребляемая мощность 200 Вт
+
+      //НОВОСТИ
+      .news
+        .news-top
+          +main-title("Новости")
+          a.news-top__btn(href="") все новости
+        .news-main
+          .news-main__col
+            img.news-bigpic(src="./img/news-pic.jpg")
+            .news-main__text
+              h4 Семинар Milos
+              span 27.01.2019
+              p Наши сотрудники прошли последний семинар от компании Milos. Они получили новый объем знаний, который позволит нашей компании заниматься оборудованием не только мероприятий, но производственных помещений.
+              .news-more: a(href="") Читать полностью...
+          .news-main__col
+            h4 Выставка Prolight+Sound NAMM Russia 2016
+            p 30 контрактов, тысячи восторженных посетителей...
+            img(src="./img/news-pic01.jpg")
+            span 27.01.2019
+          .news-main__col
+            h4 Выставка Prolight+Sound NAMM Russia 2016
+            p 30 контрактов, тысячи восторженных посетителей...
+            img(src="./img/news-pic02.jpg")
+            span 27.01.2019
+
+    
+    // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+    footer.footer
+      .footer-contacts
+        .footer-contacts__item (812) 710-80-25
+        .footer-contacts__item 191180, Санкт-Петербург, Набережная реки Фонтанки, 90, корпус 1
+        .footer-contacts__item mail@translight.ru
+
+      .footer-nav
+        ul.footer-nav__item
+          li  О компании
+          li  Новости
+        ul.footer-nav__item
+          li  Каталог
+          li  Аренда
+        ul.footer-nav__item
+          li  Наши проекты
+          li  Сервисное обслуживание
+      .footer-copy
+        .footer-copy__item © 2019 ЗАО «Транслайт». Все права защищены.
+        .footer-copy__item Разработка и дизайн - D-e-n.ru
+    
+    
+
+    
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")   
+script(src="./js/script.js")   
