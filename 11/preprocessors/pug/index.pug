@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document
+    body
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            header.header
+                .header-top-mob
+                .header-top
+                    .logo: img(src="./img/svg/logo-ico.svg")
+                    .header-search
+                        form: input(type="text" name="search")
+                    .header-top__switches
+                        span
+                            img(src="./img/svg/local-ico.svg") 
+                            | Вся Россия
+                        span 
+                            | Валюта: <b> USD</b>  
+                            img(src="./img/svg/arrow-bot-ico.svg") 
+                        span 
+                            | <b>RU</b> | UK
+                    .header-login Вход
+
+                .header-main
+                    .header-stat
+                        span.header-stat__item
+                            img(src="./img/svg/guests-ico.svg")
+                            b 246798
+                            span Гостей
+                        span.header-stat__item
+                            img(src="./img/svg/views-ico.svg")
+                            b 56798
+                            span Просмотров
+                        span.header-stat__item
+                            img(src="./img/svg/adver-ico.svg")
+                            b  1157
+                            span Объявлений
+                    .header-main__desc
+                        | Мы собрали продавцов и перевозчиков в одном месте,
+                        | чтобы вы быстро и удобно могли заказать и доставить
+                        | нужную вам продукцию
+                        span Попробуйте!
+                    .header-main__desc-mob
+                        | Мы собрали продавцов <br>и перевозчиков в одном месте,
+                        | <br>чтобы вы быстро и удобно могли <br>заказать и доставить
+                        | <br>нужную вам <br>продукцию
+                    .header-main__btn 
+                        img(src="./img/svg/plus-ico.svg")
+                        | Добавить свое объявление
+                
+                
+                
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                form.main-search
+                    .select
+                        select
+                            option(desabled) Раздел 1
+                    input(type="text" placeholder="Что ищем?")
+                    .select
+                        select
+                            option(desabled) Регион
+                    .select
+                        select
+                            option(desabled) Еще фильтры
+                    input(type="submit" value="Поиск")
+
+                .adt-vip
+                    .adt-vip__wrapper
+                        .adt-vip__panel
+                            span <b>VIP</b> Объявления 
+                            span.btn-actived Предложения
+                            span Спрос
+                        .adt-vip__cols
+                            .col
+                                img(src="./img/advt-vip-pic01.jpg", alt="")
+                                .meta 
+                                    span Сегодня в 14:30:45
+                                    span 
+                                        img(src="./img/svg/advt-views-ico.svg", alt="")
+                                        | 5896 
+                                .title
+                                    h3 Груша Северянка
+                                    span.price <b>54 000₽</b> / тонна
+                                p.desc.
+                                    Сочные, спелые сладкие яблоки, урожая этого сезона. 
+                                    Почти отсуствуют битые , технология сбора яблок при ...
+                                .address 
+                                    span ООО РоботексЭпплКорпорейшин
+                                    span г. Ставрополь
+                            .col
+                                img(src="./img/advt-vip-pic02.jpg", alt="")
+                                .meta 
+                                    span Сегодня в 14:30:45
+                                    span 
+                                        img(src="./img/svg/advt-views-ico.svg", alt="")
+                                        | 5896 
+                                .title
+                                    h3 Картошка Венета
+                                    span.price <b>20 000₽</b> / тонна
+                                p.desc.
+                                    Сочные, спелые сладкие яблоки, урожая этого сезона. 
+                                    Почти отсуствуют битые , технология сбора яблок при ...
+                                .address 
+                                    span ООО РоботексЭпплКорпорейшин
+                                    span г. Ставрополь
+                            .col
+                                img(src="./img/advt-vip-pic03.jpg", alt="")
+                                .meta 
+                                    span Сегодня в 14:30:45
+                                    span 
+                                        img(src="./img/svg/advt-views-ico.svg", alt="")
+                                        | 5896 
+                                .title
+                                    h3 Яблоки спелые
+                                    span.price <b>80 000₽</b> / тонна
+                                p.desc.
+                                    Сочные, спелые сладкие яблоки, урожая этого сезона. 
+                                    Почти отсуствуют битые , технология сбора яблок при ...
+                                .address 
+                                    span ООО РоботексЭпплКорпорейшин
+                                    span г. Ставрополь
+
+                    .adt-vip__grid
+                        .col
+                            h3 Овощи
+                            ul
+                                li
+                                    a(href="") Картофель
+                                        span (1115286)
+                                li
+                                    a(href="") Капуста
+                                        span (15286)
+                                li
+                                    a(href="") Помидоры
+                                        span (3135256)
+                                li
+                                    a(href="") Свекла
+                                        span (176586)
+                                li
+                                    a(href="") Огурцы
+                                        span (111846)
+                            .all Смотреть все объявления раздела
+                        .col
+                            h3 Овощи
+                            ul
+                                li
+                                    a(href="") Картофель
+                                        span (1115286)
+                                li
+                                    a(href="") Капуста
+                                        span (15286)
+                                li
+                                    a(href="") Помидоры
+                                        span (3135256)
+                                li
+                                    a(href="") Свекла
+                                        span (176586)
+                                li
+                                    a(href="") Огурцы
+                                        span (111846)
+                            .all Смотреть все объявления раздела
+                        .col
+                            h3 Овощи
+                            ul
+                                li
+                                    a(href="") Картофель
+                                        span (1115286)
+                                li
+                                    a(href="") Капуста
+                                        span (15286)
+                                li
+                                    a(href="") Помидоры
+                                        span (3135256)
+                                li
+                                    a(href="") Свекла
+                                        span (176586)
+                                li
+                                    a(href="") Огурцы
+                                        span (111846)
+                            .all Смотреть все объявления раздела
+                        .col
+                            h3 Овощи
+                            ul
+                                li
+                                    a(href="") Картофель
+                                        span (1115286)
+                                li
+                                    a(href="") Капуста
+                                        span (15286)
+                                li
+                                    a(href="") Помидоры
+                                        span (3135256)
+                                li
+                                    a(href="") Свекла
+                                        span (176586)
+                                li
+                                    a(href="") Огурцы
+                                        span (111846)
+                            .all Смотреть все объявления раздела
+                        .col
+                            h3 Овощи
+                            ul
+                                li
+                                    a(href="") Картофель
+                                        span (1115286)
+                                li
+                                    a(href="") Капуста
+                                        span (15286)
+                                li
+                                    a(href="") Помидоры
+                                        span (3135256)
+                                li
+                                    a(href="") Свекла
+                                        span (176586)
+                                li
+                                    a(href="") Огурцы
+                                        span (111846)
+                            .all Смотреть все объявления раздела
+                        .col
+                            h3 Овощи
+                            ul
+                                li
+                                    a(href="") Картофель
+                                        span (1115286)
+                                li
+                                    a(href="") Капуста
+                                        span (15286)
+                                li
+                                    a(href="") Помидоры
+                                        span (3135256)
+                                li
+                                    a(href="") Свекла
+                                        span (176586)
+                                li
+                                    a(href="") Огурцы
+                                        span (111846)
+                            .all Смотреть все объявления раздела
+                    
+                    .pagination
+                        .pg 1
+                        .pg 2
+                        .pg 3
+                        .pg ...
+                        .pg 456
+                        .pg Следующая
+
+
+
+                
+
+
+
+            
+            
+            // Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            footer.footer
+                .top
+                    .item Реклама
+                    .item Частозадаваемые вопросы
+                    .item Нашли ошибку?
+                .bot
+                    .item Пользовательское <br>соглашение
+                    .item Политика <br>конфиденциальности
+                    .item Условия <br>использования сайта
+                    .item Связь <br>с администратором портала
+            
+            
+            
