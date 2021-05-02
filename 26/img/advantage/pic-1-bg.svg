@@ -1,0 +1,28 @@
+<svg width="136" height="128" viewBox="0 0 136 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="144" height="128" rx="8" fill="#E1E1E1"/>
+<rect x="19.6362" y="12.7998" width="19.6364" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="45.818" y="12.7998" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="58.9091" y="12.7998" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="19.6362" y="32" width="19.6364" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="45.818" y="32" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="58.9091" y="32" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="19.6362" y="51.2002" width="19.6364" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="45.818" y="51.2002" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="58.9091" y="51.2002" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="19.6362" y="70.3999" width="19.6364" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="45.818" y="70.3999" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="58.9091" y="70.3999" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="19.6362" y="89.5999" width="19.6364" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="45.818" y="89.5999" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="58.9091" y="89.5999" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="19.6362" y="108.8" width="19.6364" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="45.818" y="108.8" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<rect x="58.9091" y="108.8" width="6.54545" height="6.4" rx="3.2" fill="#E7E9E8"/>
+<ellipse cx="112.909" cy="39.9998" rx="27.8182" ry="27.2" fill="#E7E9E8"/>
+<path d="M131.545 40C131.545 50.0306 123.223 58.2 112.909 58.2C102.595 58.2 94.2725 50.0306 94.2725 40C94.2725 29.9695 102.595 21.8 112.909 21.8C123.223 21.8 131.545 29.9695 131.545 40Z" stroke="#E1E1E1" stroke-width="2"/>
+<path d="M121.727 39.9999C121.727 44.7285 117.8 48.5999 112.909 48.5999C108.018 48.5999 104.091 44.7285 104.091 39.9999C104.091 35.2713 108.018 31.3999 112.909 31.3999C117.8 31.3999 121.727 35.2713 121.727 39.9999Z" stroke="#E1E1E1" stroke-width="2"/>
+<rect x="112.091" y="12.7998" width="1.63636" height="54.4" fill="#E1E1E1"/>
+<rect x="140.727" y="39.2" width="1.6" height="55.6364" transform="rotate(90 140.727 39.2)" fill="#E1E1E1"/>
+<rect width="1.61805" height="55.0566" transform="matrix(-0.710497 0.703701 -0.719486 -0.694507 133.412 58.4258)" fill="#E1E1E1"/>
+<rect width="1.61805" height="55.0566" transform="matrix(0.710497 0.703701 0.719486 -0.694507 92.6504 58.4258)" fill="#E1E1E1"/>
+</svg>
