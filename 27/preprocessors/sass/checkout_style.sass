@@ -1,0 +1,422 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main 
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+
+// -- form checkout
+form.checkout 
+    position: relative
+
+
+// -- breadcrumb
+.breadcrumb // ul
+        margin: 30px auto
+        display: flex
+        align-items: center
+        &__item // li
+            margin-right: 50px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            a
+                color: #333333
+            position: relative
+            &:before
+                content: url(../img/catalog/breadcrumb-arrow.svg)
+                display: block
+                position: absolute
+                left: -30px
+                
+            &:last-child
+                color: #88B131
+            &:first-child
+                &:before
+                    content: ''
+                    display: block
+
+
+
+// -- deliverymethods
+section.deliverymethods
+    margin-bottom: 30px
+    h2.main-title
+        margin-bottom: 30px
+
+.deliverymethods 
+    
+    &__wrapper 
+        width: 1440px - 370px * 2
+    
+    &__row 
+        margin-bottom: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        label
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            color: #333333
+            input[type="radio"]
+                display: none
+                &:checked + *
+                    border: 0.5px solid #88B131
+                    background: url(../img/checkout/checkmark.svg) no-repeat center
+                
+    &__radio 
+        margin-right: 10px
+        width: 14px
+        height: 14px
+        background: #FFFFFF
+        border: 0.5px solid #333333
+        border-radius: 2px
+    &__radio-name 
+    &__row-1, &__row-2
+        dl
+            margin-bottom: 20px
+            dt
+                margin-bottom: 10px
+                font-weight: normal
+                font-size: 16px
+                line-height: 19px
+                color: #88B131
+            dd
+                font-weight: normal
+                font-size: 18px
+                line-height: 22px
+                color: #333333
+    &__row-1
+    &__row-2
+        display: none
+        label
+            margin-bottom: 15px
+            display: flex
+            justify-content: start
+            align-items: center
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            color: #333333
+            input[type="radio"]
+                display: none
+                &:checked + *
+                    border: 0.5px solid #88B131 
+                    background: url(../img/checkout/checkmark.svg) no-repeat center
+    &__fields
+        display: grid
+        grid-template-columns: 370px 370px
+        grid-gap: 30px
+    &__field 
+        font-weight: normal
+        font-size: 14px
+        line-height: 28px
+        color: #333333
+        input
+            width: 100%
+            height: 62px
+            background: #FFFFFF
+            // border: 1px solid #88B131
+            // border: 1px solid #D75A4A
+            border: 1px solid #E7E7E7
+            border-radius: 50px
+            text-align: center
+            &[type="text"]
+                &::placeholder
+                    font-size: 14px
+                    line-height: 28px
+    
+// -- recipientdata
+section.recipientdata
+    margin-bottom: 30px
+    h2.main-title
+        margin-bottom: 30px
+    
+.recipientdata 
+    
+    &__wrapper 
+        display: grid
+        grid-template-columns: 370px 370px
+        grid-gap: 30px
+    &__field 
+        font-weight: normal
+        font-size: 14px
+        line-height: 28px
+        color: #333333
+        &:last-of-type
+            grid-column: span 2
+        input
+            width: 100%
+            height: 62px
+            background: #FFFFFF
+            // border: 1px solid #88B131
+            // border: 1px solid #D75A4A
+            border: 1px solid #E7E7E7
+            border-radius: 50px
+            text-align: center
+            &[type="text"]
+                &::placeholder
+                    font-size: 14px
+                    line-height: 28px
+                
+        textarea
+            padding: 15px 30px
+            // width: 772px
+            width: 100%
+            height: 188px
+            background: #FFFFFF
+            border: 1px solid #E7E7E7
+            border-radius: 15px
+            resize: none
+            &::placeholder
+    &__field-title 
+        margin-bottom: 5px
+    
+
+// -- paymentmethods
+section.paymentmethods
+    margin-bottom: 30px
+    h2.main-title
+        margin-bottom: 30px
+        
+.paymentmethods 
+    
+    &__wrapper 
+        width: 1440px - 370px * 2
+    
+    &__radios 
+        margin-bottom: 30px
+        display: block
+        label
+            margin-bottom: 20px
+            display: flex
+            justify-content: start
+            align-items: center
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            color: #333333
+            input[type="radio"]
+                display: none
+                &:checked + *
+                    border: 0.5px solid #88B131
+                    background: url(../img/checkout/checkmark.svg) no-repeat center
+
+    &__radio 
+        margin-right: 10px
+        width: 14px
+        height: 14px
+        background: #FFFFFF
+        border: 0.5px solid #333333
+        border-radius: 2px
+    
+    &__radio-name 
+
+    
+    &__fields
+        display: grid
+        grid-template-columns: 370px 370px
+        grid-gap: 30px
+    &__field 
+        font-weight: normal
+        font-size: 14px
+        line-height: 28px
+        color: #333333
+        input
+            width: 100%
+            height: 62px
+            background: #FFFFFF
+            // border: 1px solid #88B131
+            // border: 1px solid #D75A4A
+            border: 1px solid #E7E7E7
+            border-radius: 50px
+            text-align: center
+            &[type="text"]
+                &::placeholder
+                    font-size: 14px
+                    line-height: 28px
+                
+        textarea
+            padding: 15px 30px
+            // width: 772px
+            width: 100%
+            height: 188px
+            background: #FFFFFF
+            border: 1px solid #E7E7E7
+            border-radius: 15px
+            resize: none
+            &::placeholder
+    &__field-title 
+        margin-bottom: 5px
+
+
+// -- submit
+.submit
+    margin-top: 60px
+    margin-bottom: 120px
+    font-weight: 600
+    font-size: 18px
+    line-height: 22px
+    color: #333333
+    input[type="submit"]
+        width: 270px
+        height: 65px
+        border: 0
+        border-radius: 50px
+        background: #FACF5C
+        display: flex
+        justify-content: center
+        align-items: center
+
+
+// -- yourorder
+.yourorder
+    padding: 30px 20px
+    width: 370px
+    background: #FFFFFF
+    box-shadow: 0px 0px 35px rgba(28, 94, 189, 0.05)
+    border-radius: 15px
+    position: absolute
+    top: 0
+    right: 135px
+
+    &__top
+        margin-bottom: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__title 
+        font-weight: bold
+        font-size: 16px
+        line-height: 19px
+        color: #88B131
+    &__return 
+        padding-right: 25px
+        background: url(../img/checkout/return.svg) no-repeat center right
+        font-weight: 600
+        font-size: 10px
+        line-height: 12px
+        color: #333333
+
+    &__items 
+        margin-bottom: 40px
+    &__item 
+        margin-bottom: 20px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__pic 
+        margin-right: 20px
+        img
+
+    &__info 
+    
+    &__info-name 
+        margin-bottom: 8px
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        color: #333333
+    &__info-specs 
+        margin-bottom: 10px
+        font-weight: normal
+        font-size: 10px
+        line-height: 12px
+        color: #333333
+    &__info-price 
+        font-weight: 600
+        font-size: 24px
+        line-height: 28px
+        color: #88B131
+    &__intotal 
+        dl
+            display: flex
+            justify-content: space-between
+            align-items: center
+            dt
+                font-weight: bold
+                font-size: 14px
+                line-height: 16px
+                color: #333333
+            dd
+                font-weight: 600
+                font-size: 18px
+                line-height: 21px
+                text-align: center
+                color: #88B131
+
+    
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

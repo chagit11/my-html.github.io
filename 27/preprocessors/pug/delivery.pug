@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/delivery_style.css")
+        title Доставка и оплата
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                
+                // --- breadcrumb ---
+                ul.breadcrumb
+                    li.breadcrumb__item: a(href="./") Главная
+                    li.breadcrumb__item Доставка и оплата
+                
+                // --- delivery ---
+                section.delivery 
+                    h2.main-title Доставка и оплата
+                    .delivery__wrapper 
+                        dl
+                            dt Самовывоз:
+                            dd Город Раменское (адрес уточняйте у менеджера)
+                        dl
+                            dt Доставка по Москве:
+                            dd Доставка курьером по Москве 300р. в приделах МКАД. (Оплата при получении)
+                        dl 
+                            dt Доставка по России:
+                            span От 2 до 6 рабочих дней
+                            .delivery__post-office Выбрать пункт Почты России
+                            dd Почта России
+                            dd EMS России
+                            dd ПЭК
+                        dl 
+                            dt Оплата
+                            dd Оплата картой (на сайте)
+                            dd Оплата картой (при получении)
+                            dd Оплата наличными (при получении)
+                             
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+                
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/delivery_script.js")
+
+
+                

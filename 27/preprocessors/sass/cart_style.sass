@@ -1,0 +1,306 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main 
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+
+// -- breadcrumb
+.breadcrumb // ul
+    margin: 30px auto
+    display: flex
+    align-items: center
+    &-item // li
+        margin-right: 50px
+        font-weight: 500
+        font-size: 14px
+        line-height: 16px
+        a
+            color: #333333
+        position: relative
+        &:before
+            content: url(../img/catalog/breadcrumb-arrow.svg)
+            display: block
+            position: absolute
+            left: -30px
+            
+        &:last-child
+            color: #88B131
+        &:first-child
+            &:before
+                content: ''
+                display: block
+
+    &__tabs 
+        margin-bottom: 50px
+        display: flex
+        justify-content: start
+        align-items: center
+        font-weight: 500
+        font-size: 20px
+        line-height: 52px
+        text-align: center
+        color: #333333
+    
+    &__tab 
+        width: 270px
+        height: 65px
+        border-radius: 10px
+        box-shadow: 0px 0px 25px rgba(213, 213, 213, 0.25)
+        background: #FFFFFF
+        display: flex
+        justify-content: center
+        align-items: center
+        &:not(last-child)
+            margin-right: 30px
+        &:nth-child(2)
+            border: 1px solid rgba(136, 177, 49, 0.5)
+            box-shadow: 0px 0px 25px rgba(136, 177, 49, 0.15)
+
+    
+    &__items 
+        margin-bottom: 100px
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-gap: min-max(10, 30, 720, 1440)
+        @media screen and ( max-width:  768px )
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 30px 20px
+        @media screen and ( max-width:  420px )
+            grid-template-columns: 1fr
+            
+    &__item 
+        position: relative
+        @media screen and ( max-width:  992px )
+            padding-bottom: 30px
+
+    &__pic 
+        margin-bottom: 15px
+        text-align: center
+        @media screen and ( max-width:  420px )
+            width: 100%
+
+    &__title //a
+        display: block
+        margin-bottom: 10px
+        font-weight: normal
+        font-size: 18px
+        font-size: min-max(14, 18, 420, 1440)
+        line-height: 24px
+        color: #333333
+    &__desc 
+        margin-bottom: 25px
+        font-weight: normal
+        font-size: 12px
+        font-size: min-max(10, 12, 420, 1440)
+        line-height: 22px
+        color: #333333
+    &__date 
+        font-weight: 500
+        font-size: 8px
+        font-size: min-max(12, 8, 420, 1440)
+        line-height: 22px
+        color: #333333
+        position: absolute
+        left: 0
+        bottom: 0
+        @media screen and ( max-width:  992px )
+            bottom: 30px
+            
+    &__more 
+        padding-right: 10px
+        background: url(../img/blog/arrow-more.svg) no-repeat center right
+        font-weight: 500
+        font-size: 8px
+        font-size: min-max(12, 8, 420, 1440)
+        line-height: 22px
+        color: #88B131
+        position: absolute
+        right: 0
+        bottom: 0
+        @media screen and ( max-width:  992px )
+            background: url(../img/blog/arrow-more.svg) no-repeat center right 30px
+            font-size: 14px
+            text-align: center
+            left: 0
+
+
+// -- cart
+section.cart
+    padding-bottom: 120px
+    h2.main-title
+        margin-bottom: 30px
+
+.cart 
+
+    &__items 
+
+    &__item 
+        margin-bottom: 30px
+        padding: 20px 90px 20px 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background: #FFFFFF
+        box-shadow: 0px 0px 35px rgba(28, 94, 189, 0.05)
+        border-radius: 15px
+        position: relative
+    &__remove
+        position: absolute
+        top: 0
+        right: 0
+        cursor: pointer
+        img
+
+    &__pic 
+        img
+            width: 140px
+            // height: 140px
+            border-radius: 2px
+
+    &__info 
+        width: 230px
+        &-name 
+            margin-bottom: 10px
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px
+            color: #333333
+        &-details 
+            font-weight: normal
+            font-size: 10px
+            line-height: 12px
+            color: #333333
+    &__price 
+        font-weight: 600
+        font-size: 24px
+        line-height: 28px
+        color: #88B131
+    &__amount 
+        width: 100px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 25px
+        text-align: center
+        color: #88B131
+        span
+        div
+            color: #333333
+
+    &__intotal 
+        font-weight: 600
+        font-size: 24px
+        line-height: 28px
+        color: #88B131
+
+    &__checkout 
+        margin-top: 60px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &-intotal // dl
+            dt
+                margin-bottom: 5px
+                font-weight: 500
+                font-size: 24px
+                line-height: 30px
+                color: #333333
+            dd
+                font-weight: bold
+                font-size: 36px
+                line-height: 30px
+                color: #88B131
+        &-button 
+            margin-left: 30px
+            width: 270px
+            height: 65px
+            background: #FACF5C
+            border-radius: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 18px
+            line-height: 22px
+            color: #333333
+
+
+        
+
+        
+    
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

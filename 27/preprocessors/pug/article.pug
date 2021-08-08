@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/article_style.css")
+        title Название статьи
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+                        
+
+                     
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+
+                // --- article ---
+                section.article
+                    ul.article-breadcrumb
+                        li.article-breadcrumb__item: a(href="./") Главная
+                        li.article-breadcrumb__item: a(href="blog.html")  Блог
+                        li.article-breadcrumb__item Похожие статьи
+                    h2.article-title Название статьи
+                    .article-content 
+                        .article-content__pic: img(src="./img/article/article-1.jpg" alt="") 
+                        .article-content__text 
+                            p.
+                                Lorem Ipsum is simply dummy text of the printing 
+                                and typesetting industry. Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                                like Aldus PageMaker including versions of Lorem 
+                                Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
+                                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                                including versions of Lorem Ipsum
+                            p.
+                                Lorem Ipsum is simply dummy text of the printing 
+                                and typesetting industry. Lorem Ipsum has been the industry's standard 
+                                dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+                                It has survived not only five centuries, but also the leap into electronic typesetting, 
+                                remaining essentially unchanged. It was popularised in the 1960s with the release 
+                                of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
+                                like Aldus PageMaker including versions of Lorem 
+                                Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been 
+                                the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley 
+                                of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
+                                the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s 
+                                with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
+                                including versions of Lorem Ipsum
+                    .article-readalso 
+                        .article-readalso__title-main Читайте так же
+                        .article-readalso__items
+                            .article-readalso__item 
+                                .article-readalso__pic: img(src="./img/blog/pic-1.jpg" alt="")
+                                a.article-readalso__title(href="article.html") Загаловок статьив две строки
+                                .article-readalso__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .article-readalso__date 24 апреля 2020
+                                .article-readalso__more Читать дальше 
+                            .article-readalso__item 
+                                .article-readalso__pic: img(src="./img/blog/pic-2.jpg" alt="")
+                                a.article-readalso__title(href="article.html") Загаловок статьив две строки
+                                .article-readalso__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .article-readalso__date 24 апреля 2020
+                                .article-readalso__more Читать дальше 
+                            .article-readalso__item 
+                                .article-readalso__pic: img(src="./img/blog/pic-3.jpg" alt="")
+                                a.article-readalso__title(href="article.html") Загаловок статьив две строки
+                                .article-readalso__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .article-readalso__date 24 апреля 2020
+                                .article-readalso__more Читать дальше 
+                            .article-readalso__item 
+                                .article-readalso__pic: img(src="./img/blog/pic-4.jpg" alt="")
+                                a.article-readalso__title(href="article.html") Загаловок статьив две строки
+                                .article-readalso__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .article-readalso__date 24 апреля 2020
+                                .article-readalso__more Читать дальше 
+
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/blog__script.js")
+
+
+            
+                

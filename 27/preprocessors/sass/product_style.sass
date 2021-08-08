@@ -1,0 +1,428 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main 
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+// -- breadcrumb
+.breadcrumb // ul
+        margin: 40px auto
+            top: 30px
+        display: flex
+        align-items: center
+        &__item // li
+            margin-right: 50px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            a
+                color: #333333
+            position: relative
+            &:before
+                content: url(../img/catalog/breadcrumb-arrow.svg)
+                display: block
+                position: absolute
+                left: -30px
+                
+            &:last-child
+                color: #88B131
+            &:first-child
+                &:before
+                    content: ''
+                    display: block
+
+
+// -- card
+.card
+    margin-bottom: 60px
+    display: grid
+    grid-template-columns: 571px auto
+    grid-gap: 30px
+    &-pic 
+
+        &__big 
+            margin-bottom: 20px
+            img
+                width: 571px
+                height: 571px
+                border-radius: 2px
+
+        &__thumb 
+            display: grid
+            grid-auto-flow: column
+            grid-auto-columns: 115px
+            grid-gap: 20px
+            img
+                width: 115px
+                height: 115px
+                border-radius: 2px
+    &-info 
+        padding-top: 20px
+        &__name 
+            margin-bottom: 20px
+            font-weight: normal
+            font-size: 24px
+            line-height: 32px
+            color: #333333
+        &__title
+            margin-bottom: 15px
+            font-weight: 500
+            font-size: 18px
+            line-height: 21px
+            color: #88B131
+        &__size 
+            margin-bottom: 20px
+            &-wrap 
+                display: grid
+                grid-auto-columns: max-content
+                grid-auto-flow: column
+                grid-gap: 20px
+                font-weight: normal
+                font-size: 18px
+                line-height: 21px
+                color: #333333
+            &-item 
+                padding: 13px 34px
+                border: 1px solid #E7E7E7
+                border-radius: 10px
+                background: rgba(201, 201, 201, 0.1)
+                &_selected
+                    background: rgba(136, 177, 49, 0.1)
+                    border: 1px solid #88B131
+        &__thickness 
+            margin-bottom: 20px
+            &-wrap 
+                display: grid
+                grid-auto-columns: max-content
+                grid-auto-flow: column
+                grid-gap: 15px
+                font-weight: normal
+                font-size: 12px
+                line-height: 14px
+                color: #333333
+            &-item 
+                padding: 17px 8px
+                background: #FAFAFA
+                border: 1px solid #E7E7E7
+                border-radius: 10px
+                &_selected
+                    background: rgba(136, 177, 49, 0.1)
+                    border: 1px solid #88B131
+                    border-radius: 10px
+        &__color 
+            
+            &-wrap 
+                display: grid
+                grid-auto-columns: max-content
+                grid-auto-flow: column
+                grid-gap: 15px
+            &-item 
+                padding: 13px
+                background: #FAFAFA
+                border: 1px solid #E7E7E7
+                border-radius: 10px
+                span
+                    display: block
+                    width: 21px
+                    height: 21px
+                    border-radius: 50%
+                &:nth-child(1) span
+                    background: #DC2828
+                &:nth-child(2) span
+                    background: #390C0C
+                &:nth-child(3) span
+                        background: #FACF5C
+                &_selected
+                    background: rgba(136, 177, 49, 0.1)
+                    border: 1px solid #88B131
+                    border-radius: 10px
+        &__price 
+            margin-top: 40px
+            margin-bottom: 40px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            &-value 
+                font-weight: bold
+                font-size: 36px
+                line-height: 30px
+                color: #88B131
+            &-amount 
+                display: grid
+                grid-template-columns: auto 80px
+                grid-column-gap: 20px
+                &--title 
+                    font-weight: 500
+                    font-size: 18px
+                    line-height: 21px
+                    color: #88B131
+                &--input 
+                    display: flex
+                    justify-content: space-between
+                    align-items: center
+                    font-weight: normal
+                    font-size: 18px
+                    line-height: 21px
+                    color: #88B131
+                    .count 
+                        color: #333333
+        &__btns 
+            display: flex
+            justify-content: start
+            align-items: center
+            &-cart 
+                margin-right: 20px
+                width: 270px
+                height: 65px
+                border-radius: 50px
+                background: #FACF5C
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                color: #333333
+            &-buy 
+                display: flex
+                align-items: center
+                font-weight: normal
+                font-size: 18px
+                line-height: 21px
+                color: #000000
+
+
+// -- aboutproduct
+.aboutproduct 
+    margin-bottom: 120px
+    &__nav 
+        margin-bottom: 30px
+        border-bottom: 0.5px solid #999999
+        display: grid
+        grid-auto-columns: max-content
+        grid-auto-flow: column
+        grid-column-gap: 70px
+        &-item 
+            padding-bottom: 12px
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            display: flex
+            align-items: center
+            color: #999999
+            &_actived 
+                border-bottom: 2px solid #88B131
+                color: #88B131
+    &__tabs 
+        &-descriptions 
+            font-weight: normal
+            font-size: 18px
+            line-height: 28px
+            color: #333333
+        &-feature 
+            dl
+                display: grid
+                grid-template-columns: max-content max-content
+                grid-gap: 30px 185px
+                dt
+                    font-weight: 300
+                    font-size: 18px
+                    line-height: 28px
+                    color: #333333
+                dd
+                    font-weight: bold
+                    font-size: 18px
+                    line-height: 28px
+                    color: #88B131
+        &-reviews 
+            &--comment 
+                margin-bottom: 30px
+            &--wrap 
+                position: relative
+                margin-bottom: 15px
+                display: flex
+                justify-content: start
+                align-items: center
+            &--user 
+                margin-right: 40px
+                font-weight: 600
+                font-size: 18px
+                line-height: 28px
+                color: #88B131
+            &--date 
+                font-weight: 300
+                font-size: 16px
+                line-height: 28px
+                color: #333333
+            &--rating 
+                position: absolute
+                right: 0
+                img
+                    margin-left: 10px
+            &--text 
+                font-weight: 300
+                font-size: 16px
+                line-height: 28px
+                color: #333333
+
+    
+
+
+
+// -- recentviews
+section.recentviews
+    margin-bottom: 120px
+    h2.main-title
+        margin-bottom: 30px
+        
+.recentviews 
+    
+    &__wrapper 
+        display: grid
+        grid-auto-columns: 270px
+        grid-auto-flow: column
+        grid-column-gap: 30px
+    &__item 
+        padding: 20px
+        width: 270px
+        height: 429px
+        background: #FFFFFF
+        box-shadow: 0px 0px 25px rgba(213, 213, 213, 0.25)
+        border-radius: 10px
+    &__pic 
+        margin-bottom: 10px
+        width: 230px
+        img
+    &__name 
+        margin-bottom: 10px
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #333333
+    
+    &__specs 
+        font-weight: normal
+        font-size: 10px
+        line-height: 12px
+        color: #333333
+    &__wrap 
+        margin-top: 15px
+        margin-bottom: 15px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__price 
+        font-weight: 600
+        font-size: 24px
+        line-height: 28px
+        color: #88B131
+    &__amount 
+        width: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 21px
+        text-align: center
+        color: #88B131
+        span
+            &:nth-child(1)
+            &:nth-child(2)
+        .count
+            color: #333333
+            
+    &__btns 
+        display: grid
+        grid-template-columns: 123px auto
+        grid-column-gap: 15px
+        align-items: center
+        &-cart 
+            height: 37px
+            border-radius: 50px
+            background: #FACF5C
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 14px
+            line-height: 16px
+            color: #333333
+        &-buy 
+            font-weight: normal
+            font-size: 10px
+            line-height: 12px
+            color: #333333
+    
+
+
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

@@ -1,0 +1,105 @@
+section.callback {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  background: #FAD163;
+}
+section.callback h2.main-title {
+  margin-bottom: 0;
+  padding: 0;
+}
+section.callback h2.main-title:before {
+  content: "";
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  section.callback h2.main-title {
+    text-align: center;
+  }
+}
+section.callback p {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: min-max(10, 16, 420, 1440);
+  line-height: 22px;
+  line-height: min-max(15, 22, 420, 1440);
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  section.callback p {
+    font-size: 11px;
+    text-align: center;
+  }
+}
+
+.callback__wrapper {
+  padding: 20px 0;
+  margin: 0 auto;
+  padding-left: min-max(15, 135, 420, 1440);
+  padding-right: min-max(15, 135, 420, 1440);
+  max-width: 1440px;
+  background: url(../img/callback/bg-wrapper.svg) no-repeat top 7px right 75px;
+}
+@media screen and (max-width: 768px) {
+  .callback__wrapper {
+    padding: 20px min-max(50, 130, 225, 768);
+    background: url(../img/callback/bg-wrapper.svg) no-repeat center right;
+  }
+}
+@media screen and (max-width: 360px) {
+  .callback__wrapper {
+    padding: 20px 50px;
+  }
+}
+.callback__form {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+@media screen and (max-width: 768px) {
+  .callback__form {
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+  }
+}
+.callback__form input {
+  border: 0;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.callback__form input[type=text] {
+  border-radius: 50px;
+  background: #FFFFFF;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+}
+.callback__form input[type=text]::placeholder {
+  color: #999999;
+}
+.callback__form input[type=submit] {
+  border-radius: 50px;
+  background: #3E3F53;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.callback__igree {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  font-size: min-max(10, 14, 420, 1440);
+  line-height: 28px;
+  line-height: min-max(16, 28, 420, 1440);
+  color: #333333;
+}
+@media screen and (max-width: 768px) {
+  .callback__igree {
+    text-align: center;
+  }
+}

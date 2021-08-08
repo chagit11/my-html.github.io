@@ -1,0 +1,162 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main 
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+// -- contacts
+section.contacts
+    padding-top: 30px
+        
+.contacts
+
+    &-breadcrumb // ul
+        display: flex
+        align-items: center
+        &__item // li
+            margin-right: 50px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            a
+                color: #333333
+            position: relative
+            &:before
+                content: url(../img/catalog/breadcrumb-arrow.svg)
+                display: block
+                position: absolute
+                left: -30px
+                
+            &:last-child
+                color: #88B131
+            &:first-child
+                &:before
+                    content: ''
+                    display: block
+
+
+    &-container 
+        padding: 100px 0 120px 0
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: 600
+        font-size: 18px
+        line-height: 21px
+        color: #333333
+        &__text 
+            ul
+                li
+                    margin-bottom: 37px
+                    padding-left: 60px
+                    position: relative
+                    &::before
+                        content: url(../img/contacts/phone.svg)
+                        display: flex
+                        justify-content: center
+                        align-items: center
+                        width: 40px
+                        height: 40px
+                        border-radius: 50%
+                        box-shadow: 0px 4px 25px rgba(164, 164, 164, 0.25)
+                        background: #FACF5C
+                        position: absolute
+                        left: 0
+                        transform: translateY(-25%)
+                        
+                    &:first-child
+                        a
+                            display: inline-block
+                            margin-right: 40px
+                    span
+                        margin-right: 30px
+
+            a
+                color: #333333
+
+            &-socials 
+                margin-top: 60px
+                display: flex
+                justify-content: start
+                align-items: center
+                &--title 
+                    margin-right: 40px
+                img
+                    margin-right: 30px
+
+        &__pic 
+            img
+
+
+
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

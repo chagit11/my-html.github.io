@@ -1,0 +1,1246 @@
+
+// ==== FONT-FACE 'Raleway' ====
+//raleway-regular - latin
+@font-face
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 400
+    src: url('../fonts/raleway-v19-latin-regular.eot')
+
+    //IE9 Compat Modes
+    src: local(""), url('../fonts/raleway-v19-latin-regular.eot?#iefix') format("embedded-opentype"), url('../fonts/raleway-v19-latin-regular.woff2') format("woff2"), url('../fonts/raleway-v19-latin-regular.woff') format("woff"), url('../fonts/raleway-v19-latin-regular.ttf') format("truetype"), url('../fonts/raleway-v19-latin-regular.svg#Raleway') format("svg")
+
+    //Legacy iOS
+
+    //raleway-500 - latin
+@font-face
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 500
+    src: url('../fonts/raleway-v19-latin-500.eot')
+
+    //IE9 Compat Modes
+    src: local(""), url('../fonts/raleway-v19-latin-500.eot?#iefix') format("embedded-opentype"), url('../fonts/raleway-v19-latin-500.woff2') format("woff2"), url('../fonts/raleway-v19-latin-500.woff') format("woff"), url('../fonts/raleway-v19-latin-500.ttf') format("truetype"), url('../fonts/raleway-v19-latin-500.svg#Raleway') format("svg")
+
+    //Legacy iOS
+
+    //raleway-600 - latin
+@font-face
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 600
+    src: url('../fonts/raleway-v19-latin-600.eot')
+
+    //IE9 Compat Modes
+    src: local(""), url('../fonts/raleway-v19-latin-600.eot?#iefix') format("embedded-opentype"), url('../fonts/raleway-v19-latin-600.woff2') format("woff2"), url('../fonts/raleway-v19-latin-600.woff') format("woff"), url('../fonts/raleway-v19-latin-600.ttf') format("truetype"), url('../fonts/raleway-v19-latin-600.svg#Raleway') format("svg")
+
+    //Legacy iOS
+
+    //raleway-700 - latin
+@font-face
+    font-family: 'Raleway'
+    font-style: normal
+    font-weight: 700
+    src: url('../fonts/raleway-v19-latin-700.eot')
+
+    //IE9 Compat Modes
+    src: local(""), url('../fonts/raleway-v19-latin-700.eot?#iefix') format("embedded-opentype"), url('../fonts/raleway-v19-latin-700.woff2') format("woff2"), url('../fonts/raleway-v19-latin-700.woff') format("woff"), url('../fonts/raleway-v19-latin-700.ttf') format("truetype"), url('../fonts/raleway-v19-latin-700.svg#Raleway') format("svg")
+
+    //Legacy iOS
+    
+
+// ==== IMPORT 'Scada' ====
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap')
+
+
+
+
+
+// =============== HTML ===============
+html 
+    box-sizing: border-box
+    scroll-behavior: smooth
+*, *::after, *::before 
+    box-sizing: inherit
+
+body 
+    padding: 0
+    //-- Font default
+    font-family: Raleway, sans-serif
+    font-style: normal
+    font-size: 10px
+
+img 
+    max-width: 100%
+    height: auto
+
+a 
+    text-decoration: none
+
+
+// =============== #POPUP ===============  
+div#popup
+    display: none
+    width: 100%
+    height: 100%
+    //-
+    position: fixed
+    top: 0
+    left: 0
+    z-index: 111
+    #popup-bg
+        background: rgba(0, 0, 0, 0.8)
+        width: 100%
+        height: 100%
+    #popup-name
+        display: none
+        $width: 400px
+        $height: 300px
+        position: fixed
+        left: calc(50% - (#{$width} / 2))
+        top: calc(50% - (#{$height} / 2))
+        z-index: 222
+        width: $width
+        height: $height
+        //-
+        background: #FFFFFF
+// =============== #SITE ===============  
+#site 
+    // width: 1440px
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+// --- Header --- --------------------
+header 
+    // width: 100%
+    // overflow-x: hidden
+.header-wrapper
+    margin: 0 auto
+    @include min-max(padding-left, 15, 135, 420, 1440)
+    @include min-max(padding-right, 15, 135, 420, 1440)
+    max-width: 1440px// - 135px * 2 + 30px
+
+.header-top
+    padding: 20px 0
+    background: #F4F3F4
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    color: #3E3F53
+    .header-wrapper
+        display: grid
+        grid-template-columns: max-content max-content
+        grid-column-gap: 20px
+        justify-content: space-between
+        @media screen and ( max-width:  460px )
+            grid-template-columns: max-content
+
+
+            
+    &__left 
+        @media screen and ( max-width:  991px )
+            margin-bottom: 30px
+            // display: none
+            display: flex
+            flex-direction: column
+            height: 25px
+            overflow-y: hidden
+            overflow-x: visible
+            position: relative
+        > .header-top__link:first-child
+            display: none
+            @media screen and ( max-width:  991px )
+                border: 1px solid #facaca
+                // content: '+'
+                display: flex
+                justify-content: center
+                align-items: center
+                right: 0px
+                width: 20px
+                height: 15px
+                position: absolute
+                z-index: 11
+            @media screen and ( max-width:  460px )
+                right: 80px
+                    
+                
+        > a
+            margin-bottom: 10px
+    &__link 
+        position: relative
+        // cursor: pointer
+        user-select: none
+        &:not(:last-child)
+            margin-right: 40px
+        > img
+            margin-left: 10px
+        &-lsub
+            // display: none
+            padding: 14px
+            width: 160px
+            height: 145px
+            background: #F4F3F4
+            box-shadow: 0px 5px 15px rgba(124, 124, 124, 0.15)
+            border-radius: 0px 0px 10px 10px
+            position: absolute
+            z-index: 11
+            transform: translate(100px, 20px)
+            a
+                margin-bottom: 14px
+                display: block
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #000000
+                img
+                    margin-right: 10px
+        
+
+    &__right 
+        img
+            margin-right: 10px
+    &__geoloc
+        display: inline-block
+        font-weight: bold
+        text-decoration-line: underline
+        > span            
+    &__link-rsub 
+        padding: 14px 10px
+        // width: 160px
+        // height: 182px
+        background: #F4F3F4
+        box-shadow: 0px 5px 15px rgba(124, 124, 124, 0.15)
+        border-radius: 0px 0px 10px 10px
+        display: grid
+        position: absolute
+        z-index: 10
+        transform: translateY(20px)
+        > span
+            margin-top: 14px
+            margin-left: 10px
+            // display: block
+            font-weight: 500
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+        &_selected
+            font-weight: bold !important
+            text-decoration-line: underline
+
+        form 
+            input
+                &[type="text"]
+                    padding: 10px 15px
+                    width: 143px
+                    height: 30px
+                    background: #FFFFFF
+                    border: 1px solid #FAD163
+                    border-radius: 50px
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 14px
+                    text-align: center
+                    color: #000000
+                    &::placeholder
+                        color: #C4C4C4
+                    
+                &[type="submit"]
+                    // display: flex
+                    display: none
+                    justify-content: center
+                    align-items: center
+    &__phone
+        font-weight: 500
+        text-decoration-line: underline
+        color: #3E3F53
+        span
+
+.header-main 
+    padding: 25px 0
+    .header-wrapper
+        display: grid
+        grid-template-columns: 1fr max-content
+        grid-column-gap: 60px
+        justify-content: space-between
+        @media screen and ( max-width:  790px )
+            grid-column-gap: 20px
+        @media screen and ( max-width:  460px )
+            padding: 0 15px
+            display: flex
+            flex-direction: column-reverse
+    &__left 
+        display: grid
+        grid-template-columns: max-content minmax(340px, 570px)
+        grid-column-gap: 40px
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width:  790px )
+            grid-template-columns: 1fr
+            grid-column-gap: 0px
+        @media screen and ( max-width:  460px )
+            margin-top: 30px
+    &__logo 
+        @media screen and ( max-width:  790px )
+            display: none
+        img
+            @include min-max(width, 100, 157, 500, 1440)
+            
+    &__form-search 
+        input
+            &[type="search"]
+                padding: 15px 30px
+                box-sizing: border-box
+                // width: 570px
+                width: 100%
+                // height: 48px
+                background: url(../img/header/search.svg) no-repeat center right 30px, #FFFFFF
+
+                border: 1px solid #FAD163
+                border-radius: 50px
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #3E3F53
+                &::placeholder
+                    color: #C4C4C4
+            &[type="submit"]
+                // display: flex
+                display: none
+                justify-content: center
+                align-items: center
+    &__right 
+        // margin-left: 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        white-space: nowrap
+    &__user 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 21px
+        color: #333333
+    &__user-reg
+        margin-right: 10px
+        img
+            margin-right: 10px
+        span
+            @media screen and ( max-width:  960px )
+                display: none
+    &__user-line
+        align-self: start
+        height: 18px
+        border: 1px solid #FAD163
+    &__user-log 
+        margin-left: 10px
+    &__cart 
+        margin-left: 30px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        img
+            width: 21px
+            height: 21px
+            margin-right: 10px
+        sup
+            width: 19px
+            height: 19px
+            border-radius: 50%
+            background: #FAD163
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 8px
+            line-height: 9px
+            color: #333333
+            transform: translate(-20px, -10px)
+        span
+            font-weight: bold
+            font-size: 14px
+            line-height: 16px
+            text-align: center
+            color: #88B131
+            transform: translateX(-20px)
+            @media screen and ( max-width:  1060px )
+                display: none
+
+.header-bottom
+    padding: 20px
+    background: #FACF5C
+    position: relative
+    .header-wrapper
+        display: flex
+        // justify-content: space-between
+        align-items: flex-start
+    &__burger
+        display: none
+        @media screen and ( max-width:  960px )
+            margin-right: 10px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            span
+                border: 1px solid #000000
+                margin-bottom: 6px
+                width: 20px
+    &__catalog
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        white-space: nowrap
+        user-select: none
+        @media screen and ( max-width:  960px )
+            flex-direction: column
+            align-items: flex-start
+            height: 30px
+            overflow: hidden
+            > li
+                margin-bottom: 10px
+        > li
+            cursor: pointer
+            &:not(:last-of-type)
+                margin-right: 15px
+            &:first-of-type
+                font-weight: 600
+                font-size: 20px
+                line-height: 23px
+            &:nth-of-type(2)
+                padding-right: 15px
+                background: url(../img/header/header-bottom-arrow.svg) no-repeat center right
+            a
+                color: #333333
+    &__subcat
+        // display: none
+        padding: 15px
+            left: 12px
+        width: 230px
+        // height: 135px
+        background: #FACF5C
+        box-shadow: 0px 5px 15px rgba(124, 124, 124, 0.15)
+        border-radius: 0px 0px 10px 10px
+        position: absolute
+        z-index: 11
+        transform: translate(-20px, 20px)
+        @media screen and ( max-width:  960px )
+            transform: translate(210px, -20px)
+        @media screen and ( max-width:  470px )
+            transform: translate(10px, 10px)
+            
+        > li
+            margin-bottom: 14px
+            padding-left: 15px
+            background: url(../img/header/header-bottom-arrow-white.svg) no-repeat center left
+            a
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #333333
+
+
+
+// --- Main --- ----------------------
+main 
+    // width: 100%
+    > *
+        padding: 0 135px
+        margin: 0 auto
+        max-width: 1440px// - 135px * 2 + 30px
+        @media screen and ( max-width:  1440px )
+            @include min-max(padding-left, 15, 135, 420, 1440)
+            @include min-max(padding-right, 15, 135, 420, 1440)
+        
+
+// -- banner
+section.banner
+    
+.banner 
+
+    &__slider 
+
+    &__slider-arrows 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        transform: translateY(300px)
+        position: relative
+        z-index: 10
+        user-select: none
+        @media screen and ( max-width:  1440px )
+            transform: translateY(calc(130px + (300 - 130) * (100vw - 420px) / (1440 - 420)))
+        @media screen and ( max-width:  550px )
+            transform: translateY(280px)
+            transform: translateY(calc(200px + (300 - 200) * (100vw - 320px) / (550 - 320)))
+            justify-content: space-around
+        > div
+            width: 56px
+            height: 56px
+            border-radius: 50%
+            display: flex
+            justify-content: center
+            align-items: center
+            background: #FACF5C
+            cursor: pointer
+            @media screen and ( max-width:  1440px )
+                @include min-max(width, 40, 56, 420, 1440)
+                @include min-max(height, 40, 56, 420, 1440)
+    &__slider-arrprev 
+        margin-left: -28px
+        img
+    &__slider-arrnext 
+        margin-right: -28px
+        img
+
+    &__slider-wrap 
+        overflow: hidden
+    &__slider-slides  
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: 100%
+        column-gap: min-max(10, 40, 420, 1440)
+    &__slider-slide 
+
+    &__slider-item 
+        position: relative
+        // max-height: 540px
+        &:not(:first-of-type)
+            $tr: min-max(10, 40, 420, 1440)
+            transform: translateX(#{$tr})
+        img
+        .info 
+            position: absolute
+            top: 110px
+            left: 70px
+            @media screen and ( max-width:  1440px )
+                @include min-max(top, 15, 110, 420, 1440)
+                @include min-max(left, 15, 70, 420, 1440)
+            h3
+                margin-bottom: 20px
+                font-weight: 600
+                font-size: 38px
+                line-height: 52px
+                color: #3E3F53
+                @media screen and ( max-width:  1440px )
+                    @include min-max(margin-bottom, 10, 20, 420, 1440)
+                    @include min-max(font-size, 20, 30, 420, 1440)
+                    @include min-max(line-height, 30, 52, 420, 1440)
+            p
+                font-weight: normal
+                font-size: 22px
+                line-height: 34px
+                color: #333333
+                @media screen and ( max-width:  1440px )
+                    @include min-max(font-size, 15, 22, 420, 1440)
+                    @include min-max(line-height, 20, 34, 420, 1440)
+                @media screen and ( max-width:  550px )
+                    display: none
+            a.btn
+                margin-top: 55px
+                width: 371px
+                height: 73px
+                background: #3E3F53
+                border-radius: 50px
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: normal
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: #FFFFFF
+                cursor: pointer
+                @media screen and ( max-width:  1440px )
+                    @include min-max(margin-top, 20, 55, 420, 1440)
+                    @include min-max(width, 160, 372, 420, 1440)
+                    @include min-max(height, 30, 73, 420, 1440)
+                    @include min-max(font-size, 11, 18, 420, 1440)
+                @media screen and ( max-width:  550px )
+                    margin-top: 30px
+                    width: 200px
+                    height: 50px !important
+
+                
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+// -- popular-products
+section.popular-products
+    padding-top: 60px
+    @media screen and ( max-width:  550px )
+        padding-top: 100px
+        
+.popular-products
+
+    &__slider 
+        position: relative
+    &__slider-arrows 
+        margin-bottom: 35px
+        width: 70px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: absolute
+        top: -60px
+        right: 0
+        > div
+            width: 22px
+            cursor: pointer
+    &__slider-arrprev 
+        img
+    &__slider-arrnext 
+        img
+    &__slider-wrap 
+        overflow: hidden
+    &__slider-slides 
+        display: grid
+        grid-auto-flow: column
+        grid-auto-columns: 270px
+        column-gap: min-max(10, 30, 420, 1440)
+    &__slider-slide 
+        padding: 20px
+      
+
+    &__cards 
+
+    &__card 
+        border-radius: 10px
+        box-shadow: 0px 0px 25px rgba(213, 213, 213, 0.25)
+
+    &__img 
+        margin-bottom: 10px
+        // width: 230px
+        // height: 223px
+        img
+    &__name // a href
+        display: block
+        margin-bottom: 15px
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #333333
+    &__desc 
+        margin-bottom: 10px
+        font-weight: normal
+        font-size: 10px
+        line-height: 12px
+        color: #333333
+    &__price-wrap 
+        margin-bottom: 15px
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__price 
+        font-weight: 600
+        font-size: 24px
+        line-height: 28px
+        color: #88B131
+    &__count-wrap 
+        width: 80px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 21px
+        text-align: center
+        color: #88B131
+    &__count-minus 
+        display: flex
+        justify-content: center
+        align-items: center
+    &__count-input 
+        color: #333333
+    &__count-plus 
+        display: flex
+        justify-content: center
+        align-items: center
+    &__cart 
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &__cart-add 
+        width: 123px
+        height: 37px
+        background: #FACF5C
+        border-radius: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 600
+        font-size: 14px
+        line-height: 16px
+        text-align: center
+        color: #333333
+    &__cart-buy 
+        font-weight: normal
+        font-size: 10px
+        line-height: 12px
+        text-align: center
+        color: #333333
+
+
+// -- categories
+section.categories
+    padding-top: 120px 
+    h2.main-title
+        margin-bottom: 20px
+        
+.categories 
+
+    &__items 
+        display: grid
+        // grid-template-columns: repeat(4, 270px)
+        grid-auto-columns: auto
+        // grid-gap: 20px 30px
+        grid-row-gap: min-max(5, 20, 420, 1440)
+        grid-column-gap: min-max(10, 30, 420, 1440)
+
+    &__item 
+        position: relative
+        &:nth-child(1)
+            @media screen and ( max-width:  600px )
+                grid-column: 1 / 3
+        &:nth-child(2)
+            @media screen and ( max-width:  600px )
+                grid-column: 3 / 5
+        &:nth-child(3)
+            grid-column: 3 / 4
+            grid-row: span 2
+            @media screen and ( max-width:  992px )
+                grid-column: 2 / 4
+                grid-row: span 2
+            @media screen and ( max-width:  600px )
+                grid-column: 1 / 5
+                grid-row: 2 / 4
+        &:nth-child(4)
+            @media screen and ( max-width:  992px )
+                grid-row: 2 / 3
+            @media screen and ( max-width:  600px )
+                grid-column: 1 / 3
+                grid-row: 4 / 5
+        &:nth-child(5)
+            @media screen and ( max-width:  992px )
+                grid-row: 3 / 4
+            @media screen and ( max-width:  600px )
+                grid-column: 3 / 5
+                grid-row: 4 / 5
+
+
+    &__img 
+        img
+            height: 100% 
+            // object-fit: cover
+    &__name 
+        padding: 0 min-max(3, 10, 420, 1440)
+        // width: 204px
+        height: 38px
+        background: #FAD163
+        border-radius: 0px 10px 10px 0px
+        display: inline-flex
+        justify-content: start
+        align-items: center
+        font-weight: 600
+        font-size: 16px
+        font-size: min-max(12, 14, 420, 1440)
+        line-height: 19px
+        color: #333333
+        position: absolute
+        top: 20px
+
+
+// -- advantage
+section.advantage
+    padding-top: 120px
+        
+    h2.main-title
+          
+.advantage 
+
+    &__items 
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width:  768px )
+            display: block
+
+    &__item 
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width:  768px )
+            margin-bottom: 10px
+            justify-content: flex-start
+            align-items: center
+        &:not(:last-child)
+            margin-right: min-max(10, 30, 420, 1440)
+    &__pic 
+        margin-right: 20px
+        // width: 69px
+        height: min-max(50, 69, 420, 1440)
+        flex: 0 0 min-max(50, 69, 420, 1440)
+        border-radius: 50%
+        background: #FAD163
+        @media screen and ( max-width:  768px )
+            height: 69px
+            flex: 0 0 69px
+            margin-right: 25px
+        img
+            transform: translate(20px, 0)
+    &__text 
+        font-weight: normal
+        font-size: min-max(10, 15, 420, 1440)
+        line-height: 22px
+        color: #333333
+        @media screen and ( max-width:  768px )
+            font-size: 15px
+
+
+// -- aboutus
+section.aboutus
+    padding-top: 120px
+        
+    h2.main-title
+
+.aboutus 
+    display: flex
+    justify-content: space-between
+    align-items: center
+    @media screen and ( max-width:  992px )
+        display: block
+    &__text 
+        margin-bottom: 20px
+        h2
+        p
+            font-weight: normal
+            font-size: min-max(12, 18, 420, 1440)
+            line-height: 32px
+            color: #333333
+            @media screen and ( max-width:  992px )
+                font-size: 18px
+
+    &__pic 
+        margin-left: min-max(20, 80, 420, 1440)
+        // width: 517px
+        // height: 460px
+        flex: 0 0 min-max(300, 517, 420, 1440)
+        border-radius: 10px
+        @media screen and ( max-width:  992px )
+            margin-left: 0
+            flex: 0 0 100%
+            text-align: center
+        img
+
+
+// -- blog
+section.blog
+    padding-top: 120px
+        
+    h2.main-title
+        
+.blog 
+
+    &__container 
+        position: relative
+        @media screen and ( max-width:  420px )
+            padding-bottom: 80px
+    &__allnews //a
+        display: block
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        text-decoration-line: underline
+        color: #88B131
+        position: absolute
+        top: -70px
+        right: 0
+        @media screen and ( max-width:  420px )
+            top: auto
+            bottom: 0
+            right: 0
+            left: 0
+            text-align: center
+
+    &__items 
+        display: grid
+        grid-template-columns: repeat(4, 1fr)
+        grid-column-gap: min-max(10, 30, 720, 1440)
+        @media screen and ( max-width:  768px )
+            grid-template-columns: repeat(2, 1fr)
+            grid-gap: 30px 20px
+        @media screen and ( max-width:  420px )
+            grid-template-columns: 1fr
+            
+    &__item 
+        position: relative
+        @media screen and ( max-width:  992px )
+            padding-bottom: 30px
+
+    &__pic 
+        margin-bottom: 15px
+        text-align: center
+        @media screen and ( max-width:  420px )
+            width: 100%
+
+    &__title //a
+        display: block
+        margin-bottom: 10px
+        font-weight: normal
+        font-size: 18px
+        font-size: min-max(14, 18, 420, 1440)
+        line-height: 24px
+        color: #333333
+    &__desc 
+        margin-bottom: 25px
+        font-weight: normal
+        font-size: 12px
+        font-size: min-max(10, 12, 420, 1440)
+        line-height: 22px
+        color: #333333
+    &__date 
+        font-weight: 500
+        font-size: 8px
+        font-size: min-max(12, 8, 420, 1440)
+        line-height: 22px
+        color: #333333
+        position: absolute
+        left: 0
+        bottom: 0
+        @media screen and ( max-width:  992px )
+            bottom: 30px
+            
+    &__more 
+        padding-right: 10px
+        background: url(../img/blog/arrow-more.svg) no-repeat center right
+        font-weight: 500
+        font-size: 8px
+        font-size: min-max(12, 8, 420, 1440)
+        line-height: 22px
+        color: #88B131
+        position: absolute
+        right: 0
+        bottom: 0
+        @media screen and ( max-width:  992px )
+            background: url(../img/blog/arrow-more.svg) no-repeat center right 30px
+            font-size: 14px
+            text-align: center
+            left: 0
+            
+
+// -- delivery
+section.delivery
+    padding-top: 120px
+    padding-bottom: 120px
+        
+    h2.main-title
+        
+.delivery 
+
+    &__items 
+        display: flex
+        justify-content: space-between
+        @media screen and ( max-width:  420px )
+            display: block
+    &__item
+        &:not(last-child)
+            margin-left: 10px
+            margin-bottom: 20px
+
+    &__pic 
+        margin-bottom: 25px
+        width: 35px
+        height: 35px
+        border-radius: 50%
+        background: #FAD163
+        img
+            transform: translate(17px, 13px)
+
+    &__title 
+        font-weight: 600
+        font-size: min-max(16, 24, 420, 1440)
+        line-height: min-max(20, 52, 420, 1440)
+        color: #88B131
+        @media screen and ( max-width:  420px )
+            font-size: 24px
+            line-height: 52px
+            white-space: nowrap
+            
+            
+    &__desc //ul 
+        padding-left: 15px
+        font-weight: normal
+        font-size: min-max(12, 15, 420, 1440)
+        line-height: min-max(15, 22, 420, 1440)
+        color: #333333
+        @media screen and ( max-width:  420px )
+            font-size: 15px
+            line-height: 22px
+        li 
+            list-style: none
+            position: relative
+            &:before
+                content: url(../img/delivery/checkmark.svg)
+                display: block
+                position: absolute
+                left: -15px
+    &__item:last-child ul.delivery__desc li:first-child
+        &:before
+            content: ''
+                    
+  
+// -- callback
+section.callback
+    padding: 0
+    margin: 0
+    max-width: 100% 
+    background: #FAD163
+    h2.main-title
+        margin-bottom: 0
+        padding: 0
+        &:before
+            content: ''
+            display: none
+        @media screen and ( max-width:  768px )
+            text-align: center
+            
+    p
+        margin-bottom: 20px
+        font-weight: 600
+        font-size: min-max(10, 16, 420, 1440)
+        line-height: 22px
+        line-height: min-max(15, 22, 420, 1440)
+        color: #333333
+        @media screen and ( max-width:  768px )
+            font-size: 11px
+            text-align: center
+
+.callback 
+
+    &__wrapper
+        padding: 20px 0
+        margin: 0 auto
+        padding-left: min-max(15, 135, 420, 1440)
+        padding-right: min-max(15, 135, 420, 1440)
+        max-width: 1440px
+        background: url(../img/callback/bg-wrapper.svg) no-repeat top 7px right 75px
+        @media screen and ( max-width:  768px )
+            padding: 20px min-max(50, 130, 225, 768)
+            background: url(../img/callback/bg-wrapper.svg) no-repeat center right
+        @media screen and ( max-width:  360px )
+            padding: 20px 50px
+
+                
+
+    &__form //form
+        display: grid
+        grid-template-columns: repeat(3, 1fr)
+        grid-column-gap: 30px
+        @media screen and ( max-width:  768px )
+            grid-template-columns: 1fr
+            grid-row-gap: 10px
+            
+        input
+            border: 0
+            height: 62px
+            display: flex
+            justify-content: center
+            align-items: center
+            &[type="text"]
+                border-radius: 50px
+                background: #FFFFFF
+                font-weight: normal
+                font-size: 16px
+                line-height: 22px
+                text-align: center
+                &::placeholder
+                    color: #999999
+                
+            &[type="submit"]
+                border-radius: 50px
+                background: #3E3F53
+                font-weight: normal
+                font-size: 16px
+                line-height: 22px
+                text-align: center
+                color: #FFFFFF
+
+    &__igree 
+        margin-top: 20px
+        font-weight: 500
+        font-size: 14px
+        font-size: min-max(10, 14, 420, 1440)
+        line-height: 28px
+        line-height: min-max(16, 28, 420, 1440)
+        color: #333333
+        @media screen and ( max-width:  768px )
+            text-align: center
+
+        
+
+
+// --- Footer --- --------------------
+footer 
+    padding: 60px 0 30px 0
+    background: #3E3F53
+    > *
+        margin: 0 auto
+        @include min-max(padding-left, 15, 135, 420, 1440)
+        @include min-max(padding-right, 15, 135, 420, 1440)
+        max-width: 1440px
+.footer-main 
+    padding-bottom: 50px
+    display: flex
+    justify-content: space-between
+    @media screen and ( max-width:  500px )
+        padding-left: 40px
+        display: block
+    &__logo 
+        @media screen and ( max-width:  1200px )
+            display: none
+        img
+    &__nav 
+        display: flex
+        justify-content: center
+        font-weight: normal
+        font-size: min-max(14, 16, 420, 1440)
+        line-height: 19px
+        color: #FFFFFF
+        @media screen and ( max-width:  500px )
+            margin-bottom: 30px
+            justify-content: start
+            font-size: 16px
+    &__nav-lists 
+        &:not(:last-child)
+            margin-right: 55px
+        ul
+            li
+                margin-bottom: 20px
+                a
+                    color: #FFFFFF
+        &:last-child
+            @media screen and ( max-width:  768px )
+                display: none
+
+    &__nav-title 
+        margin-bottom: 20px
+    &__contacts 
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        ul
+            li
+                margin-bottom: 20px
+                padding-left: 30px
+                &:nth-child(1)
+                    background: url(../img/footer/phone.svg) no-repeat left top
+                &:nth-child(2)
+                    background: url(../img/footer/email.svg) no-repeat left top
+                &:nth-child(3)
+                    background: url(../img/footer/time.svg) no-repeat left top
+                &:nth-child(4)
+                    background: url(../img/footer/geoloc.svg) no-repeat left top
+
+    &__socials 
+        @media screen and ( max-width:  500px )
+            margin-top: 50px
+            text-align: center
+        a
+            margin-right: 30px
+            display: inline-block
+            img
+
+.footer-bottom 
+    border-top: 1px solid #FFFFFF
+    padding-top: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: normal
+    font-size: 16px
+    // font-size: min-max(14, 16, 360, 560)
+    line-height: 19px
+    color: #FFFFFF
+    @media screen and ( max-width:  1200px )
+        display: block
+    &__payment 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width:  1200px )
+            justify-content: start
+            margin-bottom: 30px
+        @media screen and ( max-width:  560px )
+            display: block
+
+    &__payment-title 
+        margin-right: 20px
+        @media screen and ( max-width:  560px )
+            margin-bottom: 20px
+            text-align: center
+    &__payments-ways 
+        @media screen and ( max-width:  560px )
+            text-align: center
+        img
+            padding: 6px
+            border-radius: 5px
+            background: #ffffff
+            &:not(:last-child)
+                margin-right: min-max(5, 15, 360, 1440)
+                @media screen and ( max-width:  560px )
+                    margin-right: 15px
+                    
+    &__wrap
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        @media screen and ( max-width:  1200px )
+            justify-content: flex-start
+        @media screen and ( max-width:  560px )
+            display: block
+    &__privacy-policy //a
+        color: #FFFFFF
+        @media screen and ( max-width:  560px )
+            display: block
+            text-align: center
+    &__copyright 
+        margin-left: 30px
+        @media screen and ( max-width:  560px )
+            margin-top: 10px
+            margin-left: 0
+            text-align: center
+
+
+

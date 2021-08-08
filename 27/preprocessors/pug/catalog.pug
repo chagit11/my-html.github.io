@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/catalog_style.css")
+        title Каталог
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                // --- catalog ---
+                section.catalog
+                    .catalog__wrapper
+                        ul.catalog__breadcrumb
+                            li.catalog__breadcrumb-item: a(href="./") Главная
+                            li.catalog__breadcrumb-item Каталог
+                        .catalog__container
+                            form.catalog__filters(action="index.html")
+                                .catalog__filters-categories
+                                    .catalog__filters-title Категории
+                                    ul.catalog__filters-list
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_1")
+                                                span 
+                                                | Силиконовая скатерть
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_2")
+                                                span 
+                                                | Скатерть с рисунком
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_3")
+                                                span 
+                                                | Белая скатерть
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_4")
+                                                span 
+                                                | Итальянская скатерть
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_5")
+                                                span 
+                                                | Коврики
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_6")
+                                                span 
+                                                | Шторы в ванну
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_7")
+                                                span 
+                                                | Комплекты в ванну
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="cat_8")
+                                                span 
+                                                | Клеенка
+
+                                //- .catalog__filters-price
+                                //-     .catalog__filters-title Цена
+                                //-     .catalog__filters-range 
+                                //-         .catalog__filters-range-scale-wrap 
+                                //-             .catalog__filters-range-scale 
+                                //-                 .catalog__filters-range-bar 
+                                //-                 .catalog__filters-range-min.catalog__filters-range-toggle
+                                //-                 .catalog__filters-range-max.catalog__filters-range-toggle
+                                //-         .catalog__filters-range-input--wrap
+                                //-             .catalog__filters-range-input--min 1500
+                                //-             .catalog__filters-range-input--max 25600
+                                .catalog__filters-price
+                                    .catalog__filters-title Цена
+                                    .catalog__filters-range 
+                                        .catalog__filters-range-scale-wrap 
+                                            .catalog__filters-range-scale 
+                                                .catalog__filters-range-bar 
+                                                    .catalog__filters-range-min.catalog__filters-range-toggle
+                                                    .catalog__filters-range-max.catalog__filters-range-toggle
+                                        .catalog__filters-range-input--wrap
+                                            .catalog__filters-range-input--min 1500
+                                            .catalog__filters-range-input--max 25600
+
+                                .catalog__filters-sizes
+                                    .catalog__filters-title Размеры
+                                    ul.catalog__filters-list
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="size_1")
+                                                span 
+                                                | 120*80
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="size_2")
+                                                span 
+                                                | 140*95
+                                        li.catalog__filters-item 
+                                            label
+                                                input(type="checkbox" name="size_3")
+                                                span 
+                                                | 220*90
+                                .catalog__filters-input: input(type="submit" value="Перейти в каталог")
+                            .catalog__products
+                                .catalog__products-sorting 
+                                    .catalog__products-sorting--title Сортировать:
+                                    .catalog__products-sorting--item по популярности
+                                    .catalog__products-sorting--item.catalog__products-sorting--item_active сначала дешевые
+                                    .catalog__products-sorting--item сначала дорогие
+                                .catalog__products-wrap 
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                    .catalog__products-item 
+                                        .catalog__products-img
+                                            img(src="./img/catalog/products-img-1.jpg" alt="")
+                                        a.catalog__products-name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                        .catalog__products-desc размер 80 на 60 см
+                                        .catalog__products-price--wrap 
+                                            .catalog__products-price 740 руб 
+                                            .catalog__products-count--wrap 
+                                                .catalog__products-count--minus -   
+                                                .catalog__products-count--input 1
+                                                .catalog__products-count--plus +   
+                                        .catalog__products-cart
+                                            .catalog__products-cart--add В корзину
+                                            .catalog__products-cart--buy Купить в один клик
+                                .catalog__products-pagination
+                                    .catalog__products-pagination--pages
+                                        .catalog__products-pagination--page 1
+                                        .catalog__products-pagination--page 2
+                                        .catalog__products-pagination--page.catalog__products-pagination-page_active 3
+                                        .catalog__products-pagination--page 4
+                                        .catalog__products-pagination--page ...
+                                        .catalog__products-pagination--page 12
+                                    .catalog__products-pagination--more Показать еще
+                                    
+                                //-  
+                
+                
+
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/catalog__script.js")
+
+
+            
+                

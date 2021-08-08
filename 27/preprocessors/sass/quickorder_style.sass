@@ -1,0 +1,143 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    height: 100vh
+    background: #F2F2F2
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+.wrapper 
+    margin: 110px auto
+    padding: 60px 30px
+    width: 465px
+    width: 630px
+    // height: 761px
+    background: #FFFFFF
+    box-shadow: 0px 0px 25px rgba(212, 212, 212, 0.25)
+    border-radius: 10px
+    &__title 
+        margin-bottom: 35px
+        font-weight: 600
+        font-size: 26px
+        line-height: 31px
+        text-align: center
+        color: #333333
+    &__info 
+        margin-bottom: 25px
+        display: grid
+        grid-template-columns: auto auto
+        grid-gap: 30px
+        &-pic 
+        &-text 
+            padding-top: 15px
+        &-title 
+            margin-bottom: 10px
+            font-weight: 500
+            font-size: 24px
+            line-height: 28px
+            color: #333333
+        
+        &-specs 
+            margin-bottom: 20px
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            color: #333333
+        
+        &-price 
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #88B131
+
+
+    &__form // form
+        > *
+            margin: 0 auto
+        &-title 
+            margin-bottom: 10px
+            font-weight: normal
+            font-size: 14px
+            line-height: 28px
+            text-align: center
+            color: #333333
+        input
+            margin-bottom: 25px
+            display: block
+            width: 570px
+            height: 62px
+            background: #FFFFFF
+            border: 1px solid #E7E7E7
+            border-radius: 50px
+            font-weight: normal
+            font-size: 14px
+            line-height: 28px
+            text-align: center
+            color: #333333
+            text-align: center
+            &[type="text"]
+                &:placeholder
+            &[type="password"]
+                &::placeholder
+                
+            &[type="submit"]
+                width: 270px
+                height: 65px
+                background: #FACF5C
+                border-radius: 50px
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: #333333
+            
+        textarea
+            display: block
+            margin-bottom: 15px
+            padding-top: 18px
+            width: 570px
+            height: 129px
+            background: #FFFFFF
+            border: 1px solid #E7E7E7
+            border-radius: 15px
+            font-weight: normal
+            font-size: 14px
+            line-height: 28px
+            text-align: center
+            color: #666666
+            resize: none
+                
+        &-iagree // a
+            display: block
+            margin-bottom: 30px
+            font-weight: normal
+            font-size: 14px
+            line-height: 16px
+            text-align: center
+            color: #333333
+    
+    
+
+    
+
+

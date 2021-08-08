@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/blog_style.css")
+        title Блог
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+        
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                // --- blog ---
+                section.blog
+                    ul.blog__breadcrumb
+                        li.blog__breadcrumb-item: a(href="./") Главная
+                        li.blog__breadcrumb-item Блог
+                    .blog__tabs 
+                        .blog__tab Статьи
+                        .blog__tab Новости 
+                    .blog__items 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-1.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-2.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-3.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-4.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-1.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-2.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-3.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-4.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-1.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-2.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-3.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+                        .blog__item 
+                            .blog__pic: img(src="./img/blog/pic-4.jpg" alt="")
+                            a.blog__title(href="article.html") Загаловок статьив две строки
+                            .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                            .blog__date 24 апреля 2020
+                            .blog__more Читать дальше 
+
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/blog__script.js")
+
+
+                

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/cart_style.css")
+        title Корзина
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+        
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                // --- breadcrumb ---
+                ul.breadcrumb
+                    li.breadcrumb-item: a(href="./") Главная
+                    li.breadcrumb-item Корзина
+
+                // --- cart ---
+                section.cart
+                    h2.main-title Товары
+                    .cart__items 
+                        .cart__item 
+                            .cart__remove: img(src="./img/cart/remove.svg" alt="")
+                            .cart__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .cart__info
+                                .cart__info-name Рифлёная силиконовая скатерть 1,5 мм
+                                .cart__info-details размер 80 на 60 см
+                            .cart__price 740 руб 
+                            .cart__amount 
+                                span -
+                                div 1
+                                span +
+                            .cart__intotal 740 руб 
+                        .cart__item 
+                            .cart__remove: img(src="./img/cart/remove.svg" alt="")
+                            .cart__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .cart__info
+                                .cart__info-name Рифлёная силиконовая скатерть 1,5 мм
+                                .cart__info-details размер 80 на 60 см
+                            .cart__price 740 руб 
+                            .cart__amount 
+                                span -
+                                div 1
+                                span +
+                            .cart__intotal 740 руб 
+                        .cart__item 
+                            .cart__remove: img(src="./img/cart/remove.svg" alt="")
+                            .cart__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .cart__info
+                                .cart__info-name Рифлёная силиконовая скатерть 1,5 мм
+                                .cart__info-details размер 80 на 60 см
+                            .cart__price 740 руб 
+                            .cart__amount 
+                                span -
+                                div 1
+                                span +
+                            .cart__intotal 740 руб 
+                    .cart__checkout 
+                        dl.cart__checkout-intotal 
+                            dt ИТОГО:
+                            dd 3 569 руб
+                        .cart__checkout-button Оформить заказ
+
+                
+                   
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/cart_script.js")
+
+
+                

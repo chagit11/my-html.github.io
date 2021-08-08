@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/product_style.css")
+        title Оформление заказа
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                
+                // --- breadcrumb ---
+                ul.breadcrumb
+                    li.breadcrumb__item: a(href="./") Главная
+                    li.breadcrumb__item: a(href="catalog.html") Каталог
+                    li.breadcrumb__item Название товара
+                
+                
+                // --- card ---
+                .card 
+                    .card-pic 
+                        .card-pic__big: img(src="./img/catalog/products-img-1.jpg" alt="")
+                        .card-pic__thumb 
+                            img(src="./img/catalog/products-img-1.jpg" alt="") 
+                            img(src="./img/catalog/products-img-1.jpg" alt="") 
+                            img(src="./img/catalog/products-img-1.jpg" alt="") 
+                    .card-info 
+                        .card-info__name Название товарав <br/>две строки
+                        .card-info__size 
+                            .card-info__title Размер
+                            .card-info__size-wrap
+                                .card-info__size-item 120*80
+                                .card-info__size-item 300*90
+                                .card-info__size-item 120*80
+                                .card-info__size-item.card-info__size-item_selected 300*90
+                        .card-info__thickness 
+                            .card-info__title Толщина мм*
+                            .card-info__thickness-wrap
+                                .card-info__thickness-item 1,2 мм
+                                .card-info__thickness-item 1,2 мм
+                                .card-info__thickness-item 1,2 мм
+                                .card-info__thickness-item 1,2 мм
+                                .card-info__thickness-item.card-info__thickness-item_selected 1,2 мм 
+                        .card-info__color 
+                            .card-info__title Цвет*
+                            .card-info__color-wrap
+                                .card-info__color-item: span
+                                .card-info__color-item: span
+                                .card-info__color-item.card-info__color-item_selected: span 
+                        .card-info__price 
+                            .card-info__price-value 3 569 руб
+                            .card-info__price-amount 
+                                .card-info__price-amount--title Количество
+                                .card-info__price-amount--input 
+                                    span -
+                                    span.count 1
+                                    span +
+                        .card-info__btns 
+                            .card-info__btns-cart В корзину
+                            .card-info__btns-buy Купить в один клик
+
+
+                // --- aboutproduct description, feature, reviews
+                .aboutproduct
+                    .aboutproduct__nav 
+                        .aboutproduct__nav-item.aboutproduct__nav-item_actived Описание
+                        .aboutproduct__nav-item Характеристики
+                        .aboutproduct__nav-item Отзывы (7)
+                    .aboutproduct__tabs
+                        .aboutproduct__tabs-descriptions.
+                            Contrary to popular belief, Lorem Ipsum is not simply random 
+                            text. It has roots in a piece of classical Latin literature 
+                            from 45 BC, making it over 2000 years old. Richard McClintock, 
+                            a Latin Contrary to popular belief, Lorem Ipsum is not simply random text. 
+                            It has roots in a piece of classical Latin literature from 45 BC, 
+                            making it over 2000 years old. Richard McClintock, a Latin
+                        .aboutproduct__tabs-feature
+                            dl 
+                                dt Какая-то характиристика
+                                dd Да
+                                dt Какая-то характиристика
+                                dd Нет
+                                dt Какая-то характиристика
+                                dd Есть
+                                dt Какая-то характиристика
+                                dd Нет
+                        .aboutproduct__tabs-reviews
+                            .aboutproduct__tabs-reviews--comment 
+                                .aboutproduct__tabs-reviews--wrap 
+                                    .aboutproduct__tabs-reviews--user Наталия
+                                    .aboutproduct__tabs-reviews--date 26 мая 2021
+                                    .aboutproduct__tabs-reviews--rating 
+                                        img(src="./img/product/rating.svg" alt="")
+                                        img(src="./img/product/rating.svg" alt="")
+                                        img(src="./img/product/rating.svg" alt="")
+                                        img(src="./img/product/rating.svg" alt="")
+                                .aboutproduct__tabs-reviews--text.
+                                    Lorem Ipsum is simply dummy text of the printing and 
+                                    typesetting industry. Lorem Ipsum has been the industry's 
+                                    standard dummy text ever since the 1500s, when an unknown 
+                                    printer took a galley of type and scrambled it to make a type 
+                                    specimen book. It has survived not only five centuries, 
+                                    but also the leap into electronic 
+                                    typesetting, remaining essentially unchanged.
+
+                // --- recentviews ---
+                section.recentviews
+                    h2.main-title Недавно просмотренные: 
+                    .recentviews__wrapper 
+                        .recentviews__item 
+                            .recentviews__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .recentviews__name Рифлёная силиконовая скатерть 1,5 мм
+                            .recentviews__specs размер 80 на 60 см
+                            .recentviews__wrap
+                                .recentviews__price 740 руб 
+                                .recentviews__amount
+                                    span +    
+                                    span.count 1   
+                                    span -   
+                            .recentviews__btns 
+                                .recentviews__btns-cart В корзину
+                                .recentviews__btns-buy Купить в один клик 
+                        .recentviews__item 
+                            .recentviews__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .recentviews__name Рифлёная силиконовая скатерть 1,5 мм
+                            .recentviews__specs размер 80 на 60 см
+                            .recentviews__wrap
+                                .recentviews__price 740 руб 
+                                .recentviews__amount
+                                    span +    
+                                    span.count 1   
+                                    span -   
+                            .recentviews__btns 
+                                .recentviews__btns-cart В корзину
+                                .recentviews__btns-buy Купить в один клик 
+                        .recentviews__item 
+                            .recentviews__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .recentviews__name Рифлёная силиконовая скатерть 1,5 мм
+                            .recentviews__specs размер 80 на 60 см
+                            .recentviews__wrap
+                                .recentviews__price 740 руб 
+                                .recentviews__amount
+                                    span +    
+                                    span.count 1   
+                                    span -   
+                            .recentviews__btns 
+                                .recentviews__btns-cart В корзину
+                                .recentviews__btns-buy Купить в один клик 
+                        .recentviews__item 
+                            .recentviews__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                            .recentviews__name Рифлёная силиконовая скатерть 1,5 мм
+                            .recentviews__specs размер 80 на 60 см
+                            .recentviews__wrap
+                                .recentviews__price 740 руб 
+                                .recentviews__amount
+                                    span +    
+                                    span.count 1   
+                                    span -   
+                            .recentviews__btns 
+                                .recentviews__btns-cart В корзину
+                                .recentviews__btns-buy Купить в один клик 
+
+                        
+
+                    
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+                
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/delivery_script.js")
+
+
+                

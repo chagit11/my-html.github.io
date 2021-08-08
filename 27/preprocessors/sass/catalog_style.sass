@@ -1,0 +1,445 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main 
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+// -- catalog
+section.catalog
+    padding-top: 30px
+
+.catalog 
+
+    &__wrapper 
+
+    &__breadcrumb // ul
+        margin-bottom: 40px
+        display: flex
+        align-items: center
+        &-item // li
+            margin-right: 50px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            a
+                color: #333333
+            position: relative
+            &:before
+                content: url(../img/catalog/breadcrumb-arrow.svg)
+                display: block
+                position: absolute
+                left: -30px
+                
+            &:last-child
+                color: #88B131
+            &:first-child
+                &:before
+                    content: ''
+                    display: block
+
+    &__container 
+        display: grid
+        grid-template-columns: 270px auto
+        grid-column-gap: 20px
+    
+    &__filters // левая колонка
+        > *
+            margin-bottom: 30px
+        &-categories
+    
+        &-title 
+            margin-bottom: 20px
+            font-weight: 600
+            font-size: 16px
+            line-height: 19px
+            display: flex
+            align-items: center
+            color: #88B131
+        
+        &-list // ul
+        
+        &-item // li
+            margin-bottom: 15px
+            user-select: none
+            label
+                display: flex
+                // justify-content: center
+                align-items: center
+                font-weight: normal
+                font-size: 12px
+                line-height: 14px
+                color: #333333
+                cursor: pointer
+                span
+                    margin-right: 10px
+                    width: 14px
+                    height: 14px
+                    background: #FFFFFF
+                    border: 0.5px solid #C1C1C1
+                    border-radius: 2px
+                input
+                    &[type="checkbox"]
+                        display: none
+                    &:checked + span
+                        border: 0.5px solid #88B131
+                        background: url(../img/catalog/checkbox.svg) no-repeat center
+     
+
+        // &-price 
+        // &-range 
+        //     user-select: none
+        // &-range-scale-wrap 
+        //     border: 1px solid #ff0000
+        //     padding-top: 8px
+        //     height: 18px
+        // &-range-scale 
+        //     width: 268px
+        //     height: 2px
+        //     background: #999999
+        //     position: relative
+        // &-range-bar
+        //     // width: 150px
+        //     height: 2px 
+        //     display: flex
+        //     justify-content: space-between
+        //     align-items: center
+        //     background: #88B131
+        //     position: absolute
+        //     left: 10px
+        //     right: 0
+        // &-range-toggle
+        //     width: 16px
+        //     flex: 0 0 16px
+        //     height: 16px
+        //     border-radius: 50%
+        //     background: #88B131
+        //     transform: translateY(-50%)
+        //     position: absolute
+        //     // &:first-child:after
+        //     //     content: ''
+        //     //     display: block
+        //     //     width: 268px
+        //     //     height: 2px
+        //     //     background: #88B131
+        //     //     transform: translateY(8px)
+
+                
+        // &-range-min 
+        //     left: 0
+        //     // transform: translateX(-8px)
+        // &-range-max 
+        //     right: 0
+        //     // transform: translateX(8px)
+        // &-range-input--wrap 
+        //     margin-top: 17px
+        //     display: flex
+        //     justify-content: space-between
+        //     align-items: center
+        //     > *
+        //         width: 70px
+        //         height: 25px
+        //         border-radius: 6px
+        //         display: flex
+        //         justify-content: center
+        //         align-items: center
+        //         background: #F3F3F3
+        //         font-weight: 600
+        //         font-size: 14px
+        //         line-height: 16px
+        //         color: #88B131
+        // &-range-input--min 
+        // &-range-input--max 
+
+        &-price 
+        &-range 
+            user-select: none
+        &-range-scale-wrap 
+            // border: 1px solid #ff0000
+            padding-top: 8px
+            height: 20px
+        &-range-scale 
+            width: 268px
+            height: 2px
+            background: #999999
+            position: relative
+        &-range-bar 
+            // width: 150px
+            height: 2px 
+            display: flex
+            justify-content: space-between
+            align-items: center
+            background: #88B131
+            position: absolute
+            left: 10px
+            right: 0
+        &-range-toggle
+            width: 16px
+            flex: 0 0 16px
+            height: 16px
+            border-radius: 50%
+            background: #88B131
+            position: absolute
+        &-range-min 
+            left: 0
+            transform: translateX(-8px)
+        &-range-max 
+            right: 0
+            transform: translateX(8px)
+        &-range-input--wrap 
+            margin-top: 17px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            > *
+                width: 70px
+                height: 25px
+                border-radius: 6px
+                display: flex
+                justify-content: center
+                align-items: center
+                background: #F3F3F3
+                font-weight: 600
+                font-size: 14px
+                line-height: 16px
+                color: #88B131
+        &-range-input--min 
+        &-range-input--max 
+
+        &-sizes 
+
+        &-input
+            input[type="submit"]
+                width: 270px
+                height: 65px
+                border: 0
+                border-radius: 50px
+                background: #FACF5C
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: #333333
+    
+
+    &__products // правая колонка
+        
+        &-sorting 
+            margin-bottom: 30px
+            display: flex
+            justify-content: start
+            align-items: center
+            user-select: none
+            > *
+                &:not(:last-child)
+                    margin-right: 30px
+            &--title 
+                margin-right: -10px
+                font-weight: 600
+                font-size: 16px
+                line-height: 19px
+                color: #333333
+            
+            &--item
+                font-weight: normal
+                font-size: 12px
+                line-height: 14px
+                color: #737373
+                cursor: pointer
+                &_active
+                    font-weight: 600
+                    text-decoration-line: underline
+                    color: #88B131
+
+
+        &-wrap
+            margin-bottom: 60px
+            display: grid
+            grid-template-columns: repeat(3, 1fr)
+            grid-gap: 30px
+            grid-gap: min-max(15, 30, 1120, 1440)
+            @media screen and ( max-width:  992px )
+                grid-template-columns: 1fr 1fr
+                
+        &-item
+            padding: 20px
+            padding: min-max(10, 20, 1120, 1440)
+            border-radius: 10px
+            box-shadow: 0px 0px 25px rgba(213, 213, 213, 0.25)
+
+        &-img 
+            margin-bottom: 10px
+            // width: 230px
+            // height: 223px
+            img
+        &-name // a href
+            display: block
+            margin-bottom: 15px
+            font-weight: normal
+            font-size: 16px
+            line-height: 19px
+            color: #333333
+        &-desc
+            margin-bottom: 10px
+            font-weight: normal
+            font-size: 10px
+            line-height: 12px
+            color: #333333
+        &-price--wrap 
+            margin-bottom: 15px
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-price 
+            font-weight: 600
+            font-size: 24px
+            line-height: 28px
+            color: #88B131
+        &-count--wrap 
+            width: 80px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            font-weight: normal
+            font-size: 18px
+            line-height: 21px
+            text-align: center
+            color: #88B131
+        &-count--minus 
+            display: flex
+            justify-content: center
+            align-items: center
+        &-count--input 
+            color: #333333
+        &-count--plus 
+            display: flex
+            justify-content: center
+            align-items: center
+        &-cart
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &-cart--add 
+            width: 123px
+            height: 37px
+            background: #FACF5C
+            border-radius: 50px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 14px
+            line-height: 16px
+            text-align: center
+            color: #333333
+        &-cart--buy 
+            font-weight: normal
+            font-size: 10px
+            line-height: 12px
+            text-align: center
+            color: #333333
+        &-pagination 
+            margin-bottom: 120px
+            width: 280px
+            transform: translateX(120px)
+            &--pages 
+                margin: 0 auto
+                margin-bottom: 30px
+                width: 205px
+                display: flex
+                justify-content: space-between
+                align-items: center
+                font-weight: 600
+                font-size: 20px
+                line-height: 23px
+                text-align: center
+                color: #333333
+            &--page 
+                &_active 
+            &--more
+                margin: 0 auto
+                width: 270px
+                height: 65px
+                border-radius: 50px
+                background: #FACF5C
+                display: flex
+                justify-content: center
+                align-items: center
+                font-weight: 600
+                font-size: 18px
+                line-height: 22px
+                text-align: center
+                color: #333333
+    
+
+
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

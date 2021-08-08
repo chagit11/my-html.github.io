@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/aboutcompany_style.css")
+        title О компании
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                // --- aboutcompany ---
+                section.aboutcompany
+                    ul.aboutcompany-breadcrumb
+                        li.aboutcompany-breadcrumb__item: a(href="./") Главная
+                        li.aboutcompany-breadcrumb__item О компании
+                    h2.main-title О компании
+                    .aboutcompany-about
+                        .aboutcompany-about__text.
+                            Lorem Ipsum is simply dummy text of
+                            the printing and typesetting industry.
+                            Lorem Ipsum has been the industry's standard dummy text ever 
+                            since the 1500s, when an unknown printer took a galley of type 
+                            and scrambled it to make a type specimen book. It has survived 
+                            not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+                        .aboutcompany-about__pic: img(src="./img/aboutcompany/pic.jpg" alt="")
+                        .aboutcompany-about__text.
+                            Lorem Ipsum is simply dummy text of
+                            the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text ever 
+                            since the 1500s, when an unknown printer took a galley of type 
+                            and scrambled it to make a type specimen book. It has survived 
+                            not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+
+                // --- certificate ---
+                section.certificate
+                    h2.main-title Наши сертификаты
+                    .certificate-slider
+                        .certificate-slider__arrows
+                            .certificate-slider__arrprev
+                                img(src="./img/aboutcompany/arrow-end.svg" alt="")
+                            .certificate-slider__arrnext
+                                img(src="./img/aboutcompany/arrow-next.svg" alt="")
+                        .certificate-slider__wrap
+                            .certificate-slider__slides
+                                .certificate-slider__slide
+                                    .certificate-slider__item
+                                        img(src="./img/aboutcompany/certificate-1.jpg" alt="")
+                                .certificate-slider__slide
+                                    .certificate-slider__item
+                                        img(src="./img/aboutcompany/certificate-1.jpg" alt="")
+                                .certificate-slider__slide
+                                    .certificate-slider__item
+                                        img(src="./img/aboutcompany/certificate-1.jpg" alt="")
+                                .certificate-slider__slide
+                                    .certificate-slider__item
+                                        img(src="./img/aboutcompany/certificate-1.jpg" alt="")
+                    
+
+                        //- .certificate-slider__dots
+                        //-     img(src="./img/slider/dot-active.svg" alt="")
+                        //-     img(src="./img/slider/dot.svg" alt="")
+
+
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/aboutcompany_script.js")
+
+
+            
+                

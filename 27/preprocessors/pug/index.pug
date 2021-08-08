@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/style.css")
+        title Document 
+    body
+        div#popup 
+            #popup-bg
+            #popup-name
+
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+                // --- banner ---
+                section.banner
+                    .banner__slider
+                        .banner__slider-arrows
+                            .banner__slider-arrprev
+                                img(src="./img/banner-slider/arrow-prev.svg" alt="")
+                            .banner__slider-arrnext
+                                img(src="./img/banner-slider/arrow-next.svg" alt="")
+                        .banner__slider-wrap
+                            .banner__slider-slides
+                                .banner__slider-slide
+                                    .banner__slider-item
+                                        img(src="./img/banner-slider/banner-01.jpg" alt="")
+                                        .info
+                                            h3 СИЛИКОНОВАЯ СКАТЕРТЬ<br/> ОТ ПРОИЗВОДИТЕЛЯ
+                                            p Lorem Ipsum is simply dummy text of the printing<br/> and typesetting industry. Lorem 
+                                            a.btn(href="") Перейти в каталог
+                                .banner__slider-slide
+                                    .banner__slider-item
+                                        img(src="./img/banner-slider/banner-01.jpg" alt="")
+                                        .info
+                                            h3 2 СИЛИКОНОВАЯ СКАТЕРТЬ<br/> ОТ ПРОИЗВОДИТЕЛЯ !!!!!!!!!
+                                            p Lorem Ipsum is simply dummy text of the printing<br/> and typesetting industry. Lorem 
+                                            a.btn(href="" style="background:red;") Перейти в каталог
+                                .banner__slider-slide
+                                    .banner__slider-item
+                                        img(src="./img/banner-slider/banner-01.jpg" alt="")
+                                        .info
+                                            h3 2 СИЛИКОНОВАЯ СКАТЕРТЬ<br/> ОТ ПРОИЗВОДИТЕЛЯ !!!!!!!!!
+                                            p Lorem Ipsum is simply dummy text of the printing<br/> and typesetting industry. Lorem 
+                                            a.btn(href="" style="background:blue;") Перейти в каталог
+                                    
+                        //- .banner__slider-dots
+                        //-     img(src="./img/slider/dot-active-ico.svg" alt="")
+                        //-     img(src="./img/slider/dot-ico.svg" alt="")
+            
+                // --- popular-products ---
+                section.popular-products
+                    h2.main-title Популярные товары
+                    .popular-products__slider
+                        .popular-products__slider-arrows
+                            .popular-products__slider-arrprev
+                                img(src="./img/popular-products/arrow-end.svg" alt="")
+                            .popular-products__slider-arrnext
+                                img(src="./img/popular-products/arrow-go.svg" alt="")
+                        .popular-products__slider-wrap
+                            .popular-products__slider-slides
+                                .popular-products__slider-slide
+                                    .popular-products__cards
+                                        .popular-products__card 
+                                            .popular-products__img
+                                                img(src="./img/popular-products/pic-1.jpg" alt="")
+                                            a.popular-products__name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                            .popular-products__desc размер 80 на 60 см
+                                            .popular-products__price-wrap 
+                                                .popular-products__price 740 руб 
+                                                .popular-products__count-wrap 
+                                                    .popular-products__count-minus -   
+                                                    .popular-products__count-input 1
+                                                    .popular-products__count-plus +   
+                                            .popular-products__cart
+                                                .popular-products__cart-add В корзину
+                                                .popular-products__cart-buy Купить в один клик
+                                .popular-products__slider-slide
+                                    .popular-products__cards
+                                        .popular-products__card 
+                                            .popular-products__img
+                                                img(src="./img/popular-products/pic-1.jpg" alt="")
+                                            a.popular-products__name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                            .popular-products__desc размер 80 на 60 см
+                                            .popular-products__price-wrap 
+                                                .popular-products__price 740 руб 
+                                                .popular-products__count-wrap 
+                                                    .popular-products__count-minus -   
+                                                    .popular-products__count-input 1
+                                                    .popular-products__count-plus +   
+                                            .popular-products__cart
+                                                .popular-products__cart-add В корзину
+                                                .popular-products__cart-buy Купить в один клик
+                                .popular-products__slider-slide
+                                    .popular-products__cards
+                                        .popular-products__card 
+                                            .popular-products__img
+                                                img(src="./img/popular-products/pic-1.jpg" alt="")
+                                            a.popular-products__name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                            .popular-products__desc размер 80 на 60 см
+                                            .popular-products__price-wrap 
+                                                .popular-products__price 740 руб 
+                                                .popular-products__count-wrap 
+                                                    .popular-products__count-minus -   
+                                                    .popular-products__count-input 1
+                                                    .popular-products__count-plus +   
+                                            .popular-products__cart
+                                                .popular-products__cart-add В корзину
+                                                .popular-products__cart-buy Купить в один клик
+                                .popular-products__slider-slide
+                                    .popular-products__cards
+                                        .popular-products__card 
+                                            .popular-products__img
+                                                img(src="./img/popular-products/pic-1.jpg" alt="")
+                                            a.popular-products__name(href="") Рифлёная силиконовая скатерть 1,5 мм
+                                            .popular-products__desc размер 80 на 60 см
+                                            .popular-products__price-wrap 
+                                                .popular-products__price 740 руб 
+                                                .popular-products__count-wrap 
+                                                    .popular-products__count-minus -   
+                                                    .popular-products__count-input 1
+                                                    .popular-products__count-plus +   
+                                            .popular-products__cart
+                                                .popular-products__cart-add В корзину
+                                                .popular-products__cart-buy Купить в один клик
+                    
+                        //- .popular-products__slider-dots
+                        //-     img(src="./img/slider/dot-active.svg" alt="")
+                        //-     img(src="./img/slider/dot.svg" alt="")
+
+
+                // --- categories ---
+                section.categories
+                    h2.main-title Витрина категорий
+                    .categories__items  
+                        .categories__item
+                            .categories__img: img(src="./img/categories/pic-1.jpg" alt="")
+                            .categories__name Силиконовые скатерти 
+                        .categories__item
+                            .categories__img: img(src="./img/categories/pic-2.jpg" alt="")
+                            .categories__name Коврики
+                        .categories__item
+                            .categories__img: img(src="./img/categories/pic-3.jpg" alt="")
+                            .categories__name Комплекты в ванну
+                        .categories__item
+                            .categories__img: img(src="./img/categories/pic-4.jpg" alt="")
+                            .categories__name Шторы в ванну
+                        .categories__item
+                            .categories__img: img(src="./img/categories/pic-5.jpg" alt="")
+                            .categories__name Клеенка
+
+                // --- advantage ---
+                section.advantage
+                    h2.main-title Наши преимущества
+                    .advantage__items 
+                        .advantage__item 
+                            .advantage__pic: img(src="./img/advantage/pic-1.svg" alt="")   
+                            .advantage__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                        .advantage__item 
+                            .advantage__pic: img(src="./img/advantage/pic-1.svg" alt="")   
+                            .advantage__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                        .advantage__item 
+                            .advantage__pic: img(src="./img/advantage/pic-1.svg" alt="")   
+                            .advantage__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+
+                // --- aboutus ---
+                section.aboutus
+                    .aboutus__text
+                        h2.main-title О нас
+                        p.
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy 
+                            text ever since the 1500s, when an unknown printer took 
+                            a galley of type and scrambled it to make a type specimen book. 
+                            It has survived not onlyLorem 
+                            Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard 
+                            dummy text ever since the 1500s, when an unknown printer 
+                            took a galley of type and scrambled it to 
+                            make a type specimen book. It has survived not onlyLorem 
+                            Ipsum is simply dummy text of the printing and typesetting industry. 
+                            Lorem Ipsum has been the industry's standard dummy text  
+                    .aboutus__pic: img(src="./img/aboutus/pic.jpg" alt="")
+
+                // --- blog ---
+                section.blog
+                    h2.main-title Блог
+                    .blog__container
+                        a.blog__allnews(href="") Смотреть все новости
+                        .blog__items 
+                            .blog__item 
+                                .blog__pic: img(src="./img/blog/pic-1.jpg" alt="")
+                                a.blog__title(href="") Загаловок статьив две строки
+                                .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .blog__date 24 апреля 2020
+                                .blog__more Читать дальше 
+                            .blog__item 
+                                .blog__pic: img(src="./img/blog/pic-2.jpg" alt="")
+                                a.blog__title(href="") Загаловок статьив две строки
+                                .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .blog__date 24 апреля 2020
+                                .blog__more Читать дальше 
+                            .blog__item 
+                                .blog__pic: img(src="./img/blog/pic-3.jpg" alt="")
+                                a.blog__title(href="") Загаловок статьив две строки
+                                .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .blog__date 24 апреля 2020
+                                .blog__more Читать дальше 
+                            .blog__item 
+                                .blog__pic: img(src="./img/blog/pic-4.jpg" alt="")
+                                a.blog__title(href="") Загаловок статьив две строки
+                                .blog__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum 
+                                .blog__date 24 апреля 2020
+                                .blog__more Читать дальше 
+            
+                // --- delivery ---
+                section.delivery
+                    h2.main-title Доставка
+                    .delivery__items 
+                        .delivery__item 
+                            .delivery__pic: img(src="./img/delivery/pic-1.svg" alt="")
+                            .delivery__title Самовывоз:
+                            .delivery__desc 
+                                li Город Раменское <br/>(адрес уточняйте у менеджера)
+                        .delivery__item 
+                            .delivery__pic: img(src="./img/delivery/pic-2.svg" alt="")
+                            .delivery__title Доставка по Москве:
+                            .delivery__desc 
+                                li Доставка курьеромпо Москве 300р.<br/> в приделах МКАД. (оплата при<br/> получении)
+                        .delivery__item 
+                            .delivery__pic: img(src="./img/delivery/pic-3.svg" alt="")
+                            .delivery__title Доставка по России:
+                            .delivery__desc 
+                                li От 2 до 6 рабочих дней
+                                li Почта России
+                                li EMS России
+                                li ПЭК
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+
+
+
+        //script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")

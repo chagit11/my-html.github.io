@@ -1,0 +1,93 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    height: 100vh
+    background: #E5E5E5
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+.wrapper 
+    margin: 110px auto
+    padding: 60px 0
+    width: 465px
+    // height: 761px
+    background: #FFFFFF
+    box-shadow: 0px 0px 25px rgba(212, 212, 212, 0.25)
+    border-radius: 10px
+    &__title 
+        margin-bottom: 35px
+        font-weight: 600
+        font-size: 26px
+        line-height: 31px
+        text-align: center
+        color: #333333
+    &__form // form
+        > *
+            margin: 0 auto
+        &-title 
+            margin-bottom: 10px
+            font-weight: normal
+            font-size: 14px
+            line-height: 28px
+            text-align: center
+            color: #333333
+        input
+            margin-bottom: 25px
+            display: block
+            width: 371px
+            height: 62px
+            background: #FFFFFF
+            border: 1px solid #E7E7E7
+            border-radius: 50px
+            font-weight: normal
+            font-size: 14px
+            line-height: 28px
+            text-align: center
+            color: #333333
+            text-align: center
+            &[type="text"]
+                &:placeholder
+            &[type="password"]
+                &::placeholder
+                
+            &[type="submit"]
+                width: 270px
+                height: 65px
+                background: #FACF5C
+                border-radius: 50px
+            
+        &-passremember 
+            margin-top: -5px
+            margin-bottom: 20px
+            font-weight: normal
+            font-size: 13px
+            line-height: 28px
+            text-align: center
+            color: #88B131
+                
+    
+    
+
+    
+
+

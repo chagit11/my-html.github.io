@@ -1,0 +1,333 @@
+// --- Header --- --------------------
+header 
+
+.header-wrapper
+    margin: 0 auto
+    padding-left: min-max(15, 135, 420, 1440)
+    padding-right: min-max(15, 135, 420, 1440)
+    max-width: 1440px// - 135px * 2 + 30px
+
+.header-top
+    padding: 20px 0
+    background: #F4F3F4
+    font-weight: normal
+    font-size: 14px
+    line-height: 16px
+    color: #3E3F53
+    .header-wrapper
+        display: grid
+        grid-template-columns: max-content max-content
+        grid-column-gap: 20px
+        justify-content: space-between
+        @media screen and ( max-width:  460px )
+            grid-template-columns: max-content
+
+
+            
+    &__left 
+        @media screen and ( max-width:  991px )
+            margin-bottom: 30px
+            // display: none
+            display: flex
+            flex-direction: column
+            height: 25px
+            overflow-y: hidden
+            overflow-x: visible
+            position: relative
+        > .header-top__link:first-child
+            display: none
+            @media screen and ( max-width:  991px )
+                border: 1px solid #facaca
+                // content: '+'
+                display: flex
+                justify-content: center
+                align-items: center
+                right: 0px
+                width: 20px
+                height: 15px
+                position: absolute
+                z-index: 11
+            @media screen and ( max-width:  460px )
+                right: 80px
+                    
+                
+        > a
+            margin-bottom: 10px
+    &__link 
+        position: relative
+        // cursor: pointer
+        user-select: none
+        &:not(:last-child)
+            margin-right: 40px
+        > img
+            margin-left: 10px
+        &-lsub
+            // display: none
+            padding: 14px
+            width: 160px
+            height: 145px
+            background: #F4F3F4
+            box-shadow: 0px 5px 15px rgba(124, 124, 124, 0.15)
+            border-radius: 0px 0px 10px 10px
+            position: absolute
+            z-index: 11
+            transform: translate(100px, 20px)
+            a
+                margin-bottom: 14px
+                display: block
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #000000
+                img
+                    margin-right: 10px
+        
+
+    &__right 
+        img
+            margin-right: 10px
+    &__geoloc
+        display: inline-block
+        font-weight: bold
+        text-decoration-line: underline
+        > span            
+    &__link-rsub 
+        padding: 14px 10px
+        // width: 160px
+        // height: 182px
+        background: #F4F3F4
+        box-shadow: 0px 5px 15px rgba(124, 124, 124, 0.15)
+        border-radius: 0px 0px 10px 10px
+        display: grid
+        position: absolute
+        z-index: 10
+        transform: translateY(20px)
+        > span
+            margin-top: 14px
+            margin-left: 10px
+            // display: block
+            font-weight: 500
+            font-size: 12px
+            line-height: 14px
+            color: #000000
+        &_selected
+            font-weight: bold !important
+            text-decoration-line: underline
+
+        form 
+            input
+                &[type="text"]
+                    padding: 10px 15px
+                    width: 143px
+                    height: 30px
+                    background: #FFFFFF
+                    border: 1px solid #FAD163
+                    border-radius: 50px
+                    font-weight: 300
+                    font-size: 12px
+                    line-height: 14px
+                    text-align: center
+                    color: #000000
+                    &::placeholder
+                        color: #C4C4C4
+                    
+                &[type="submit"]
+                    // display: flex
+                    display: none
+                    justify-content: center
+                    align-items: center
+    &__phone
+        font-weight: 500
+        text-decoration-line: underline
+        color: #3E3F53
+        span
+
+.header-main 
+    padding: 25px 0
+    .header-wrapper
+        display: grid
+        grid-template-columns: 1fr max-content
+        grid-column-gap: 60px
+        justify-content: space-between
+        @media screen and ( max-width:  790px )
+            grid-column-gap: 20px
+        @media screen and ( max-width:  460px )
+            padding: 0 15px
+            display: flex
+            flex-direction: column-reverse
+    &__left 
+        display: grid
+        grid-template-columns: max-content minmax(340px, 570px)
+        grid-column-gap: 40px
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width:  790px )
+            grid-template-columns: 1fr
+            grid-column-gap: 0px
+        @media screen and ( max-width:  460px )
+            margin-top: 30px
+    &__logo 
+        @media screen and ( max-width:  790px )
+            display: none
+        img
+            width: min-max(100, 157, 500, 1440)
+        
+    &__form-search 
+        input
+            &[type="search"]
+                padding: 15px 30px
+                box-sizing: border-box
+                // width: 570px
+                width: 100%
+                // height: 48px
+                background: url(../img/header/search.svg) no-repeat center right 30px, #FFFFFF
+
+                border: 1px solid #FAD163
+                border-radius: 50px
+                font-weight: 300
+                font-size: 16px
+                line-height: 19px
+                color: #3E3F53
+                &::placeholder
+                    color: #C4C4C4
+            &[type="submit"]
+                // display: flex
+                display: none
+                justify-content: center
+                align-items: center
+    &__right 
+        // margin-left: 60px
+        display: flex
+        justify-content: space-between
+        align-items: center
+        white-space: nowrap
+    &__user 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: normal
+        font-size: 18px
+        line-height: 21px
+        color: #333333
+    &__user-reg
+        margin-right: 10px
+        img
+            margin-right: 10px
+        span
+            @media screen and ( max-width:  960px )
+                display: none
+    &__user-line
+        align-self: start
+        height: 18px
+        border: 1px solid #FAD163
+    &__user-log 
+        margin-left: 10px
+    &__cart 
+        margin-left: 30px
+        display: flex
+        justify-content: space-between
+        align-items: flex-end
+        img
+            width: 21px
+            height: 21px
+            margin-right: 10px
+        sup
+            width: 19px
+            height: 19px
+            border-radius: 50%
+            background: #FAD163
+            display: flex
+            justify-content: center
+            align-items: center
+            font-weight: 600
+            font-size: 8px
+            line-height: 9px
+            color: #333333
+            transform: translate(-20px, -10px)
+        span
+            font-weight: bold
+            font-size: 14px
+            line-height: 16px
+            text-align: center
+            color: #88B131
+            transform: translateX(-20px)
+            @media screen and ( max-width:  1060px )
+                display: none
+
+.header-bottom
+    padding: 20px
+    background: #FACF5C
+    position: relative
+    .header-wrapper
+        display: flex
+        // justify-content: space-between
+        align-items: flex-start
+    &__burger
+        display: none
+        @media screen and ( max-width:  960px )
+            margin-right: 10px
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            align-items: center
+            span
+                border: 1px solid #000000
+                margin-bottom: 6px
+                width: 20px
+    &__catalog
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-weight: 500
+        font-size: 16px
+        line-height: 19px
+        white-space: nowrap
+        user-select: none
+        @media screen and ( max-width:  960px )
+            flex-direction: column
+            align-items: flex-start
+            height: 30px
+            overflow: hidden
+            > li
+                margin-bottom: 10px
+        > li
+            cursor: pointer
+            &:not(:last-of-type)
+                margin-right: 15px
+            &:first-of-type
+                font-weight: 600
+                font-size: 20px
+                line-height: 23px
+            &:nth-of-type(2)
+                padding-right: 15px
+                background: url(../img/header/header-bottom-arrow.svg) no-repeat center right
+            a
+                color: #333333
+    &__subcat
+        // display: none
+        padding: 15px
+            left: 12px
+        width: 230px
+        // height: 135px
+        background: #FACF5C
+        box-shadow: 0px 5px 15px rgba(124, 124, 124, 0.15)
+        border-radius: 0px 0px 10px 10px
+        position: absolute
+        z-index: 11
+        transform: translate(-20px, 20px)
+        @media screen and ( max-width:  960px )
+            transform: translate(210px, -20px)
+        @media screen and ( max-width:  470px )
+            transform: translate(10px, 10px)
+            
+        > li
+            margin-bottom: 14px
+            padding-left: 15px
+            background: url(../img/header/header-bottom-arrow-white.svg) no-repeat center left
+            a
+                font-weight: 500
+                font-size: 12px
+                line-height: 14px
+                color: #333333
+

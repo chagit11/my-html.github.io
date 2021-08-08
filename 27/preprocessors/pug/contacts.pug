@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/contacts_style.css")
+        title Блог
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                // --- contacts ---
+                section.contacts
+                    ul.contacts-breadcrumb
+                        li.contacts-breadcrumb__item: a(href="./") Главная
+                        li.contacts-breadcrumb__item Контакты
+                    .contacts-container 
+                        .contacts-container__text 
+                            ul
+                                li
+                                    a(href="") 8 (888) 888 88 88
+                                    a(href="") +7 (888) 888 88 88
+                                li: a(href="") email-email@gmail.com
+                                li: a(href="") <span>Пн-Пт 8:00-22:00</span>     Сб-вс- выходные
+                                li: a(href="") Адрес, дом такой, улица такая
+                            .contacts-container__text-socials
+                                .contacts-container__text-socials--title Мы в соц.сетях:
+                                a(href=""): img(src="./img/contacts/vk.svg" alt="vk")
+                                a(href=""): img(src="./img/contacts/fb.svg" alt="fb")
+                                a(href=""): img(src="./img/contacts/insta.svg" alt="insta")
+                        .contacts-container__pic 
+                            img(src="./img/contacts/map.jpg" alt="")
+
+
+
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/contacts_script.js")
+
+
+                

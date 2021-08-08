@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/checkout_style.css")
+        title Оформление заказа
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                
+                // --- breadcrumb ---
+                ul.breadcrumb
+                    li.breadcrumb__item: a(href="./") Главная
+                    li.breadcrumb__item: a(href="cart.html") Корзина
+                    li.breadcrumb__item Оформление заказа
+                
+                // --- CHECKOUT FORM ---
+                form.checkout(action="index.html")
+
+                    // --- deliverymethods ---
+                    section.deliverymethods
+                        h2.main-title Способы доставки
+                        .deliverymethods__wrapper 
+                            .deliverymethods__row
+                                label
+                                    input(type="radio" name="del" checked)
+                                    .deliverymethods__radio 
+                                    .deliverymethods__radio-name Самовывоз
+                                label
+                                    input(type="radio" name="del")
+                                    .deliverymethods__radio 
+                                    .deliverymethods__radio-name Доставка по Москве
+                                label
+                                    input(type="radio" name="del")
+                                    .deliverymethods__radio 
+                                    .deliverymethods__radio-name Доставка по России
+                            .deliverymethods__row-1
+                                dl 
+                                    dt Адрес выдачи товара:
+                                    dd Город Раменское (адрес уточняйте у менеджера)
+                                dl 
+                                    dt Часы работы:
+                                    dd Каждый день с 8:00 до 20:00
+                            .deliverymethods__row-2
+                                dl 
+                                    dt Способ доставки:
+                                    dd 
+                                        label
+                                            input(type="radio" name="del1" checked)
+                                            .deliverymethods__radio 
+                                            .deliverymethods__radio-name курьер
+                                        label
+                                            input(type="radio" name="del1")
+                                            .deliverymethods__radio 
+                                            .deliverymethods__radio-name транспортная компания СДЭК
+                                        label
+                                            input(type="radio" name="del1")
+                                            .deliverymethods__radio 
+                                            .deliverymethods__radio-name EMS
+                                        label
+                                            input(type="radio" name="del1")
+                                            .deliverymethods__radio 
+                                            .deliverymethods__radio-name ПЭК
+                                        label
+                                            input(type="radio" name="del1")
+                                            .deliverymethods__radio 
+                                            .deliverymethods__radio-name Почта России
+
+                                dl 
+                                    dt Адрес доставки
+                                    dd.deliverymethods__fields
+                                        .deliverymethods__field
+                                            .deliverymethods__field-title Индекс*
+                                            input(type="text" value="" placeholder="55555555")
+                                        .deliverymethods__field
+                                            .deliverymethods__field-title Регион*
+                                            input(type="text" value="" placeholder="55555555")
+                                        .deliverymethods__field
+                                            .deliverymethods__field-title Населенный пункт*
+                                            input(type="text" value="" placeholder="55555555")
+                                        .deliverymethods__field
+                                            .deliverymethods__field-title Улица*
+                                            input(type="text" value="" placeholder="55555555")
+                                        .deliverymethods__field
+                                            .deliverymethods__field-title Дом*
+                                            input(type="text" value="" placeholder="55555555")
+                                        .deliverymethods__field
+                                            .deliverymethods__field-title Квартира*
+                                            input(type="text" value="" placeholder="55555555")
+
+                            
+
+                    // --- recipientdata ---
+                    section.recipientdata
+                        h2.main-title Данные получателя
+                        .recipientdata__wrapper 
+                            .recipientdata__field
+                                .recipientdata__field-title Ваше имя*
+                                input(type="text" value="" placeholder="Петр")
+                            .recipientdata__field
+                                .recipientdata__field-title Фамилия*
+                                input(type="text" value="" placeholder="Петр")
+                            .recipientdata__field
+                                .recipientdata__field-title Номер телефона*
+                                input(type="text" value="" placeholder="+7 999 999 99 99")
+                            .recipientdata__field
+                                .recipientdata__field-title E-mail
+                                input(type="text" value="" placeholder="E-mail@mail.com")
+                            .recipientdata__field
+                                .recipientdata__field-title Комментарий к заказу
+                                textarea(name="" value="" placeholder="Введите сообщение")
+                                
+                    // --- paymentmethods ---
+                    section.paymentmethods
+                        h2.main-title Способы оплаты
+                        .paymentmethods__wrapper 
+                            .paymentmethods__radios
+                                label
+                                    input(type="radio" name="pay" checked)
+                                    .paymentmethods__radio
+                                    .paymentmethods__checkbox-name Оплата картой (на сайте)
+                                label
+                                    input(type="radio" name="pay")
+                                    .paymentmethods__radio
+                                    .paymentmethods__checkbox-name Оплата картой (при получении)
+                                label
+                                    input(type="radio" name="pay")
+                                    .paymentmethods__radio
+                                    .paymentmethods__checkbox-name Оплата наличными (при получении)
+                            .paymentmethods__fields
+                                .paymentmethods__field
+                                    .paymentmethods__field-title Имя владельца
+                                    input(type="text" value="" placeholder="PETR IVANOV")
+                                .paymentmethods__field
+                                    .paymentmethods__field-title Номер карты
+                                    input(type="text" value="" placeholder="0000 0000 0000 0000")
+                                .paymentmethods__field
+                                    .paymentmethods__field-title Срок действия
+                                    input(type="text" value="" placeholder="00/00")
+                                .paymentmethods__field
+                                    .paymentmethods__field-title CVV
+                                    input(type="text" value="" placeholder="****")
+
+                    // --- submit --
+                    .submit 
+                        input(type="submit" value="Оформить заказ")
+
+                    // --- yourorder ---
+                    .yourorder
+                        .yourorder__top
+                            .yourorder__title Ваш заказ
+                            .yourorder__return вернуться в корзину
+                        .yourorder__items 
+                            .yourorder__item 
+                                .yourorder__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                                .yourorder__info 
+                                    .yourorder__info-name Рифлёная силиконовая скатерть 1,5 мм
+                                    .yourorder__info-specs размер 80 на 60 см
+                                    .yourorder__info-price 740 руб
+                            .yourorder__item 
+                                .yourorder__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                                .yourorder__info 
+                                    .yourorder__info-name Рифлёная силиконовая скатерть 1,5 мм
+                                    .yourorder__info-specs размер 80 на 60 см
+                                    .yourorder__info-price 740 руб
+                            .yourorder__item 
+                                .yourorder__pic: img(src="./img/catalog/products-img-1.jpg" alt="")
+                                .yourorder__info 
+                                    .yourorder__info-name Рифлёная силиконовая скатерть 1,5 мм
+                                    .yourorder__info-specs размер 80 на 60 см
+                                    .yourorder__info-price 740 руб
+                        .yourorder__intotal 
+                            dl 
+                                dt Сумма к оплате:
+                                dd 12 222 руб
+
+                    
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+                
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/delivery_script.js")
+
+
+                

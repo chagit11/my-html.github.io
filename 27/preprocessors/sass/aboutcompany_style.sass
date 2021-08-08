@@ -1,0 +1,178 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+// -- aboutcompany
+section.aboutcompany
+    padding-top: 30px
+    padding-bottom: 80px
+        
+    h2.main-title
+        margin-bottom: 30px
+
+.aboutcompany 
+    
+
+    &-breadcrumb // ul
+        margin-bottom: 30px
+        display: flex
+        align-items: center
+        &__item // li
+            margin-right: 50px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            a
+                color: #333333
+            position: relative
+            &:before
+                content: url(../img/catalog/breadcrumb-arrow.svg)
+                display: block
+                position: absolute
+                left: -30px
+                
+            &:last-child
+                color: #88B131
+            &:first-child
+                &:before
+                    content: ''
+                    display: block
+            
+    
+    &-about 
+        display: grid
+        grid-template-columns: auto 570px
+        grid-gap: 30px
+        &__text 
+            font-weight: 500
+            font-size: 18px
+            line-height: 32px
+            color: #333333
+            &:last-of-type
+                grid-column: span 2
+        
+        &__pic 
+    
+
+// -- certificate
+section.certificate
+    padding-bottom: 120px
+    h2.main-title
+        margin-bottom: 20px
+
+.certificate 
+    
+    &-slider 
+        position: relative
+        &__arrows 
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            position: absolute
+            top: -50px
+            right: 0
+            > div 
+                width: 50px
+                height: 50px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+        &__arrprev 
+            img
+        &__arrnext 
+            img
+        &__wrap 
+            overflow: hidden
+        &__slides 
+                display: grid
+                grid-auto-flow: column
+                grid-auto-columns: 270px
+                grid-gap: 30px
+        &__slide 
+        
+        &__item 
+            img
+            
+        // &__dots
+        //     img
+        //         &[src *="dot-active"]
+
+        
+
+        
+
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

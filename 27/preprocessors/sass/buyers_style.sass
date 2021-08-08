@@ -1,0 +1,232 @@
+// ==== FONT-FACE 'Raleway' ====
+@import "imports/font-face.sass"
+
+
+
+// =============== HTML ===============
+@import "imports/html.sass"
+
+
+// =============== #SITE ===============  
+#site 
+    width: auto
+    margin: 0 auto
+    overflow-x: hidden
+    // height: 100vh
+    a:hover
+        opacity: 0.8
+
+@mixin min-max($key, $min, $max, $min-wind, $max-wind)
+    #{$key}: calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+@function min-max($min, $max, $min-wind, $max-wind)
+    @return calc(#{$min}px + (#{$max} - #{$min}) * (100vw - #{$min-wind}px) / (#{$max-wind} - #{$min-wind}))
+
+
+
+
+
+
+// --- Header --- --------------------
+@import "imports/header.sass"
+
+
+
+
+// --- Main --- ----------------------
+main 
+    > *
+        // padding: 0 135px
+        // margin: 0 auto
+        // max-width: 1440px// - 135px * 2 + 30px
+        // @media screen and ( max-width:  1440px )
+        //     @include min-max(padding-left, 15, 135, 420, 1440)
+        //     @include min-max(padding-right, 15, 135, 420, 1440)
+
+        margin: 0 auto
+        // padding: 0 clamp(15px, 9.375%, 135px)
+        padding: 0 min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+h2.main-title
+    margin-bottom: 30px
+    padding-left: 28px
+    font-weight: 600
+    font-size: 26px
+    font-size: min-max(18, 26, 420, 1440)
+    line-height: 52px
+    color: #333333
+    white-space: nowrap
+    &:before
+        content: ''
+        display: block
+        width: 18px
+        height: 7px
+        background: #88B131
+        transform: translate(-28px, 30px)
+
+
+
+
+section
+    margin-bottom: 90px
+    
+
+.breadcrumb // ul
+        margin: 30px auto
+        display: flex
+        align-items: center
+        &__item // li
+            margin-right: 50px
+            font-weight: 500
+            font-size: 14px
+            line-height: 16px
+            a
+                color: #333333
+            position: relative
+            &:before
+                content: url(../img/catalog/breadcrumb-arrow.svg)
+                display: block
+                position: absolute
+                left: -30px
+                
+            &:last-child
+                color: #88B131
+            &:first-child
+                &:before
+                    content: ''
+                    display: block
+
+
+// -- faq
+section.faq 
+
+.faq 
+    
+    &__wrapper 
+
+    &__row 
+        margin-bottom: 20px
+        padding: 10px 40px
+        border-left: 8px solid #FAD163
+        border-radius: 2px
+        // border-radius: 10px
+        box-shadow: 0px 0px 25px rgba(213, 213, 213, 0.25)
+        &_open
+            border-left: 8px solid #88B131
+            > *:first-of-type
+                background: url(../img/buyers/close.svg) no-repeat center right 27px
+                font-weight: bold
+                color: #88B131
+            > *:last-of-type
+                display: block
+
+        &-title 
+            background: url(../img/buyers/open.svg) no-repeat center right 27px
+            font-weight: 600
+            font-size: 18px
+            line-height: 52px
+            color: #333333
+        &-desc 
+            padding-bottom: 20px
+            display: none
+            font-weight: 500
+            font-size: 16px
+            line-height: 32px
+            color: #000000
+
+
+// -- guarantee
+section.guarantee 
+
+.guarantee 
+    &__desc
+        font-weight: 500
+        font-size: 18px
+        line-height: 32px
+        color: #333333
+
+// -- refund
+section.refund 
+
+.refund 
+
+    &__desc
+        font-weight: 500
+        font-size: 18px
+        line-height: 32px
+        color: #333333
+
+
+// -- promotion
+section.promotion 
+
+.promotion 
+    margin-bottom: 120px
+
+    &__wrapper 
+        display: grid
+        grid-template-columns: auto auto
+        grid-gap: min-max(10, 30, 767, 1440)
+        @media screen and ( max-width:  767px )
+            grid-template-columns: auto
+            grid-row-gap: 20px
+    &__card 
+        padding-top: 36px
+        padding-left: 28px
+        padding-bottom: 30px
+        background: linear-gradient(269.11deg, #F9BC16 0.65%, #FCE29E 99.24%)
+        border-radius: 10px
+        &:first-of-type
+            background: url(../img/buyers/promotion-1.png) no-repeat bottom right, linear-gradient(269.11deg, #F9BC16 0.65%, #FCE29E 99.24%)
+        &:last-of-type
+            background: url(../img/buyers/promotion-2.png) no-repeat bottom right, linear-gradient(269.11deg, #F9BC16 0.65%, #FCE29E 99.24%)
+
+        > *
+            margin-bottom: 8px
+    &__title 
+        font-weight: bold
+        font-size: 24px
+        font-size: min-max(20, 24, 767, 1440)
+        line-height: 32px
+        text-transform: uppercase
+        color: #FFFFFF
+    &__subtitle 
+        margin-bottom: 8px
+        font-weight: bold
+        font-size: 18px
+        font-size: min-max(16, 18, 767, 1440)
+        line-height: 32px
+        color: #FFFFFF
+
+    &__btn // a
+        // width: 229px
+        // height: 62px
+        width: max-content
+        padding: 20px 45px
+        padding: min-max(15, 20, 767, 1440) min-max(20, 45, 767, 1440)
+        background: #3E3F53
+        border-radius: 50px
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: normal
+        font-size: 16px
+        font-size: min-max(14, 16, 767, 1440)
+        line-height: 22px
+        text-align: center
+        color: #FFFFFF
+
+
+
+    
+
+
+  
+// -- callback
+@import "imports/main-callback.sass"
+  
+
+
+// --- Footer --- --------------------
+@import "imports/footer.sass"

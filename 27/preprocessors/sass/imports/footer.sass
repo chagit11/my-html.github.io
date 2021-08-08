@@ -1,0 +1,132 @@
+// --- Footer --- --------------------
+footer 
+    padding: 60px 0 30px 0
+    background: #3E3F53
+    > *
+        margin: 0 auto
+        padding-left: min-max(15, 135, 420, 1440)
+        padding-right: min-max(15, 135, 420, 1440)
+        max-width: 1440px
+
+.footer-main 
+    padding-bottom: 50px
+    display: flex
+    justify-content: space-between
+    @media screen and ( max-width:  500px )
+        padding-left: 40px
+        display: block
+    &__logo 
+        @media screen and ( max-width:  1200px )
+            display: none
+        img
+    &__nav 
+        display: flex
+        justify-content: center
+        font-weight: normal
+        font-size: min-max(14, 16, 420, 1440)
+        line-height: 19px
+        color: #FFFFFF
+        @media screen and ( max-width:  500px )
+            margin-bottom: 30px
+            justify-content: start
+            font-size: 16px
+    &__nav-lists 
+        &:not(:last-child)
+            margin-right: 55px
+        ul
+            li
+                margin-bottom: 20px
+                a
+                    color: #FFFFFF
+        &:last-child
+            @media screen and ( max-width:  768px )
+                display: none
+
+    
+    &__contacts 
+        font-weight: normal
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        ul
+            li
+                margin-bottom: 20px
+                padding-left: 30px
+                &:nth-child(1)
+                    background: url(../img/footer/phone.svg) no-repeat left top
+                &:nth-child(2)
+                    background: url(../img/footer/email.svg) no-repeat left top
+                &:nth-child(3)
+                    background: url(../img/footer/time.svg) no-repeat left top
+                &:nth-child(4)
+                    background: url(../img/footer/geoloc.svg) no-repeat left top
+
+    &__socials 
+        @media screen and ( max-width:  500px )
+            margin-top: 50px
+            text-align: center
+        a
+            margin-right: 30px
+            display: inline-block
+            img
+
+.footer-bottom 
+    border-top: 1px solid #FFFFFF
+    padding-top: 30px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    font-weight: normal
+    font-size: 16px
+    // font-size: min-max(14, 16, 360, 560)
+    line-height: 19px
+    color: #FFFFFF
+    @media screen and ( max-width:  1200px )
+        display: block
+    &__payment 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        @media screen and ( max-width:  1200px )
+            justify-content: start
+            margin-bottom: 30px
+        @media screen and ( max-width:  560px )
+            display: block
+
+    &__payment-title 
+        margin-right: 20px
+        @media screen and ( max-width:  560px )
+            margin-bottom: 20px
+            text-align: center
+    &__payments-ways 
+        @media screen and ( max-width:  560px )
+            text-align: center
+        img
+            padding: 6px
+            border-radius: 5px
+            background: #ffffff
+            &:not(:last-child)
+                margin-right: min-max(5, 15, 360, 1440)
+                @media screen and ( max-width:  560px )
+                    margin-right: 15px
+                    
+    &__wrap
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        @media screen and ( max-width:  1200px )
+            justify-content: flex-start
+        @media screen and ( max-width:  560px )
+            display: block
+    &__privacy-policy //a
+        color: #FFFFFF
+        @media screen and ( max-width:  560px )
+            display: block
+            text-align: center
+    &__copyright 
+        margin-left: 30px
+        @media screen and ( max-width:  560px )
+            margin-top: 10px
+            margin-left: 0
+            text-align: center
+

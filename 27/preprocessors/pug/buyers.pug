@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/buyers_style.css")
+        title Блог
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                //- // --- buyers ---
+                //- section.buyers
+                //-     ul.buyers-breadcrumb
+                //-         li.buyers-breadcrumb__item: a(href="./") Главная
+                //-         li.buyers-breadcrumb__item Покупателям
+                //-     .buyers-faq 
+                //-         h2.main-title FAQ
+                //-         .buyers-faq__wrapper
+                //-             .buyers-faq__row.buyers-faq__row_open
+                //-                 .buyers-faq__row-title Что такое “силиконовая пленка”?
+                //-                 .buyers-faq__row-desc.
+                //-                     Lorem Ipsum is simply dummy text of the printing and 
+                //-                     typesetting industry. Lorem Ipsum has been the industry's 
+                //-                     standard dummy text ever since the 1500s, when an unknown
+                //-                     printer took a galley of type and scrambled it to make a 
+                //-                     type specimen book. It has survived not only five centuries, 
+                //-                     but also the leap into electronic
+                //-             .buyers-faq__row
+                //-                 .buyers-faq__row-title Это не вредно для здоровья?
+                //-                 .buyers-faq__row-desc.
+                //-                     Lorem Ipsum is simply dummy text of the printing and 
+                //-                     typesetting industry. Lorem Ipsum has been the industry's 
+                //-                     standard dummy text ever since the 1500s, when an unknown
+                //-                     printer took a galley of type and scrambled it to make a 
+                //-                     type specimen book. It has survived not only five centuries, 
+                //-                     but also the leap into electronic
+                //-             .buyers-faq__row
+                //-                 .buyers-faq__row-title Где можно использовать силиконовые скатерти?
+                //-                 .buyers-faq__row-desc.
+                //-                     Lorem Ipsum is simply dummy text of the printing and 
+                //-                     typesetting industry. Lorem Ipsum has been the industry's 
+                //-                     standard dummy text ever since the 1500s, when an unknown
+                //-                     printer took a galley of type and scrambled it to make a 
+                //-                     type specimen book. It has survived not only five centuries, 
+                //-                     but also the leap into electronic
+                //-             .buyers-faq__row
+                //-                 .buyers-faq__row-title Как правильно расстелись силиконовую скатерть?
+                //-                 .buyers-faq__row-desc.
+                //-                     Lorem Ipsum is simply dummy text of the printing and 
+                //-                     typesetting industry. Lorem Ipsum has been the industry's 
+                //-                     standard dummy text ever since the 1500s, when an unknown
+                //-                     printer took a galley of type and scrambled it to make a 
+                //-                     type specimen book. It has survived not only five centuries, 
+                //-                     but also the leap into electronic
+                //-             .buyers-faq__row
+                //-                 .buyers-faq__row-title Как ухаживать за силиконовой скатертью?
+                //-                 .buyers-faq__row-desc.
+                //-                     Lorem Ipsum is simply dummy text of the printing and 
+                //-                     typesetting industry. Lorem Ipsum has been the industry's 
+                //-                     standard dummy text ever since the 1500s, when an unknown
+                //-                     printer took a galley of type and scrambled it to make a 
+                //-                     type specimen book. It has survived not only five centuries, 
+                //-                     but also the leap into electronic
+                //-     .buyers-guarantee  
+                //-         h2.main-title Гарантии
+                //-         .buyers-guarantee__desc.
+                //-             Lorem Ipsum is simply dummy text of the printing and 
+                //-             typesetting industry. Lorem Ipsum has been the industry's 
+                //-             standard dummy text ever since the 1500s, when an unknown 
+                //-             printer took a galley of type and scrambled it to make a type 
+                //-             specimen book. It has survived not only five centuries, 
+                //-             but also the leap into electronic typesetting, remaining 
+                //-             essentially unchanged. It was popularised in the 1960s 
+                //-             with the release of Letraset sheets containing Lorem Ipsum 
+                //-             passages, and more recently with desktop publishing software 
+                //-             like Aldus PageMaker including versions of Lorem Ipsum Lorem 
+                //-             Ipsum is simply dummy text of the printing and typesetting industry. 
+                //-             Lorem Ipsum has been the industry's 
+                //-             standard dummy text ever since the 1500s, 
+                //-     .buyers-refund
+                //-         h2.main-title Возврат
+                //-         .buyers-refund__desc.
+                //-             Lorem Ipsum is simply dummy text of the printing and 
+                //-             typesetting industry. Lorem Ipsum has been the industry's 
+                //-             standard dummy text ever since the 1500s, when an unknown 
+                //-             printer took a galley of type and scrambled it to make a type 
+                //-             specimen book. It has survived not only five centuries, 
+                //-             but also the leap into electronic typesetting, remaining 
+                //-             essentially unchanged. It was popularised in the 1960s 
+                //-             with the release of Letraset sheets containing Lorem Ipsum 
+                //-             passages, and more recently with desktop publishing software 
+                //-             like Aldus PageMaker including versions of Lorem Ipsum Lorem 
+                //-             Ipsum is simply dummy text of the printing and typesetting industry. 
+                //-             Lorem Ipsum has been the industry's 
+                //-             standard dummy text ever since the 1500s, 
+                //-     .buyers-promotion
+                //-         h2.main-title Акции
+                
+                // --- breadcrumb ---
+                ul.breadcrumb
+                    li.breadcrumb__item: a(href="./") Главная
+                    li.breadcrumb__item Покупателям
+                
+                // --- faq ---
+                section.faq(id="faq")
+                    h2.main-title FAQ
+                    .faq__wrapper
+                        .faq__row.faq__row_open
+                            .faq__row-title Что такое “силиконовая пленка”?
+                            .faq__row-desc.
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, 
+                                but also the leap into electronic
+                        .faq__row
+                            .faq__row-title Это не вредно для здоровья?
+                            .faq__row-desc.
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, 
+                                but also the leap into electronic
+                        .faq__row
+                            .faq__row-title Где можно использовать силиконовые скатерти?
+                            .faq__row-desc.
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, 
+                                but also the leap into electronic
+                        .faq__row
+                            .faq__row-title Как правильно расстелись силиконовую скатерть?
+                            .faq__row-desc.
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, 
+                                but also the leap into electronic
+                        .faq__row
+                            .faq__row-title Как ухаживать за силиконовой скатертью?
+                            .faq__row-desc.
+                                Lorem Ipsum is simply dummy text of the printing and 
+                                typesetting industry. Lorem Ipsum has been the industry's 
+                                standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a 
+                                type specimen book. It has survived not only five centuries, 
+                                but also the leap into electronic
+                    
+
+
+
+
+                // --- guarantee ---
+                section.guarantee(id="guarantee")
+                    h2.main-title Гарантии
+                    .guarantee__desc.
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown 
+                        printer took a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, 
+                        but also the leap into electronic typesetting, remaining 
+                        essentially unchanged. It was popularised in the 1960s 
+                        with the release of Letraset sheets containing Lorem Ipsum 
+                        passages, and more recently with desktop publishing software 
+                        like Aldus PageMaker including versions of Lorem Ipsum Lorem 
+                        Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, 
+                
+                // --- refund ---
+                section.refund(id="refund")
+                    h2.main-title Возврат
+                    .refund__desc.
+                        Lorem Ipsum is simply dummy text of the printing and 
+                        typesetting industry. Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, when an unknown 
+                        printer took a galley of type and scrambled it to make a type 
+                        specimen book. It has survived not only five centuries, 
+                        but also the leap into electronic typesetting, remaining 
+                        essentially unchanged. It was popularised in the 1960s 
+                        with the release of Letraset sheets containing Lorem Ipsum 
+                        passages, and more recently with desktop publishing software 
+                        like Aldus PageMaker including versions of Lorem Ipsum Lorem 
+                        Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's 
+                        standard dummy text ever since the 1500s, 
+
+                // --- promotion ---
+                section.promotion(id="promotion")
+                    h2.main-title Акции
+                    .promotion__wrapper 
+                        .promotion__card 
+                            .promotion__title Силиконовая <br/>скатерть на стол
+                            .promotion__subtitle 15% скидка  только в мае
+                            a.promotion__btn(href="") Перейти в каталог
+                        .promotion__card 
+                            .promotion__title Сделай уютным <br/>свой дом
+                            .promotion__subtitle 15% скидка на всё только в мае
+                            a.promotion__btn(href="") Перейти в каталог
+
+                
+
+                // --- callback ---
+                include includes/main-callback.pug
+
+                
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/buyers_script.js")
+
+
+                

@@ -1,0 +1,78 @@
+header.header
+    .header-top
+        .header-wrapper
+            .header-top__left
+                a.header-top__link() +
+                a.header-top__link(href="aboutcompany.html") О компании
+                a.header-top__link(href="buyers.html") 
+                    | Покупателям
+                    img(src="./img/header/header-top-arrow.svg" alt="")
+                    .header-top__link-lsub
+                        a(href="buyers.html#guarantee")
+                            img(src="./img/header/header-top-arrow.svg" alt="")
+                            | Гарантии
+                        a(href="buyers.html#refund")
+                            img(src="./img/header/header-top-arrow.svg" alt="")
+                            | Возврат
+                        a(href="buyers.html#faq")
+                            img(src="./img/header/header-top-arrow.svg" alt="")
+                            | FAQ
+                        a(href="buyers.html#promotion")
+                            img(src="./img/header/header-top-arrow.svg" alt="")
+                            | Акции
+                a.header-top__link(href="delivery.html") Оплата и доставка
+                a.header-top__link(href="blog.html") Блог
+                a.header-top__link(href="contacts.html") Контакты
+            .header-top__right
+                .header-top__link.header-top__geoloc 
+                    img(src="./img/header/geoloc.svg" alt="")
+                    span Москва
+                    .header-top__link-rsub
+                        form(action="index.html")
+                            input(type="text" value="" placeholder="Москва")
+                            input(type="submit" value="Отправить")
+                        span.header-top__link-rsub_selected Москва
+                        span Москва
+                        span Москва
+                        span Москва
+                a.header-top__link(href="tel:0500").header-top__phone
+                    span +7 888 888 88 88
+                    //- span: img(src="./img/header/phone.svg" alt="")
+    .header-main
+        .header-wrapper
+            .header-main__left
+                .header-main__logo(href=""): img(src="./img/header/logo.svg" alt="logo")
+                form.header-main__form-search(action="index.html")
+                    input(type="search" value="" placeholder="Поиск по сайту")
+                    input(type="submit" value="Отправить")
+            .header-main__right
+                .header-main__user 
+                    .header-main__user-reg
+                        img(src="./img/header/user-log.svg" alt="")
+                        span Регистрация
+                    .header-main__user-line
+                    .header-main__user-log Вход
+                .header-main__cart 
+                    img(src="./img/header/cart.svg" alt="")
+                    sup 16
+                    span 12 356 руб
+    .header-bottom
+        .header-wrapper
+            .header-bottom__burger
+                span 
+                span 
+                span 
+            ul.header-bottom__catalog
+                li: a() Каталог товаров
+                li
+                    a Силиконовые скатерти
+                    ul.header-bottom__subcat
+                        li: a(href="") Силиконовая скатерть
+                        li: a(href="") Скатерть с рисунком
+                        li: a(href="") Белая скатерть
+                        li: a(href="") Итальянская скатерть
+                li: a(href="") Коврики
+                li: a(href="") Шторы в ванну
+                li: a(href="") Комплекты в ванну
+                li: a(href="") Клеенка
+    

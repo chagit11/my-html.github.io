@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="./css/reset.css")
+        link(rel="stylesheet", href="./css/privateoffice_style.css")
+        title Личный кабинет
+    body
+        div#popup
+            #popup-bg
+            #popup-name
+            
+        div#site
+            
+            
+
+
+            
+            
+            // Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/header.pug
+
+            
+                
+            // Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            main.main
+
+                
+                // --- breadcrumb ---
+                ul.breadcrumb
+                    li.breadcrumb__item: a(href="./") Главная
+                    li.breadcrumb__item Личный кабинет
+                
+                // --- personaldata ---
+                section.personaldata
+                    h2.main-title Персональные данные
+                    .personaldata__wrapper
+                        .personaldata__field
+                            .personaldata__field-title Имя
+                            .personaldata__field-input Мария
+                        .personaldata__field
+                            .personaldata__field-title Фамилия
+                            .personaldata__field-input Петрова
+                        .personaldata__field
+                            .personaldata__field-title Номер телефона
+                            .personaldata__field-input +7 888 888 88 88
+                        .personaldata__field
+                            .personaldata__field-title E-mail
+                            .personaldata__field-input E-mail@mail.com
+                        .personaldata__field
+                            .personaldata__field-title Адрес доставки
+                            .personaldata__field-input г. Москва, улица такая-то, дом такой-то
+
+
+                // --- historyorders ---
+                section.historyorders
+                    h2.main-title Истории заказов
+                    .historyorders__wrapper 
+                        dl 
+                            dt Заказ <b>№546413131</b>
+                            dd от 25.12.2020 на сумму 5 555 руб.
+                        dl 
+                            dt Заказ <b>№546413131</b>
+                            dd от 25.12.2020 на сумму 5 555 руб.
+                        dl 
+                            dt Заказ <b>№546413131</b>
+                            dd от 25.12.2020 на сумму 5 555 руб.
+
+            // footer >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 
+            include includes/footer.pug
+    
+
+
+        //- script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")
+        script(src="./js/script.js")
+        script(src="./js/privateoffice_script.js")
+
+
+                
