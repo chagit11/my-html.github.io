@@ -119,13 +119,14 @@ div#popup #popup-name {
   background: #FFFFFF;
 }
 
-#site {
-  width: 1400px;
-  margin: 0 auto;
-  overflow: hidden;
-}
 #site a:hover {
   opacity: 0.8;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+  overflow: hidden;
 }
 
 header {
@@ -383,9 +384,9 @@ section.giftset {
   justify-content: space-between;
   align-items: center;
 }
-.giftset-nav {
+.giftset-navs {
   transform: translateY(-2px);
-  width: 88px;
+  flex: 0 0 88px;
   height: 460px;
   background: #F5F8FC;
   box-shadow: -2px 0px 10px rgba(205, 205, 205, 0.5);
@@ -396,7 +397,7 @@ section.giftset {
   line-height: 34px;
   color: #415167;
 }
-.giftset-nav__item {
+.giftset-navs__nav {
   height: 154px;
   display: flex;
   justify-content: center;
@@ -404,7 +405,7 @@ section.giftset {
   opacity: 0.3;
   cursor: pointer;
 }
-.giftset-nav__item_active {
+.giftset-navs__nav_active {
   box-shadow: 0px 4px 5px -5px rgba(205, 205, 205, 0.5);
   background: #ffffff;
   opacity: 1;
