@@ -134,7 +134,6 @@ header {
 }
 
 .header {
-  border: 1px solid #ff0000;
   margin-bottom: 85px;
   display: grid;
   grid-template-columns: minmax(300px, 435px) minmax(500px, 690px) 275px;
