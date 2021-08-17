@@ -99,17 +99,15 @@ class Slider {
     }
 
 }
-
 new Slider('.favorite')
 new Slider('.coffeecombo')
 
 
 // Tabs --------------------------------
-
 class NavTabs {
     constructor(name) {
         this.name = name
-        this.navItems = document.querySelectorAll(`.${name}-nav__item`)
+        this.navItems = document.querySelectorAll(`.${name}-navs__nav`)
         this.tabs = document.querySelectorAll(`.${name}-tabs__tab`)
         this.clickNavItem()
     }
@@ -117,9 +115,9 @@ class NavTabs {
         let addClassNavItems = (navItem, tab) => {
             // -- nav items
             this.navItems.forEach(item => {
-                item.classList.remove(`${this.name}-nav__item_active`)
+                item.classList.remove(`${this.name}-navs__nav_active`)
             })
-            navItem.classList.add(`${this.name}-nav__item_active`)
+            navItem.classList.add(`${this.name}-navs__nav_active`)
             // -- tab
             this.tabs.forEach(item => {
                 item.classList.remove(`${this.name}-tabs__tab_active`)
@@ -133,5 +131,39 @@ class NavTabs {
         })
     }
 }
-
 new NavTabs('giftset')
+
+
+// Burger open menu --------------------
+class MenuOpenShut {
+    constructor() {
+        this.menu = document.querySelector(`.header__menu`)
+        this.burger = document.querySelector(`.header__burger`)
+        this.menu.hidden = true
+        this.openshutmenu()
+    }
+    openshutmenu() {
+        this.burger.onclick = () => {
+            if(this.menu.hidden == true) {
+                this.menu.hidden = false
+            }
+            else {
+                this.menu.hidden = true
+            }
+        }
+    }
+
+}
+// new MenuOpenShut()
+
+
+
+function openClose(burger_btn, menu_oc) {
+    let burger = document.querySelector(burger_btn)
+    let menu = document.querySelector(menu_oc)
+    burger.onclick = () => {
+        menu.classList.toggle(`${menu_oc.slice(1)}_open`)
+    }
+}
+openClose('.header__burger', '.header__menu')
+
