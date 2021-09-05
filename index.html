@@ -41,6 +41,32 @@
             grid-template-columns: repeat(3, 1fr);
             grid-gap: 30px;
         }
+        @media screen and (max-width: 992px) {
+            .main .wrapper {
+                padding: 50px 80px;
+            }
+            .main__items {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .main .wrapper {
+                padding: 50px 120px;
+            }
+            .main__items {
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (max-width: 576px) {
+            .main .wrapper {
+                padding: 50px 60px;
+            }
+        }
+        @media screen and (max-width: 425px) {
+            .main .wrapper {
+                padding: 50px 30px;
+            }
+        }
         a.main__item {
             color: blue;
             text-decoration: none;
@@ -106,23 +132,65 @@
 
 
     <script>
-        let items = document.querySelector('.main__items')
-        function createElements(from, to) {
-            for(let i=from; i>=to; i--) {
-                items.insertAdjacentHTML('beforeend', `
-                    <a class="main__item" href="${i}/" target="_blank">
-                        <div class="main__item-pic">
-                            <img src="${i}/screen-site.webp" alt="Верстка сайтов на HTML, CSS, JS">
-                        </div>
-                        <div class="main__item-link">
-                            Сайт ${i}
-                        </div>
-                    </a>
-                `)
+
+        class CreateElementsClass {
+            constructor(fromSites, toSites) {
+                this.fromSites = fromSites
+                this.toSites = toSites
+                this.countMinus = 9
+                this.startAdd = this.fromSites - this.countMinus
+                this.items = document.querySelector('.main__items')
+                this.createElements(this.fromSites, this.startAdd)
+                this.scrollPage()
+            }
+            // 
+            createElements(from, to) {
+                for(let i=from; i>=to; i--) {
+                    this.items.insertAdjacentHTML('beforeend', `
+                        <a class="main__item" href="${i}/" target="_blank">
+                            <div class="main__item-pic">
+                                <img src="${i}/screen-site.webp" alt="">
+                            </div>
+                            <div class="main__item-link">
+                                Сайт ${i}
+                            </div>
+                        </a>
+                    `)
+                }
+            }
+            //
+            checkPosition() {
+                const height = document.body.offsetHeight // высота документа
+                const screenHeight = window.innerHeight // высота экрана
+                const scrolled = window.scrollY // сколько пикселей проскроллил
+                const threshold = height - screenHeight / 4 // четверть экрана до конца страницы
+                const position = scrolled + screenHeight // где находится низ экрана относительно страницы
+                if (position >= threshold) {
+                    // Если мы пересекли полосу-порог, вызываем нужное действие.
+                    if(this.startAdd - this.countMinus > this.toSites) {
+                        this.createElements(this.startAdd-1, this.startAdd-this.countMinus)
+                        this.startAdd = this.startAdd - this.countMinus
+                        if(this.startAdd - this.countMinus < this.toSites) {
+                            this.createElements(this.startAdd-1, this.toSites)
+                        }
+                    }
+                }
+            }
+            // 
+            scrollPage() {
+                window.addEventListener("scroll", () => {
+                    this.checkPosition()
+                })
+                window.addEventListener("resize", () => {
+                    this.checkPosition()
+                })
             }
         }
         //
-        createElements(30, 10)
+        new CreateElementsClass(30, 10)
+
+        
+        
     </script>
 
 </body>
