@@ -4,66 +4,126 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мои практические работы</title>
+    <title>Мои работы по верстке сайтов</title>
 
     <!-- css -->
     <style>
-        ul.sites {
-            margin: 50px auto;
-            padding: 30px 20px;
-            width: 70%;
-            background: #f1f7fc;
-            font-size: 25px;
-            list-style: none;
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, serif;
         }
-        li {
-            margin-bottom: 20px;
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1024px;
+            overflow: hidden;
         }
-        a {
-            color: #ff0000;
+        .header {
+            padding: 50px;
+            background: #000;
+        }
+        .title {
+            font-size: 48px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .main .wrapper {
+            padding: 50px;
+        }
+        .main__description {
+            margin-bottom: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        .main__items {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 30px;
+        }
+        a.main__item {
+            color: blue;
             text-decoration: none;
         }
-        a:hover {
-            text-decoration: underline;
-            opacity: 0.5;
+        a.main__item:hover {
+            background: rgb(234, 234, 243);
+            color: red;
         }
+        .main__item-pic {
+            margin-bottom: 10px;
+            padding: 1px;
+            height: 250px;
+            overflow: hidden;
+            border: 1px solid rgba(255, 0, 0, 0.075);
+            box-shadow: 0 0 2px red;
+        }
+        .main__item-pic img {
+            max-width: 100%;
+            height: auto;
+        }
+        .main__item-link {
+            padding: 15px;
+            background: rgba(231, 231, 247, 0.993);
+            font-size: 25px;
+            text-align: center;
+        }
+        
     </style>
 </head>
 <body>
 
 
     <!-- html -->
-    <ul class="sites">
-        <!--<li><a href="1" target="_blank">Сайт 1</a></li>
-        <li><a href="2" target="_blank">Сайт 2</a></li>
-        <li><a href="3" target="_blank">Сайт 3</a></li>
-        <li><a href="4" target="_blank">Сайт 4</a></li>
-        <li><a href="5" target="_blank">Сайт 5</a></li>
-        <li><a href="6" target="_blank">Сайт 6</a></li>
-        <li><a href="7" target="_blank">Сайт 7</a></li>
-        <li><a href="8" target="_blank">Сайт 8</a></li>
-        <li><a href="9" target="_blank">Сайт 9</a></li>-->
-        <li><a href="10" target="_blank">Сайт 10</a></li>
-        <li><a href="11" target="_blank">Сайт 11</a></li>
-        <li><a href="12" target="_blank">Сайт 12</a></li>
-        <li><a href="13" target="_blank">Сайт 13</a></li>
-        <li><a href="14" target="_blank">Сайт 14</a></li>
-        <li><a href="15" target="_blank">Сайт 15</a></li>
-        <li><a href="16" target="_blank">Сайт 16</a></li>
-        <li><a href="17" target="_blank">Сайт 17</a></li>
-        <li><a href="18" target="_blank">Сайт 18</a></li>
-        <li><a href="19" target="_blank">Сайт 19</a></li>
-        <li><a href="20" target="_blank">Сайт 20</a></li>
-        <li><a href="21" target="_blank">Сайт 21</a></li>
-        <li><a href="22" target="_blank">Сайт 22</a></li>
-        <li><a href="23" target="_blank">Сайт 23</a></li>
-        <li><a href="24" target="_blank">Сайт 24</a></li>
-        <li><a href="25" target="_blank">Сайт 25</a></li>
-        <li><a href="26" target="_blank">Сайт 26</a></li>
-        <li><a href="27" target="_blank">Сайт 27</a></li>
-        <li><a href="28" target="_blank">Сайт 28</a></li>
-        <li><a href="29" target="_blank">Сайт 29</a></li>
-        <li><a href="30" target="_blank">Сайт 30</a></li>
-    </ul>
+    
+    <header class="header">
+        <div class="wrapper">
+            <h1 class="title">Мои работы по верстке сайтов</h1>
+        </div>
+    </header>
+
+
+    <main class="main">
+        <div class="wrapper">
+            <div class="main__description">
+                Верстаю на чистом HTML, CSS, Javascript
+            </div>
+            <div class="main__items">
+                <!-- <a class="main__item" href="21/" target="_blank">
+                    <div class="main__item-pic">
+                        <img src="21/screen-site.jpg" alt="">
+                    </div>
+                    <div class="main__item-link">
+                        Сайт 21
+                    </div>
+                </a> -->
+            </div>
+        </div>
+    </main>
+
+
+    <footer class="footer"></footer>
+
+
+
+    <script>
+        let items = document.querySelector('.main__items')
+        function createElements(from, to) {
+            for(let i=from; i>=to; i--) {
+                items.insertAdjacentHTML('beforeend', `
+                    <a class="main__item" href="${i}/" target="_blank">
+                        <div class="main__item-pic">
+                            <img src="${i}/screen-site.jpg" alt="">
+                        </div>
+                        <div class="main__item-link">
+                            Сайт ${i}
+                        </div>
+                    </a>
+                `)
+            }
+        }
+        //
+        createElements(30, 10)
+    </script>
+
 </body>
 </html>
