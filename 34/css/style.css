@@ -540,6 +540,9 @@ section {
   color: rgba(40, 42, 48, 0.5);
 }
 /* -- morevalue -- */
+.morevalue {
+  margin-bottom: 40em;
+}
 @media screen and (max-width: 1200px) {
   .morevalue {
     overflow: hidden;
