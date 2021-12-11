@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="./css/reset.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <title>Furniture</title>
+  </head>
+  <body>
+    <div id="popup" onclick="this.style.display='none'"></div>
+    <!-- Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <header class="header">
+      <div class="header-top"> <a class="header-top__logo" href="./">Furniutr.</a>
+        <div class="header-top__menu">
+          <div class="header-top__menu-burger"> <span></span><span></span><span></span></div>
+          <ul class="header-top__menu-list">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Collection</a></li>
+            <li><a href="">Shop</a></li>
+          </ul>
+        </div>
+        <div class="header-top__btns"> 
+          <div class="header-top__btns-cart"> <img src="./img/index/header-cart.svg" alt=""/></div>
+          <div class="header-top__btns-search"> <img src="./img/index/header-search.svg" alt=""/></div>
+        </div>
+      </div>
+      <div class="header-main">
+        <div class="header-main__info">
+          <div class="header-main__info-titletop">DECORATE HOME</div>
+          <div class="header-main__info-title">Feel your home <br/>with a modern design <br/>space</div>
+          <div class="header-main__info-buttons"><a class="header-main__info-buttons-btn btn-red" href="">Discover</a>
+            <div class="header-main__info-buttons-video">
+              <div class="header-main__info-buttons-video-popup" id="header-video-popup" style="display:none;"><iframe src="https://www.youtube.com/embed/3PUMbLma8Bw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div><img src="./img/index/header-main-play.svg" alt=""/><span>Watch video</span>
+            </div>
+          </div>
+        </div>
+        <div class="header-main__pic">
+          <picture>
+            <source srcset="./img/index/header-main-pic.webp" type="image/webp"/><img src="./img/index/header-main-pic.jpg" alt=""/>
+          </picture>
+        </div>
+      </div>
+    </header>
+    <!-- Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <main class="main">
+      <!-- --- about ----->
+      <section class="about">
+        <div class="about-pic">
+          <picture>
+            <source srcset="./img/index/about-pic.webp" type="image/webp"/><img src="./img/index/about-pic.jpg" alt=""/>
+          </picture><img src="./img/index/about-pic-dots.svg" alt=""/>
+        </div>
+        <div class="about-info">
+          <h2 class="main-title about-info__title">About<span>Furniture</span></h2>
+          <div class="about-info__desc">
+            People have been using natural objects, such as tree 
+            stumps, rocks and moss, as furniture since the 
+            beginning of human civilisation.
+          </div><a class="about-info__btn btn-red" href="">Read more</a>
+        </div>
+      </section>
+      <!-- --- morevalue ----->
+      <section class="morevalue">
+        <h2 class="main-title morevalue-title">More value from this<span>Furniture</span></h2>
+        <div class="morevalue-info">
+          <div class="morevalue-info__pic">
+            <picture>
+              <source srcset="./img/index/morevalue-pic.webp" type="image/webp"/><img src="./img/index/morevalue-pic.jpg" alt=""/>
+            </picture><img src="./img/index/morevalue-dots.svg" alt=""/>
+          </div>
+          <div class="morevalue-info__desc">
+            <div class="morevalue-info__desc-item">
+              <div class="morevalue-info__desc-item-title">Full services</div>
+              <div class="morevalue-info__desc-item-desc">Provide the best service and very fast <br/>response.</div>
+            </div>
+            <div class="morevalue-info__desc-item">
+              <div class="morevalue-info__desc-item-title">Long warranty.</div>
+              <div class="morevalue-info__desc-item-desc">With a 5-year warranty provided, providing <br/>satisfying service.</div>
+            </div>
+            <div class="morevalue-info__desc-item">
+              <div class="morevalue-info__desc-item-title">Modern design</div>
+              <div class="morevalue-info__desc-item-desc">The room looks beautiful with a blend of <br/>contemporary and attractive design.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --- buyproduct ----->
+      <section class="buyproduct">
+        <h2 class="main-title buyproduct-title">Our you have to buy<span>Product</span></h2>
+        <div class="buyproduct-swiper swiper">
+          <div class="buyproduct-swiper__arrs">
+            <div class="buyproduct-swiper__arrs-prev"><img src="./img/index/buyproduct-swiper-arrprev.svg" alt=""/></div>
+            <div class="buyproduct-swiper__arrs-next"><img src="./img/index/buyproduct-swiper-arrnext.svg" alt=""/></div>
+          </div>
+          <div class="buyproduct-swiper__wrapper swiper-wrapper">
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-1.jpg" alt=""/></div>
+                <div class="slide-item__name">Modern lamp study</div>
+                <div class="slide-item__price">$258</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-2.jpg" alt=""/></div>
+                <div class="slide-item__name">Modern lamp study</div>
+                <div class="slide-item__price">$135</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-3.jpg" alt=""/></div>
+                <div class="slide-item__name">Classic lamp</div>
+                <div class="slide-item__price">$425</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-4.jpg" alt=""/></div>
+                <div class="slide-item__name">Clock cute</div>
+                <div class="slide-item__price">$331</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-1.jpg" alt=""/></div>
+                <div class="slide-item__name">Modern lamp study</div>
+                <div class="slide-item__price">$258</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-2.jpg" alt=""/></div>
+                <div class="slide-item__name">Modern lamp study</div>
+                <div class="slide-item__price">$135</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-3.jpg" alt=""/></div>
+                <div class="slide-item__name">Classic lamp</div>
+                <div class="slide-item__price">$425</div>
+              </div>
+            </div>
+            <div class="buyproduct-swiper__wrapper-slide swiper-slide"> 
+              <div class="slide-item">
+                <div class="slide-item__pic"><img src="./img/index/buyproduct-slide-4.jpg" alt=""/></div>
+                <div class="slide-item__name">Clock cute</div>
+                <div class="slide-item__price">$331</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --- trynow ----->
+      <section class="trynow">
+        <div class="trynow-info"> 
+          <h2 class="trynow-info__title main-title">Let’s <span>Try Now </span></h2><a class="trynow-info__btn btn-red" href="">Explore</a>
+        </div>
+        <div class="trynow-pic"> 
+          <picture>
+            <source srcset="./img/index/trynow-pic.webp" type="image/webp"/><img src="./img/index/trynow-pic.jpg" alt=""/>
+          </picture>
+        </div>
+      </section>
+    </main>
+    <!-- Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <footer class="footer">
+      <hr class="footer-line"/>
+      <div class="footer-items">
+        <div class="footer-items__item">
+          <div class="footer-items__item-title">Get’s your <br/>discount</div>
+          <ul class="footer-items__item-list">
+            <li><a href="">Check now !</a></li>
+          </ul>
+        </div>
+        <div class="footer-items__item">
+          <div class="footer-items__item-title">Our services</div>
+          <ul class="footer-items__item-list">
+            <li><a href="">Collection</a></li>
+            <li><a href="">How its work</a></li>
+            <li><a href="">Estimats</a></li>
+          </ul>
+        </div>
+        <div class="footer-items__item">
+          <div class="footer-items__item-title">Company</div>
+          <ul class="footer-items__item-list">
+            <li><a href="">Terms of use</a></li>
+            <li><a href="">Privacy policy</a></li>
+            <li><a href="">Careers</a></li>
+          </ul>
+        </div>
+        <div class="footer-items__item">
+          <div class="footer-items__item-title">Contact</div>
+          <ul class="footer-items__item-list">
+            <li><a href="">Furniutr2@furniture.com</a></li>
+            <li><a href="">(888) 315-500</a></li>
+            <li><a href="">St. VIllage, New York</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!--script(src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous")-->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
