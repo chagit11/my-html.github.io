@@ -1,0 +1,212 @@
+[data-htmler="select-on"] {
+    outline: 5px dashed yellow !important;
+}
+[data-htmler="select-on"]:before,
+[data-htmler="select-on"]:after {
+    outline: 5px dashed orange !important;
+}
+[data-htmler="select-off"] {
+    outline: 5px dashed red;
+}
+[data-htmler="select-off"]:before,
+[data-htmler="select-off"]:after {
+    outline: 5px dashed blue;
+}
+
+
+#HTMLer {
+    
+}
+
+
+
+/* operelemsdom */
+#HTMLer operelemsdom {
+    width: max-content;
+    background: #282850;
+    position: fixed; z-index: 88;
+}
+    operelemsdom nameelem {
+        padding: 10px 25px; 
+        display: block; font-size: 22px; 
+        color: #00ff37; font-weight: 500; letter-spacing: 3px;
+    } 
+        operelemsdom nameelem mainname {
+            
+        }
+        operelemsdom nameelem allname {
+            color: #b3b3b3;
+        }
+
+
+
+/* view-elemstylecss */
+#HTMLer operelemscss {
+    position: fixed; inset: 0; z-index: 99;
+}
+#HTMLer operelemscss wrapper{
+    background: #000;
+    height: 0; min-width: 600px;
+    position: fixed;  z-index: 99; bottom: 150px; left: 30%; 
+    display: grid; 
+    grid-template-columns: max-content auto; 
+    grid-template-rows: auto auto; 
+    grid-template-areas: 'mainprops props'
+                         'elemstyle elemstyle';
+    grid-gap: 10px;
+    align-content: end; align-items: end;
+}
+    /* ============elemstyle========= */
+    operelemscss elemstyle {
+        grid-area: elemstyle;
+        padding: 10px 0; /* min-width: 500px; */
+        display: flex; flex-direction: column; 
+        background: #282850;
+        font-size: 22px; color: #fff;
+        letter-spacing: 3px; cursor: pointer;
+    }
+        operelemscss nameelem {
+            margin-bottom: 15px; padding: 10px 25px; 
+            display: block;
+            color: #00ff37; font-weight: 600;
+        } 
+            operelemscss nameelem mainname {
+                
+            }
+            operelemscss nameelem allname {
+                color: #b3b3b3;
+            }
+        operelemscss styleelem {
+            margin-bottom: 10px;
+            padding: 10px 25px 30px; min-height: 100px;
+            display: block; background: #000;
+            color: #b3b3b3;
+        }
+            operelemscss styleelem propval {
+                width: max-content;
+                display: block; font-weight: 500;
+                white-space: pre-wrap; user-select: none;
+            } operelemscss styleelem propval:hover {
+                background: #1b1b50; 
+            }
+                operelemscss styleelem propval prop {
+                    
+                } operelemscss styleelem propval prop:hover {
+                    text-decoration: underline;
+                }
+                operelemscss styleelem propval val {
+                    color: #ffa601;
+                } operelemscss styleelem propval val:hover {
+                    background: #000;
+                }
+                operelemscss styleelem propval [contenteditable] {
+                    color: #db05bf; 
+                }
+            /* input style */
+            operelemscss styleelem inputstyle {
+                padding-left: 50px;
+                width: 100%; height: 100%;
+                display: flex; flex-direction: column;
+            }
+                operelemscss styleelem inputstyle textarea {
+                    margin-bottom: 10px; padding: 10px 15px;
+                    height: 250px; background: #000; 
+                    color: #b3b3b3; white-space: nowrap;
+                }
+                operelemscss styleelem inputstyle buttons {
+                    display: flex; justify-content: space-between;
+                }
+                    operelemscss styleelem inputstyle backpropsvals,
+                    operelemscss styleelem inputstyle copy *,
+                    operelemscss styleelem inputstyle save {
+                        padding: 5px 15px; 
+                        width: max-content; align-self: end;
+                        color: #fff; background: #282850;
+                    } operelemscss styleelem inputstyle backpropsvals:hover,
+                    operelemscss styleelem inputstyle copy *:hover,
+                    operelemscss styleelem inputstyle save:hover {
+                        background: #414181;
+                    }
+                    operelemscss styleelem inputstyle copy {
+                        display: flex; 
+                        position: relative; top: -50px; left: 100px;
+                    }
+                    operelemscss styleelem inputstyle copycss,
+                    operelemscss styleelem inputstyle copysass {
+                        margin: 0 10px; 
+                    }
+        /* copystylesass */
+        operelemscss copystylesass {
+            padding: 5px 15px; 
+            width: max-content; align-self: center;
+            color: #fff; background: #05053b;
+        } operelemscss copystylesass:hover {
+            background: #4b4b90;
+        }
+                
+    /* ==========mainprops============= */
+    operelemscss  mainprops {
+        grid-area: mainprops;
+        padding: 10px 0; 
+        display: block; background: #282850;
+        font-size: 22px; color: #c7c7c7;
+    }
+        operelemscss mainprop {
+            padding: 7px 25px; display: block;
+            letter-spacing: 3px; cursor: pointer;
+        } operelemscss mainprop:hover {
+            background: #2d2d79;
+        }
+    /* ==========props============= */
+    operelemscss props {
+        grid-area: props;
+        padding: 10px 0; 
+        display: block; background: #282850;
+        font-size: 22px; color: #fff;
+    }
+        operelemscss props prop {
+            padding: 7px 25px; display: block;
+            letter-spacing: 3px; cursor: pointer;
+        } operelemscss props prop:hover {
+            background: #2d2d79;
+        }
+
+    
+
+
+
+
+
+/* operelemhtml */
+#HTMLer operelemshtml {
+    border: 1px solid red;
+    position: fixed; z-index: 999; inset: 0;
+    /* display: flex; */ 
+    justify-content: center; align-items: center;
+}
+    operelemshtml elemsstyles {
+        padding: 30px; width: 45vw; height: 70vh;
+        background: #282850;
+        font-size: 22px; color: #fff; letter-spacing: 3px;
+        overflow: scroll; white-space: nowrap;
+    }
+        operelemshtml elemsstyles nameelem {
+            display: block;
+            color: #04ee04; white-space: pre-wrap;
+        }
+            operelemshtml elemsstyles nameelem mainname {
+                
+            }
+            operelemshtml elemsstyles nameelem morename {
+                color: #b4b3b3;
+            }
+        operelemshtml elemsstyles styleelem {
+            display: block;
+            color: #dbd9d9; white-space: pre-wrap;
+        }
+            operelemshtml elemsstyles styleelem prop {
+                
+            }
+            operelemshtml elemsstyles styleelem val {
+                color: #ebc90a;
+            }

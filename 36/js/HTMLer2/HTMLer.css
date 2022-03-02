@@ -1,0 +1,173 @@
+[data-htmler="select-on"] {
+    outline: 5px dashed yellow !important;
+}
+[data-htmler="select-on"]:before,
+[data-htmler="select-on"]:after {
+    outline: 5px dashed orange !important;
+}
+[data-htmler="select-off"] {
+    outline: 5px dashed red;
+}
+[data-htmler="select-off"]:before,
+[data-htmler="select-off"]:after {
+    outline: 5px dashed blue;
+}
+
+
+.style-HTMLer, #HTMLer {
+    border: 1px solid red;
+    height: 0;
+    position: fixed; z-index: 99; bottom: 50px; left: 30%; /* right: 10%; */
+    display: grid; grid-template-columns: repeat(4, max-content); grid-column-gap: 40px;
+    align-content: end; align-items: end;
+}
+
+[data-view] > * {
+    outline: 5px solid #00ff9d !important;
+}
+
+
+/* view-elemstylecss */
+#HTMLer [data-htmler="view-elemstylecss"] {
+    
+}
+    [data-htmler="view-elemstylecss"] > elemstyle {
+        padding: 10px 0; 
+        display: block; background: #282850;
+        font-size: 22px; color: #fff;
+        letter-spacing: 3px; cursor: pointer;
+    }
+        [data-htmler="view-elemstylecss"] nameelem {
+            padding: 7px 25px; display: block;
+            color: #00ff37;
+        }
+        [data-htmler="view-elemstylecss"] styleelem {
+            padding: 7px 25px; display: block;
+            color: #ffd900;
+        }
+        [data-htmler="view-elemstylecss"] styleelem propval {
+            display: block;
+            white-space: pre-wrap;
+        }
+        [data-htmler="view-elemstylecss"] styleelem prop {
+            
+        }
+        [data-htmler="view-elemstylecss"] styleelem val {
+            
+        }
+
+
+    
+
+
+    
+/* view-mainpropscss */
+#HTMLer [data-htmler="view-mainpropscss"] {
+    
+}
+    [data-htmler="view-mainpropscss"] > mainprops {
+        padding: 10px 0; 
+        display: block; background: #282850;
+        font-size: 22px; color: #fff;
+    }
+        [data-htmler="view-mainpropscss"] mainprop {
+            padding: 7px 25px; display: block;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }[data-htmler="view-mainpropscss"] mainprop:hover {
+            background: #2d2d79;
+        }
+    .mainpropscss-mainprop_ {
+        background: #030333 !important;
+        /* color: #ffb300; */
+    }
+
+
+/* view-propscss */
+#HTMLer [data-htmler="view-propscss"] {
+    
+}
+    [data-htmler="view-propscss"] > props {
+        padding: 10px 0; 
+        display: block; background: #282850;
+        font-size: 22px; color: #fff;
+    }
+        [data-htmler="view-propscss"] prop {
+            padding: 7px 25px; display: block;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }[data-htmler="view-propscss"] prop:hover {
+            background: #2d2d79;
+        }
+        .propscss-prop_ {
+            background: #030333 !important;
+            /* color: #ffb300; */
+        }
+
+
+/* view-valscss */
+#HTMLer [data-htmler="view-valscss"] {
+    
+}
+    [data-htmler="view-valscss"] > vals {
+        padding: 10px 0; 
+        display: block; background: #282850;
+        font-size: 22px; color: #fff;
+    }
+        [data-htmler="view-valscss"] val {
+            padding: 7px 25px; display: block;
+            letter-spacing: 3px;
+            cursor: pointer;
+        }[data-htmler="view-valscss"] val:hover {
+            background: #2d2d79;
+        }
+        [data-htmler="view-valscss"] val:first-of-type {
+            background: #000000;
+        }
+        [data-htmler="view-valscss"] val:last-of-type {
+            color: #ffb300;
+        }
+        .valscss-val_ {
+            background: #030333 !important;
+            /* color: #ffb300; */
+        }
+
+
+
+
+
+
+/* view-elemshtml */
+#HTMLer [data-htmler="view-elemshtml"] {
+    position: fixed; z-index: 999; inset: 0;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center; align-items: center;
+}
+    [data-htmler="view-elemshtml"] > wrapper {
+        padding: 20px;
+        width: 800px; height: 600px;
+        display: block;
+        background: #282850;
+        font-size: 25px;
+        color: #fff;
+    }
+        [data-htmler="view-elemshtml"] tagname {
+            display: block;
+            white-space: pre-wrap; letter-spacing: 5px;
+            color: #45e45e;
+        }
+            [data-htmler="view-elemshtml"] tagname span {
+                color: grey;
+            }
+        [data-htmler="view-elemshtml"] attrstyle {
+            display: block;
+            white-space: pre-wrap; letter-spacing: 3px;
+            color: #9b4990;            
+        }
+            [data-htmler="view-elemshtml"] attrstyle span {
+                color: #90680a;
+            }
+
+
+
