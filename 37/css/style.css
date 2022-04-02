@@ -183,7 +183,7 @@ header > *, main > *, footer > * {
     position: fixed;
     top: 0;
     left: 0;
-    rigth: 50%;
+    right: 50%;
     z-index: 999;
   }
 }
