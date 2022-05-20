@@ -307,7 +307,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
 .card__order-btn {
   width: 180px;
   height: 45px;
-  background: url(../img/_all/card-order-btn-bg.svg) no-repeat center, #E07153;
+  background: url(../img/all/card-order-btn-bg.svg) no-repeat center, #E07153;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -414,7 +414,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   }
 }
 .header-top__phone a:before {
-  content: url(../img/_all/phone-icon.svg);
+  content: url(../img/all/phone-icon.svg);
   display: block;
   position: absolute;
   top: 0;
@@ -649,7 +649,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url(../img/_all/bg-orange-pic.svg) no-repeat center;
+  background: url(../img/all/bg-orange-pic.svg) no-repeat center;
   background-color: #E07153;
   font-weight: 700;
   font-size: 14px;
@@ -676,6 +676,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   padding: 60px 40px;
   width: 360px;
   height: 285px;
+  display: none;
   background: #FFFFFF;
   border-radius: 24px;
   box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
@@ -1169,7 +1170,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   left: -80px;
   width: 64px;
   height: 64px;
-  background: url(../img/_all/topnew-title.svg) no-repeat center;
+  background: url(../img/all/topnew-title.svg) no-repeat center;
 }
 .topnew__cards {
   display: flex;
@@ -1232,7 +1233,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   inset: 0;
   z-index: -1;
   margin: 0 -348px;
-  background: url(../img/_all/combomenu-bg.svg) no-repeat left center;
+  background: url(../img/all/combomenu-bg.svg) no-repeat left center;
   background-color: #F5F9FA;
 }
 .combomenu__title {
@@ -1246,7 +1247,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   left: 300px;
   width: 64px;
   height: 64px;
-  background: url(../img/_all/combomenu-title.svg) no-repeat center;
+  background: url(../img/all/combomenu-title.svg) no-repeat center;
 }
 .combomenu__cards {
   display: flex;
@@ -1312,7 +1313,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   z-index: -1;
   width: 570px;
   height: 390px;
-  background: url(../img/_all/stocks-bg.svg) no-repeat center;
+  background: url(../img/all/stocks-bg.svg) no-repeat center;
 }
 .stocks__title {
   position: relative;
@@ -1326,7 +1327,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   left: 160px;
   width: 64px;
   height: 64px;
-  background: url(../img/_all/stocks-title.svg) no-repeat center;
+  background: url(../img/all/stocks-title.svg) no-repeat center;
 }
 .stocks__items {
   display: flex;
@@ -1371,7 +1372,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   right: 0;
   width: 100%;
   height: 115px;
-  background-image: url(../img/_all/stocks-item-bg.svg);
+  background-image: url(../img/all/stocks-item-bg.svg);
 }
 .stocks__item:nth-of-type(1) {
   background-color: #D2F6FF;
@@ -1411,7 +1412,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   left: 250px;
   width: 64px;
   height: 64px;
-  background: url(../img/_all/categories-title.svg) no-repeat center;
+  background: url(../img/all/categories-title.svg) no-repeat center;
 }
 .categories__tabs {
   margin-bottom: 50px;
@@ -1591,7 +1592,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   position: relative;
 }
 .aboutus__title:after {
-  content: url(../img/_all/aboutus-title.svg);
+  content: url(../img/all/aboutus-title.svg);
   display: block;
   position: absolute;
   top: 0;
@@ -1633,7 +1634,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   position: relative;
 }
 .subscribe:after {
-  content: url(../img/_all/subscribe/bg.svg);
+  content: url(../img/all/subscribe/bg.svg);
   display: block;
   position: absolute;
   top: -90px;
@@ -1670,7 +1671,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   padding-left: 60px;
   width: 290px;
   height: 70px;
-  background: url(../img/_all/subscribe-btn-ig.svg) no-repeat center left 45px, url(../img/_all/subscribe-btn-bg.svg) no-repeat center;
+  background: url(../img/all/subscribe-btn-ig.svg) no-repeat center left 45px, url(../img/all/subscribe-btn-bg.svg) no-repeat center;
   background-color: #E07153;
   display: flex;
   justify-content: center;

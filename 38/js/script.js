@@ -89,6 +89,29 @@ __('.cart-hover__products-count')?.forEach( (el) => {
 })
 
 
+// --- loginPopup ---
+class loginPopup {
+  constructor() {
+    _('.header-top__login').addEventListener('click', (e) => {
+      e.stopPropagation()
+      this.openLoginPopup()
+    }, true);
+    _('.header-top__login-popup .login-popup__btn-close').addEventListener('click', (e) => {
+      e.stopPropagation()
+      this.closeLoginPopup()
+    }, true);
+  }
+  //
+  openLoginPopup() {
+    _('.header-top__login-popup').style.display = 'block'
+  }
+  //
+  closeLoginPopup() {
+    _('.header-top__login-popup').style.display = 'none'    
+  }
+}
+//
+new loginPopup()
 
 
 // --- 
