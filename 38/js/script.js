@@ -34,84 +34,34 @@ mobmenu.addWrap([
 ])
 
 
-// --- openCloseCartHover ---
-class openCloseCartHover {
-  constructor(clickElem, openCloseElem, displ) {
-    _(clickElem)?.addEventListener('click', (e) => {
+
+
+// --- LoginPopup ---
+class LoginPopup {
+  constructor(pos) {
+    __('.header-top__login')[pos].addEventListener('click', (e) => {
       e.stopPropagation()
-      this.openClose(openCloseElem, displ)
-    }, true)
+      this.openLoginPopup(pos)
+    })
+    __('.login-popup__btn-close')[pos].addEventListener('click', (e) => {
+      e.stopPropagation()
+      this.closeLoginPopup(pos)
+    })
   }
   //
-  openClose(openCloseElem, displ) {
-    if(_(openCloseElem).style.display!=displ) {
-      _(openCloseElem).style.display = displ
-    }
-    else if(_(openCloseElem).style.display==displ) {
-      _(openCloseElem).style.display = 'none'
-    }
+  openLoginPopup(pos) {
+    __('.header-top__login-popup')[pos].style.display = 'block'
+  }
+  //
+  closeLoginPopup(pos) {
+    __('.header-top__login-popup')[pos].style.display = 'none'    
   }
 }
 //
-new openCloseCartHover(
-  '.header-top__cart-badge',
-  '.header-top__cart-hover',
-  'flex'
-)
+new LoginPopup(0)
+new LoginPopup(1)
 
 
-// --- calcuteCartHover ---
-class calcuteCartHover {
-  constructor(countElem) {
-    countElem.querySelector('.minus')?.addEventListener('click', (e) => {
-      e.stopPropagation()
-      this.minusCount(countElem)
-    }, true)
-    countElem.querySelector('.plus')?.addEventListener('click', (e) => {
-      e.stopPropagation()
-      this.plusCount(countElem)
-    }, true)
-  }
-  //
-  plusCount(countElem) {
-    let count = countElem.querySelector('.count').textContent
-    countElem.querySelector('.count').textContent = +count+1
-  }
-  //
-  minusCount(countElem) {
-    let count = countElem.querySelector('.count').textContent
-    if(count!='1') countElem.querySelector('.count').textContent = +count-1
-  }
-}
-//
-__('.cart-hover__products-count')?.forEach( (el) => {
-  new calcuteCartHover(el)
-})
-
-
-// --- loginPopup ---
-class loginPopup {
-  constructor() {
-    _('.header-top__login').addEventListener('click', (e) => {
-      e.stopPropagation()
-      this.openLoginPopup()
-    }, true);
-    _('.header-top__login-popup .login-popup__btn-close').addEventListener('click', (e) => {
-      e.stopPropagation()
-      this.closeLoginPopup()
-    }, true);
-  }
-  //
-  openLoginPopup() {
-    _('.header-top__login-popup').style.display = 'block'
-  }
-  //
-  closeLoginPopup() {
-    _('.header-top__login-popup').style.display = 'none'    
-  }
-}
-//
-new loginPopup()
 
 
 // --- 
