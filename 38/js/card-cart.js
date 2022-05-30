@@ -126,6 +126,7 @@ class CartOper {
       let price = el.querySelector('.cart-hover__products-price span').textContent
       rprice += +price
     })
+    _('.header-top__cart-price span:first-child').textContent = rprice
     _('.cart-hover__footer-price span').textContent = rprice
   }
 }

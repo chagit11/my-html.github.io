@@ -220,15 +220,23 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   flex-direction: column;
   justify-content: space-between;
 }
+.card > * {
+  flex-shrink: 0;
+}
 .card__pic-wrap {
   width: 100%;
   height: 255px;
+  margin-bottom: 30px;
   position: relative;
 }
 .card__pic {
   position: absolute;
-  top: 0;
-  left: 0;
+  inset: 0;
+}
+.card__pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .card__pic-before {
   position: absolute;
@@ -271,6 +279,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
 .card__info-title {
   margin-top: 10px;
   margin-bottom: 5px;
+  height: 30px;
   font-weight: 600;
   font-size: 24px;
   line-height: 30px;
@@ -278,6 +287,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
 }
 .card__info-desc {
   margin-bottom: 35px;
+  height: 50px;
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
