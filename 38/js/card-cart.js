@@ -28,6 +28,12 @@ new OpenCloseCartHover(
   'flex'
 )
 
+_('body').addEventListener('click', (e) => {
+  if(![_('.header-top__cart-hover'), ...__('.header-top__cart-hover *')].includes(e.target)) {
+    _('.header-top__cart-hover').style.display = 'none'
+  }
+})
+
 
 // --- numProdsCart ---
 class numProdsCart {
