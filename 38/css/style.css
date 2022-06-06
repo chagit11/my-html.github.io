@@ -1623,6 +1623,7 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   color: #E07153;
 }
 .categories__wrapper {
+  margin-top: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
