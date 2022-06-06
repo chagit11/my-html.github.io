@@ -5,30 +5,638 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <link rel="stylesheet" href="./css/reset.css"/>
     <link rel="stylesheet" href="./css/style.css"/>
-    <title>Document</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <title>Доставка еды</title>
   </head>
   <body>
-    <!-- Header >>>>>>>>>>>>>>>>>>>>>>>> -->
-    <header class="header"></header>
-    <!-- Main >>>>>>>>>>>>>>>>>>>>>>>>>> -->
-    <main class="main">
-      <div class="slider">
-        <div class="slider__slides">
-          <div class="slider__slide">1</div>
-          <div class="slider__slide">2</div>
-          <div class="slider__slide">3</div>
-          <div class="slider__slide">4</div>
-          <div class="slider__slide">5</div>
+    <!-- Header >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <header class="header">
+      <!-- --- header-top ----->
+      <div class="header-top"><a class="header-top__logo" href=""><img src="./img/all/logo.svg" alt="logo"/></a>
+        <div class="header-top__mobmenu">
+          <div class="button"><span></span><span></span><span></span></div>
+          <div class="wrapper"></div>
         </div>
-        <div class="slider__arrows">
-          <div class="slider__arrows-prev"><</div>
-          <div class="slider__arrows-next">></div>
+        <ul class="header-top__menu menu">
+          <li><a href="">О нас</a></li>
+          <li><a href="">Доставка и оплата</a></li>
+          <li><a href="">Контакты</a></li>
+          <li><a href="">Бонусы</a></li>
+          <li><a href="">Вакансии </a></li>
+        </ul>
+        <div class="header-top__phone"><a href="tel:+74956171424">+7 (495) 617-14-24</a><span>c 10:00 до 23:00</span></div>
+        <div class="header-top__cart">
+          <div class="header-top__cart-price"> <span>0</span><span>₽</span></div>
+          <div class="header-top__cart-badge"><img src="./img/all/cart-icon.svg" alt=""/><sup>0</sup></div>
+          <div class="header-top__cart-hover"> 
+            <div class="cart-hover__body">
+              <div class="cart-hover__empty">
+                <div class="cart-hover__empty-pic"><img src="./img/all/cart-hover-empty-pic.svg" alt=""/></div>
+                <div class="cart-hover__empty-text">Ваша корзина пуста</div>
+              </div>
+              <div class="cart-hover__products"></div>
+            </div>
+            <div class="cart-hover__footer">
+              <div class="cart-hover__footer-price">
+                <div class="price-dt">Сумма заказа:</div>
+                <div class="price-dd"><span>0</span> ₽ </div>
+              </div><a class="cart-hover__footer-btn" href="">Оформить заказ</a>
+            </div>
+          </div>
+        </div>
+        <div class="header-top__login"><img src="./img/all/login-icon.svg" alt=""/>
+          <div class="header-top__login-popup"> 
+            <div class="login-popup__btn-close"><img src="./img/all/login-btn-close.svg" alt=""/></div>
+            <div class="login-popup__title">Вход в кабинет</div>
+            <div class="login-popup__form" action="index.html">
+              <input type="text" value="" placeholder="Телефон"/>
+              <input type="submit" value="Отправить код"/>
+            </div>
+          </div>
         </div>
       </div>
+      <!-- --- header-categories ----->
+      <div class="header-categories">
+        <div class="container"> 
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/pizza.svg" alt=""/></div><a class="header-categories__item-text" href="">Пицца</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/sushi.svg" alt=""/></div><a class="header-categories__item-text" href="">Суши</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/rolle.svg" alt=""/></div><a class="header-categories__item-text" href="">Роллы</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/set.svg" alt=""/></div><a class="header-categories__item-text" href="">Сеты</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/wok.svg" alt=""/></div><a class="header-categories__item-text" href="">Wok</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/soup.svg" alt=""/></div><a class="header-categories__item-text" href="">Супы</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/salads.svg" alt=""/></div><a class="header-categories__item-text" href="">Салаты</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/dessert.svg" alt=""/></div><a class="header-categories__item-text" href="">Десерты</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/drink.svg" alt=""/></div><a class="header-categories__item-text" href="">Напитки</a>
+          </div>
+          <div class="header-categories__item">
+            <div class="header-categories__item-icon"><img src="./img/all/categories/sale.svg" alt=""/></div><a class="header-categories__item-text" href="">Акции</a>
+          </div>
+        </div>
+      </div>
+      <!-- --- header-slider ----->
+      <div class="header-slider">
+        <div class="header-slider__wrapper swiper">
+          <div class="header-slider__slides swiper-wrapper">
+            <div class="header-slider__slide swiper-slide">
+              <div class="slide-title">Калифорния <strong>в подарок</strong> при первом заказе 1<span>от 1500 ₽</span></div>
+              <div class="slide-pic"><img src="./img/index/header-slider-pic-1.png" alt=""/></div>
+            </div>
+            <div class="header-slider__slide swiper-slide">
+              <div class="slide-title">Калифорния <strong>в подарок</strong> при первом заказе 2<span>от 1500 ₽</span></div>
+              <div class="slide-pic"><img src="./img/index/header-slider-pic-1.png" alt=""/></div>
+            </div>
+          </div>
+        </div><a class="header-slider__btn-more" href="">Подробнее</a>
+        <div class="header-slider__arrows">
+          <div class="header-slider__arrows-prev"><img src="./img/all/slider-arrow.svg" alt=""/></div>
+          <div class="header-slider__arrows-next"><img src="./img/all/slider-arrow.svg" alt=""/></div>
+        </div>
+      </div>
+      <!-- --- header-advantages ----->
+      <div class="header-advantages">
+        <div class="header-advantages__item">
+          <div class="header-advantages__item-pic"><img src="./img/all/header-advantages/item-1-text.svg" alt=""/><img src="./img/all/header-advantages/item-1.svg" alt=""/></div>
+          <div class="header-advantages__item-text"> <strong>доставка</strong>при заказе от 600 ₽ </div>
+        </div>
+        <div class="header-advantages__item">
+          <div class="header-advantages__item-pic"><img src="./img/all/header-advantages/item-2-text.svg" alt=""/><img src="./img/all/header-advantages/item-2.svg" alt=""/></div>
+          <div class="header-advantages__item-text"> <strong>за 60 мин</strong>или проморол за опоздание</div>
+        </div>
+        <div class="header-advantages__item">
+          <div class="header-advantages__item-pic"><img src="./img/all/header-advantages/item-3-text.svg" alt=""/><img src="./img/all/header-advantages/item-3.svg" alt=""/></div>
+          <div class="header-advantages__item-text"> <strong>бонусы</strong>бонусная система 1 ₽ = 1 бонус</div>
+        </div>
+        <div class="header-advantages__item">
+          <div class="header-advantages__item-pic"><img src="./img/all/header-advantages/item-4-text.svg" alt=""/><img src="./img/all/header-advantages/item-4.svg" alt=""/></div>
+          <div class="header-advantages__item-text"> <strong>продукты</strong>Никаких заготовок!</div>
+        </div>
+      </div>
+    </header>
+    <!-- Main >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <main class="main">
+      <!-- --- topnew ----->
+      <section class="topnew">
+        <div class="topnew__title main__title">Топ позиции</div>
+        <div class="topnew__arrows">
+          <div class="topnew__arrows-prev"><img src="./img/all/slider-arrow.svg" alt=""/></div>
+          <div class="topnew__arrows-next"><img src="./img/all/slider-arrow.svg" alt=""/></div>
+        </div>
+        <div class="topnew__slider swiper">
+          <div class="topnew__cards cards swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/pizza/Пицца Ветчина и грибы.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Пицца "Ветчина и грибы"</div>
+              <div class="card__info-desc">Ветчина, грибы шампиньоны, соус грибной, сыр моцарелла</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">269 ₽</div>
+                  <div class="card__order-price-main">219 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/sushi/card-pic-2.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Суши "Острые с угрем"</div>
+              <div class="card__info-desc">37 г Угорь, соус Спайси</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">129 ₽</div>
+                  <div class="card__order-price-main">99 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/role/card-pic-3.png" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Ролл "Филадельфия"</div>
+              <div class="card__info-desc">Лосось, сыр "Филадельфия", огурец, авокадо </div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">269 ₽</div>
+                  <div class="card__order-price-main">219 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/soups/card-pic-4.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Суп "Чао Пин"</div>
+              <div class="card__info-desc">креветки, мидии, кальмары, сливки, халапеньо, паста томатная, итальянские травы, специи, лук репчатый, чеснок, кинза</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">340 ₽</div>
+                  <div class="card__order-price-main">289 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/salads/card-pic-5.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Салат «Оливье» в чаше </div>
+              <div class="card__info-desc">Традиционный салат «Оливье» с куриной грудкой и свежим зеленым горошком выложен в чашу, украшен помидороми черри и укропом.</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">2300 ₽</div>
+                  <div class="card__order-price-main">2090 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --- combomenu ----->
+      <section class="combomenu"> 
+        <div class="combomenu__title main__title">Комбо меню</div>
+        <div class="combomenu__arrows">
+          <div class="combomenu__arrows-prev"><img src="./img/all/slider-arrow.svg" alt=""/></div>
+          <div class="combomenu__arrows-next"><img src="./img/all/slider-arrow.svg" alt=""/></div>
+        </div>
+        <div class="combomenu__slider swiper">
+          <div class="combomenu__cards cards swiper-wrapper">
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/combomenu/card-pic-1.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Комбо Американ Дрим</div>
+              <div class="card__info-desc">Чизбургер с сочной мясной котлетой, маринованными огурцами, плавленым сыром и соусом.</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">606 ₽</div>
+                  <div class="card__order-price-main">449 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/combomenu/card-pic-2.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Комбо Курочкa фри</div>
+              <div class="card__info-desc">Картофель фри, Наггетсы, Морс клюква, Соус сырный, Соус томатный</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">545 ₽</div>
+                  <div class="card__order-price-main">399 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/combomenu/card-pic-3.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Комбо микс</div>
+              <div class="card__info-desc">Пицца Баварская; Сет Фирменный;</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">1 499 ₽</div>
+                  <div class="card__order-price-main">1 319 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/combomenu/card-pic-4.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Дабл пицца</div>
+              <div class="card__info-desc">Пицца Баварская; Пицца 4 Сыра; Coca-Cola (1 л)</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">999 ₽</div>
+                  <div class="card__order-price-main">899 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+            <div class="card swiper-slide">
+              <div class="card__pic-wrap">
+                <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+                <div class="card__pic"><img src="./img/all/cards-pic/combomenu/card-pic-5.jpg" alt=""/></div>
+                <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+              </div>
+              <div class="card__info">
+                <div class="card__info-properties">
+                  <div class="card__info-properties-item">200 грамм</div>
+                  <div class="card__info-properties-item">130 Ккал</div>
+                </div>
+              </div>
+              <div class="card__info-title">Комбо Small party</div>
+              <div class="card__info-desc">Пицца Неаполитано; Пицца Царская; Сет Суши шок;</div>
+              <div class="card__order"> 
+                <div class="card__order-price"> 
+                  <div class="card__order-price-old">2 111 ₽</div>
+                  <div class="card__order-price-main">1 799 ₽ </div>
+                </div>
+                <div class="card__order-btn">Заказать </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --- stocks ----->
+      <section class="stocks">
+        <div class="stocks__container container">
+          <div class="stocks__title main__title">Акции</div>
+          <div class="stocks__items">
+            <div class="stocks__item">
+              <div class="stocks__item-text">
+                 Празднуй день рождения вместе с нами<span>Ролл в подарок при заказе в день рождения</span></div>
+              <div class="stocks__item-pic"> <img src="./img/all/stocks-item-1.svg" alt=""/></div>
+            </div>
+            <div class="stocks__item">
+              <div class="stocks__item-text">
+                 Доставим заказ за 60 мин<span>или проморол за опоздание</span></div>
+              <div class="stocks__item-pic"> <img src="./img/all/stocks-item-2.svg" alt=""/></div>
+            </div>
+            <div class="stocks__item">
+              <div class="stocks__item-text">
+                 Приведи друга <span>и получи 250 ₽ на бонусный счет</span></div>
+              <div class="stocks__item-pic"> <img src="./img/all/stocks-item-3.svg" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- --- categories ----->
+      <section class="categories">
+        <div class="categories__title main__title">Категории</div>
+        <div class="categories__tabs">
+          <div class="categories__tabs-item --active">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/pizza.svg" alt=""/></div>
+            <div class="categories__tabs-text">Пицца</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/sushi.svg" alt=""/></div>
+            <div class="categories__tabs-text">Суши</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/rolle.svg" alt=""/></div>
+            <div class="categories__tabs-text">Роллы</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/set.svg" alt=""/></div>
+            <div class="categories__tabs-text">Сеты</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/wok.svg" alt=""/></div>
+            <div class="categories__tabs-text">Wok</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/soup.svg" alt=""/></div>
+            <div class="categories__tabs-text">Супы</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/salads.svg" alt=""/></div>
+            <div class="categories__tabs-text">Салаты</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/dessert.svg" alt=""/></div>
+            <div class="categories__tabs-text">Десерты</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/drink.svg" alt=""/></div>
+            <div class="categories__tabs-text">Напитки</div>
+          </div>
+          <div class="categories__tabs-item">
+            <div class="categories__tabs-pic"><img src="./img/all/categories/sale.svg" alt=""/></div>
+            <div class="categories__tabs-text">Акции</div>
+          </div>
+        </div>
+        <div class="categories__cards"> 
+          <div class="categories__cards-item card"> 
+            <div class="card__pic-wrap">
+              <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+              <div class="card__pic"><img src="./img/index/categories/card-pic-1.jpg" alt=""/></div>
+              <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-properties">
+                <div class="card__info-properties-item">200 грамм</div>
+                <div class="card__info-properties-item">130 Ккал</div>
+              </div>
+            </div>
+            <div class="card__info-title">Пицца “Рикша”</div>
+            <div class="card__info-desc">соус томатный, ветчина, баварские колбаски, сыр моцарелла, колбаса салями, прошутто.</div>
+            <div class="card__order"> 
+              <div class="card__order-price"> 
+                <div class="card__order-price-old">590 ₽</div>
+                <div class="card__order-price-main">510 ₽ </div>
+              </div>
+              <div class="card__order-btn">Заказать     </div>
+            </div>
+          </div>
+          <div class="categories__cards-item card"> 
+            <div class="card__pic-wrap">
+              <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+              <div class="card__pic"><img src="./img/index/categories/card-pic-2.jpg" alt=""/></div>
+              <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-properties">
+                <div class="card__info-properties-item">200 грамм</div>
+                <div class="card__info-properties-item">130 Ккал</div>
+              </div>
+            </div>
+            <div class="card__info-title">Пицца “Парма”</div>
+            <div class="card__info-desc">соус бешамель, пармезан, сыр моцарелла, прошутто, руккола.</div>
+            <div class="card__order"> 
+              <div class="card__order-price"> 
+                <div class="card__order-price-old">699 ₽</div>
+                <div class="card__order-price-main">588 ₽ </div>
+              </div>
+              <div class="card__order-btn">Заказать     </div>
+            </div>
+          </div>
+          <div class="categories__cards-item card"> 
+            <div class="card__pic-wrap">
+              <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+              <div class="card__pic"><img src="./img/index/categories/card-pic-3.jpg" alt=""/></div>
+              <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-properties">
+                <div class="card__info-properties-item">200 грамм</div>
+                <div class="card__info-properties-item">130 Ккал</div>
+              </div>
+            </div>
+            <div class="card__info-title">Пицца “Цезарио”</div>
+            <div class="card__info-desc">соус бешамель, помидоры, хрустящий салат, пармезан, куриное мясо, сыр моцарелла, перепелиные яйца, соус "Цезарь".</div>
+            <div class="card__order"> 
+              <div class="card__order-price"> 
+                <div class="card__order-price-old">590 ₽</div>
+                <div class="card__order-price-main">540 ₽ </div>
+              </div>
+              <div class="card__order-btn">Заказать     </div>
+            </div>
+          </div>
+          <div class="categories__cards-item card"> 
+            <div class="card__pic-wrap">
+              <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+              <div class="card__pic"><img src="./img/index/categories/card-pic-4.jpg" alt=""/></div>
+              <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-properties">
+                <div class="card__info-properties-item">200 грамм</div>
+                <div class="card__info-properties-item">130 Ккал</div>
+              </div>
+            </div>
+            <div class="card__info-title">Пицца “Пеперони”</div>
+            <div class="card__info-desc">сыр моцарелла, соус барбекю, пеперони, пармезан, рукола.</div>
+            <div class="card__order"> 
+              <div class="card__order-price"> 
+                <div class="card__order-price-old">545 ₽</div>
+                <div class="card__order-price-main">499 ₽ </div>
+              </div>
+              <div class="card__order-btn">Заказать     </div>
+            </div>
+          </div>
+          <div class="categories__cards-item card"> 
+            <div class="card__pic-wrap">
+              <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+              <div class="card__pic"><img src="./img/index/categories/card-pic-5.jpg" alt=""/></div>
+              <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-properties">
+                <div class="card__info-properties-item">200 грамм</div>
+                <div class="card__info-properties-item">130 Ккал</div>
+              </div>
+            </div>
+            <div class="card__info-title">Пицца “Капричоза”</div>
+            <div class="card__info-desc">соус томатный, сыр моцарелла, ветчина, свежие грибы.</div>
+            <div class="card__order"> 
+              <div class="card__order-price"> 
+                <div class="card__order-price-old">550 ₽</div>
+                <div class="card__order-price-main">450 ₽ </div>
+              </div>
+              <div class="card__order-btn">Заказать     </div>
+            </div>
+          </div>
+          <div class="categories__cards-item card"> 
+            <div class="card__pic-wrap">
+              <div class="card__pic-before"><img src="./img/all/card-pic-before-hot.svg" alt=""/><img src="./img/all/card-pic-before-baked.svg" alt=""/></div>
+              <div class="card__pic"><img src="./img/index/categories/card-pic-6.jpg" alt=""/></div>
+              <div class="card__pic-after"><img src="./img/all/card-pic-after-top.svg" alt=""/></div>
+            </div>
+            <div class="card__info">
+              <div class="card__info-properties">
+                <div class="card__info-properties-item">200 грамм</div>
+                <div class="card__info-properties-item">130 Ккал</div>
+              </div>
+            </div>
+            <div class="card__info-title">Пицца “Кватро формаджи”</div>
+            <div class="card__info-desc">Лосось, сыр "Филадельфия", огурец, авокадо </div>
+            <div class="card__order"> 
+              <div class="card__order-price"> 
+                <div class="card__order-price-old">600 ₽</div>
+                <div class="card__order-price-main">525 ₽ </div>
+              </div>
+              <div class="card__order-btn">Заказать     </div>
+            </div>
+          </div>
+        </div>
+        <div class="categories__wrapper">
+          <div class="categories__pagination">
+            <div class="categories__pagination-arrow-prev"><img src="./img/index/categories/pagination-arrow-prev.svg" alt=""/></div>
+            <div class="categories__pagination-nums">
+              <div class="categories__pagination-nums-item --active">1</div>
+              <div class="categories__pagination-nums-item">2</div>
+              <div class="categories__pagination-nums-item">3</div>
+              <div class="categories__pagination-nums-item">4</div>
+            </div>
+            <div class="categories__pagination-arrow-next"><img src="./img/index/categories/pagination-arrow-next.svg" alt=""/></div>
+          </div>
+          <div class="categories__gotocat"><a href="catalog.html">Перейти в каталог </a></div>
+        </div>
+      </section>
+      <!-- --- aboutus ----->
+      <section class="aboutus">
+        <div class="aboutus__text">
+          <div class="aboutus__title main__title">О компании</div>
+          <div class="aboutus__desc">
+            Вкусная доставка Рикша подарит Вам незабываемые вкусовые впечатления, украсит любой ваш стол и не заставит себя долго ждать. С нами вы сможете забыть о готовке, легко сделать приятное родным и близким, устроить вкусный праздник или расслабится в кругу друзей. Все блюда готовятся исключительно из свежих продуктов и по оригинальным рецептам Нашего шеф-повара. 
+            <b></b>
+            Любая позиция из Нашего Меню может оказаться у Вас на столе максимум через 60 минут!
+            У вас есть возможность сделать предварительный заказ на определенный день и время. 
+          </div>
+        </div>
+        <div class="aboutus__pic"><img src="./img/all/aboutus-pic.jpg" alt=""/><img src="./img/all/aboutus-pic2.jpg" alt=""/></div>
+      </section>
+      <!-- --- subscribe ----->
+      <section class="subscribe">
+        <div class="subscribe__top">
+          <div class="subscribe__title main__title">А вы уже подписались на наш <span>Instagram</span>?</div><a class="subscribe__btn" href="" target="_blank">@riksha_sushi</a>
+        </div>
+        <div class="subscribe__grid">
+          <div class="subscribe__grid-item"><img src="./img/all/subscribe/pic-1.jpg" alt=""/></div>
+          <div class="subscribe__grid-item"><img src="./img/all/subscribe/pic-2.jpg" alt=""/></div>
+          <div class="subscribe__grid-item"><img src="./img/all/subscribe/pic-3.jpg" alt=""/></div>
+          <div class="subscribe__grid-item"><img src="./img/all/subscribe/pic-4.jpg" alt=""/></div>
+          <div class="subscribe__grid-item"><img src="./img/all/subscribe/pic-5.jpg" alt=""/></div>
+          <div class="subscribe__grid-item"><img src="./img/all/subscribe/pic-6.jpg" alt=""/></div>
+        </div>
+      </section>
     </main>
-    <!-- Footer >>>>>>>>>>>>>>>>>>>>>>>> -->
-    <footer class="footer"></footer>
+    <!-- Footer >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <footer class="footer">
+      <div class="footer__container container"> <a class="footer__logo logo" href=""><img src="./img/all/footer-logo.svg" alt="logo"/></a>
+        <div class="footer__links">
+          <div class="footer__links-info"> <a class="footer__links-info-item" href="">О нас</a><a class="footer__links-info-item" href="">Доставка и оплата</a><a class="footer__links-info-item" href="">Контакты</a></div>
+          <div class="footer__links-socials"><a href="https://fb.com" target="_blank"><img src="./img/all/socials-fb.svg" alt="facebook"/></a><a href="https://instagram.com" target="_blank"><img src="./img/all/socials-ig.svg" alt="instagram"/></a><a href="https://vk.com" target="_blank"><img src="./img/all/socials-vk.svg" alt="vkontakte"/></a></div>
+        </div>
+        <div class="footer__categories"><a class="footer__categories-item" href="">Пицца</a><a class="footer__categories-item" href="">Суши</a><a class="footer__categories-item" href="">Роллы</a><a class="footer__categories-item" href="">Сеты</a><a class="footer__categories-item" href="">Wok</a><a class="footer__categories-item" href="">Супы</a><a class="footer__categories-item" href="">Салаты</a><a class="footer__categories-item" href="">Десерты</a><a class="footer__categories-item" href="">Напитки</a><a class="footer__categories-item" href="">Акции</a></div>
+        <div class="footer__contacts"><a class="footer__contacts-phone" href="tel:+74956171424"> +7 (495) 617-14-24</a>
+          <div class="footer__contacts-time">c 10:00 до 23:00</div>
+        </div>
+      </div>
+      <div class="footer__copyright container">© Рикша. Все права защищены.</div>
+    </footer>
     <!-- js >>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/card-cart.js"></script>
   </body>
 </html>

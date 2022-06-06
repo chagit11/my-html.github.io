@@ -93,10 +93,6 @@ class CardsOper {
         <div class="cart-hover__products-pic"><img src="${cimg}" alt=""></div>
         <div class="cart-hover__products-info">
           <div class="cart-hover__products-name">${cname}</div>
-          <div class="cart-hover__products-properties"> 
-            <div class="cart-hover__products-properties-item --select">30 см</div>
-            <div class="cart-hover__products-properties-item">50 см</div>
-          </div>
         </div>
         <div class="cart-hover__products-calculate">
           <div class="cart-hover__products-count"> 
@@ -229,8 +225,10 @@ __('.card').forEach( (el, i, arr) => {
 
 
 
-
-
+// let prod = document.getElementsByClassName('cart-hover__products-item')
+let prods = _('.cards').querySelectorAll('.card')
+// prods[0].remove()
+console.log(prods)
 
 
 
