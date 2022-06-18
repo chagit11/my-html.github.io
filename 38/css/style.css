@@ -314,6 +314,11 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   line-height: 40px;
   color: #1B1B1B;
 }
+@media screen and (max-width: 1284px) {
+  .card__order-price-main {
+    font-size: 25px;
+  }
+}
 .card__order-btn {
   width: 180px;
   height: 45px;
@@ -1260,9 +1265,9 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   left: 0;
   transform: translate(-50%, -80%) scaleX(-1);
 }
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1440px) {
   .topnew__arrows-prev {
-    transform: translate(0%, -80%) scaleX(-1);
+    transform: translate(10%, -80%) scaleX(-1);
   }
 }
 @media screen and (max-width: 576px) {
@@ -1274,9 +1279,9 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   right: 0;
   transform: translate(50%, -80%);
 }
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1440px) {
   .topnew__arrows-next {
-    transform: translate(0%, -80%);
+    transform: translate(10%, -80%);
   }
 }
 @media screen and (max-width: 576px) {
@@ -1337,9 +1342,9 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   left: 0;
   transform: translate(-50%, -80%) scaleX(-1);
 }
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1440px) {
   .combomenu__arrows-prev {
-    transform: translate(0%, -80%) scaleX(-1);
+    transform: translate(10%, -80%) scaleX(-1);
   }
 }
 @media screen and (max-width: 576px) {
@@ -1351,9 +1356,9 @@ header > *, header .container, main > *, main .container, footer > *, footer .co
   right: 0;
   transform: translate(50%, -80%);
 }
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1440px) {
   .combomenu__arrows-next {
-    transform: translate(0%, -80%);
+    transform: translate(10%, -80%);
   }
 }
 @media screen and (max-width: 576px) {
