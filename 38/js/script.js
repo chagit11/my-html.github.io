@@ -265,8 +265,8 @@ class ResponseJsonCardsCategs {
   }
 }
 // ===
-// const respcards = new ResponseJsonCardsCategs('../img/all/cards-pic/cards.json')
-const respcards = new ResponseJsonCardsCategs('https://chagit11.github.io/ruslan-html/38/img/all/cards-pic/cards.json')
+const respcards = new ResponseJsonCardsCategs('../img/all/cards-pic/cards.json')
+// const respcards = new ResponseJsonCardsCategs('https://chagit11.github.io/ruslan-html/38/img/all/cards-pic/cards.json')
 // 
 _('body').addEventListener('click', (e) => {
   clickTabsCategs(e.target) //
@@ -292,14 +292,12 @@ function clickArrowsPagin(etarget) {
 }
 // --- clickNumsPagin
 function clickNumsPagin() {
-  setTimeout(()=>{
-    [...__('.categories__pagination-nums-item')].forEach( (el, i, arr) => {
-      el.addEventListener('click', (e) => { 
-        categs.setactiveNumPagin(el)
-        respcards.addCards(+categs.getvalActivedNumPagin()-1)
-      })
-    });
-  }, 500)
+  _('.categories__pagination').addEventListener('click', (e) => {
+    if([...__('.categories__pagination-nums-item')].includes(e.target)) {
+      categs.setactiveNumPagin(e.target)
+      respcards.addCards(+categs.getvalActivedNumPagin()-1)
+    }
+  })
 }
 clickNumsPagin() //
 
