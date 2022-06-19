@@ -265,7 +265,7 @@ class ResponseJsonCardsCategs {
   }
 }
 // ===
-const respcards = new ResponseJsonCardsCategs('../img/all/cards-pic/cards.json')
+const respcards = new ResponseJsonCardsCategs('https://chagit11.github.io/ruslan-html/38/img/all/cards-pic/cards.json')
 // 
 _('body').addEventListener('click', (e) => {
   clickTabsCategs(e.target) //
