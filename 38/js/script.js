@@ -261,7 +261,7 @@ class ResponseJsonCardsCategs {
         <div class="categories__pagination-nums-item">${i}</div>
       `)
     }
-    _('.categories__pagination-nums-item').classList.add('--active');
+    _('.categories__pagination-nums-item')?.classList.add('--active');
   }
 }
 // ===
