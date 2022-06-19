@@ -197,7 +197,7 @@ class ResponseJsonCardsCategs {
     setTimeout(()=>{
       this.addCards(0)
       this.addNumsPagin()
-    }, 2000)
+    }, 300)
   }
   // -- setdataCategs
   setdataCategs() {
@@ -265,7 +265,8 @@ class ResponseJsonCardsCategs {
   }
 }
 // ===
-const respcards = new ResponseJsonCardsCategs('https://chagit11.github.io/ruslan-html/38/img/all/cards-pic/cards.json')
+const respcards = new ResponseJsonCardsCategs('../img/all/cards-pic/cards.json')
+// const respcards = new ResponseJsonCardsCategs('https://chagit11.github.io/ruslan-html/38/img/all/cards-pic/cards.json')
 // 
 _('body').addEventListener('click', (e) => {
   clickTabsCategs(e.target) //
@@ -279,7 +280,7 @@ function clickTabsCategs(etarget) {
     setTimeout(()=>{
       respcards.addNumsPagin()
       respcards.addCards(0)
-    }, 2000)
+    }, 500)
   }
 } 
 // --- clickArrowsPagin
