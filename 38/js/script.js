@@ -197,7 +197,7 @@ class ResponseJsonCardsCategs {
     setTimeout(()=>{
       this.addCards(0)
       this.addNumsPagin()
-    }, 300)
+    }, 2000)
   }
   // -- setdataCategs
   setdataCategs() {
@@ -279,7 +279,7 @@ function clickTabsCategs(etarget) {
     setTimeout(()=>{
       respcards.addNumsPagin()
       respcards.addCards(0)
-    }, 500)
+    }, 2000)
   }
 } 
 // --- clickArrowsPagin
