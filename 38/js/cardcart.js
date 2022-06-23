@@ -235,7 +235,27 @@ function clickTabCategs(etarget) {
 
 
 
-
+document.addEventListener('scroll', (e) => {
+  if(window.pageYOffset>90) {
+    _('.header-top').style.cssText = `
+      padding-top: 10px;
+      padding-bottom: 10px;
+      box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.08);
+    `
+    _('.header-top__logo').style.cssText = `
+      // transform: translateY(-20%) scale(0.4);
+      display: none;
+    `
+  } else {
+    _('.header-top').style.cssText = `
+      box-shadow: none;
+    `
+    _('.header-top__logo').style.cssText = `
+      // transform: translateY(0) scale(1);
+      display: block;
+    `
+  }
+})
 
 
 

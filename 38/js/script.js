@@ -1,5 +1,8 @@
 const _ = document.querySelector.bind(document)
 const __ = document.querySelectorAll.bind(document)
+const et = (etarget, cname) => [...__(cname), ...__(cname+' *')].includes(etarget)
+
+
 
 // --- Mobmenu ---
 class Mobmenu {
@@ -300,7 +303,6 @@ function clickNumsPagin() {
   })
 }
 clickNumsPagin() //
-
 
 
 
